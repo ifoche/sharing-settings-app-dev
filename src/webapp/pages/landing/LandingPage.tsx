@@ -32,7 +32,7 @@ export const LandingPage: React.FC = () => {
                 {
                     name: i18n.t("Settings"),
                     listAction: () => history.push("/settings"),
-                }
+                },
             ],
         },
     ];
