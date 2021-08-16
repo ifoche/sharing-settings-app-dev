@@ -1,3 +1,4 @@
+import i18n from "@eyeseetea/d2-ui-components/locales";
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { Card, CardGrid } from "../../components/card-grid/CardGrid";
@@ -7,19 +8,31 @@ export const LandingPage: React.FC = () => {
 
     const cards: Card[] = [
         {
-            title: "Section",
+            title: "Sharing settings management",
             key: "main",
             children: [
                 {
-                    name: "John",
-                    description: "Entry point 1",
-                    listAction: () => history.push("/for/John"),
+                    name: i18n.t("Bulk apply"),
+                    description: i18n.t("Edit sharing settings to data sets, programs and dashboards."),
+                    listAction: () => history.push("/apply"),
                 },
                 {
-                    name: "Mary",
-                    description: "Entry point 2",
-                    listAction: () => history.push("/for/Mary"),
+                    name: i18n.t("List depedencies"),
+                    description: i18n.t(
+                        "List the dependencies of a data set, program or dashboard and their sharing settings."
+                    ),
+                    listAction: () => history.push("/list-dependencies"),
                 },
+            ],
+        },
+        {
+            title: "Settings",
+            key: "settings",
+            children: [
+                {
+                    name: i18n.t("Settings"),
+                    listAction: () => history.push("/settings"),
+                }
             ],
         },
     ];
