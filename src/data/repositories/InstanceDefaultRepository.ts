@@ -6,6 +6,7 @@ import { cache } from "../../utils/cache";
 import { getD2APiFromInstance } from "../../utils/d2-api";
 import { apiToFuture } from "../../utils/futures";
 import { Instance } from "../entities/Instance";
+import { UserSearch } from "../entities/SearchUser";
 
 export class InstanceDefaultRepository implements InstanceRepository {
     private api: D2Api;
@@ -38,6 +39,15 @@ export class InstanceDefaultRepository implements InstanceRepository {
             userGroups: user.userGroups,
             ...user.userCredentials,
         }));
+    }
+
+    public async searchUsers(query: string): Promise<UserSearch> {
+        const options = {
+            fields: { id: true, displayName: true },
+            filter: { displayName: { ilike: query } },
+        };
+
+        return this.api.metadata.get({ users: options, userGroups: options }).getData();
     }
 
     @cache()
