@@ -1,11 +1,12 @@
 import { D2Api } from "@eyeseetea/d2-api/2.34";
-import { FutureData } from "../../domain/entities/Future";
+import { Future, FutureData } from "../../domain/entities/Future";
 import { MetadataRepository } from "../../domain/repositories/MetadataRepository";
 import { getD2APiFromInstance } from "../../utils/d2-api";
 import { apiToFuture } from "../../utils/futures";
 import { Instance } from "../entities/Instance";
 import { MetadataEntities } from "../../domain/entities/MetadataEntities";
 import { Model } from "../../types/d2-api";
+import _ from "lodash";
 
 export class MetadataD2ApiRepository implements MetadataRepository {
     private api: D2Api;
@@ -35,15 +36,39 @@ export class MetadataD2ApiRepository implements MetadataRepository {
             })
         );
     }
-
-    public listMetadata(options: { model: "dataSets" | "programs" | "dashboards"; id: string }): FutureData<any> {
-        const { model, id } = options;
-        console.log(options);
-        //@ts-ignore: d2-api incorrectly guessing model with string access
-        return apiToFuture(this.api.get(`/${model}/${id}/metadata.json`));
+    //with dependencies
+    public listMetadataWithDependencies(options: [{ model: "dataSets" | "programs" | "dashboards"; id: string }]): FutureData<any> {
+        return Future.futureMap(options, item =>
+            apiToFuture(this.api.get(`/${item.model}/${item.id}/metadata.json`))
+        ).map(data => {
+            const dataWithoutDate = data.map((dataItem: any) => {
+                    const { date, ...everythingElse } = dataItem; // eslint-disable-line
+                    return everythingElse;
+                })
+            const mergedData = this.mergePayloads(dataWithoutDate)
+            return mergedData
+        });
     }
-
+   
     private getApiModel(type: keyof MetadataEntities): InstanceType<typeof Model> {
         return this.api.models[type];
+    }
+
+    private mergePayloads(payloads: Record<string, any[]>[]): Record<string, any[]> {
+        return _.reduce(
+            payloads,
+            (result, payload) => {
+                _.forOwn(payload, (value, key) => {
+                    if (Array.isArray(value)) {
+                         //@ts-ignore
+                        const existing = result[key] ?? [];
+                        //@ts-ignore
+                        result[key] = _.uniqBy([...existing, ...value], ({ id }) => id);
+                    }
+                });
+                return result;
+            },
+            {}
+        );
     }
 }

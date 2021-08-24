@@ -2,7 +2,7 @@ import { FutureData } from "../entities/Future";
 
 export interface MetadataRepository {
     listAllMetadata(options: ListAllMetadataParams): FutureData<any>;
-    listMetadata(options: ListMetadataParams): FutureData<any>;
+    listMetadataWithDependencies(options: ListMetadataParams[]): FutureData<any>;
 }
 
 export interface ListAllMetadataParams {

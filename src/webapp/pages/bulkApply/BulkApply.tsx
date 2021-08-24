@@ -4,7 +4,7 @@ import { ConfirmationDialog, ConfirmationDialogProps } from "@eyeseetea/d2-ui-co
 import i18n from "@dhis2/d2-i18n";
 
 export const BulkApply: React.FC = () => {
-    const [metadata, setMetadata] = useState<any>([]);
+    const [metadata, setMetadata] = useState<Record<string, any>[]>();
     const [dialogProps, updateDialog] = useState<ConfirmationDialogProps | null>(null);
 
     const onChange = useCallback((update: Parameters<typeof setMetadata>[0]) => {

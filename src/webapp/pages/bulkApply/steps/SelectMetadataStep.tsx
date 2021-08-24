@@ -1,28 +1,19 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { useAppContext } from "../../../contexts/app-context";
-import { ObjectsTable, TableSelection, TableState } from "@eyeseetea/d2-ui-components"; // TableState,
-import i18n from "@dhis2/d2-i18n";
 import _ from "lodash";
-import { MetadataSharingWizardStepProps } from "./index";
-import Dropdown from "../../../components/dropdown/Dropdown";
-//import { MetadataEntities } from "../../../../domain/entities/MetadataEntities";
+import { useAppContext } from "../../../contexts/app-context";
+import { ObjectsTable, TableSelection, TableState } from "@eyeseetea/d2-ui-components";
+import i18n from "@dhis2/d2-i18n";
 
+import { MetadataSharingWizardStepProps, columns, initialState } from "./index";
+import Dropdown from "../../../components/dropdown/Dropdown";
+import { Ref } from "../../../../domain/entities/Ref";
 import { ListAllMetadataParams } from "../../../../domain/repositories/MetadataRepository";
+
 export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
     onChange,
 }: MetadataSharingWizardStepProps) => {
     const { compositionRoot } = useAppContext();
-    const initialState = {
-        sorting: {
-            field: "displayName" as const,
-            order: "asc" as const,
-        },
-        pagination: {
-            page: 1,
-            pageSize: 25,
-        },
-    };
-    const [allMetadata, setAllMetadata] = useState<any[]>([]);
+    const [allMetadata, setAllMetadata] = useState<Record<string, any>[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [selection, setSelection] = useState<TableSelection[]>([]);
     const [filters, setFilters] = useState<ListAllMetadataParams>({
@@ -38,23 +29,21 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
             const {
                 data: { objects: mdData },
             } = await compositionRoot.metadata.listAll(filters).runAsync();
-            console.log(mdData);
             const rows = mdData.map((item: any) => ({
                 ...item,
-                //externalAccess: item.externalAccess.toString() || ,
+                model: filters.model,
             }));
             setAllMetadata(rows);
-            //onChange(metadata => [...metadata, ...rows]);
             setIsLoading(false);
         };
         getMetadata();
     }, [filters, compositionRoot]);
 
     const onTableChange = useCallback(
-        ({ selection }: TableState<any>, allMetadata) => {
+        ({ selection }: TableState<Ref>, allMetadata) => {
             setSelection(selection);
-            const selectionIds = selection.map((select: any) => select.id);
-            const selectionsFullData = allMetadata.filter((meta: any) => selectionIds.includes(meta.id));
+            const selectionIds = selection.map((select: Ref) => select.id);
+            const selectionsFullData = allMetadata.filter((meta: Record<string, any>) => selectionIds.includes(meta.id));
             onChange(selectionsFullData);
         },
         [onChange]
@@ -66,7 +55,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
         },
         [setFilters]
     );
-    //datasets programs and dashboards
+
     useEffect(() => {
         updateFilters({
             page: initialState.pagination.page,
@@ -101,13 +90,6 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
         updateFilters({ search: value });
     };
 
-    //externalAccess: item.externalAccess, publicAccess: item.publicAccess, id: item.id, name: item.name
-    const columns = [
-        { name: "name", text: i18n.t("Name"), sortable: true },
-        { name: "id", text: i18n.t("ID"), sortable: true },
-        { name: "publicAccess", text: i18n.t("Public Access"), sortable: true },
-        //{ name: "externalAccess", text: i18n.t("External Access"), sortable: true },
-    ];
     return (
         <div>
             <ObjectsTable<any>

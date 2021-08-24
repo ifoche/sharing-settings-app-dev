@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-08-23T08:29:16.387Z\n"
-"PO-Revision-Date: 2021-08-23T08:29:16.387Z\n"
+"POT-Creation-Date: 2021-08-23T09:35:28.814Z\n"
+"PO-Revision-Date: 2021-08-23T09:35:28.814Z\n"
 
 msgid "Add"
 msgstr ""
@@ -36,9 +36,6 @@ msgid "No"
 msgstr ""
 
 msgid "Note: The sharing settings are only applied to the current metadata"
-msgstr ""
-
-msgid "Add module"
 msgstr ""
 
 msgid "Name"
