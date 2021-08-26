@@ -39,13 +39,9 @@ export class MetadataD2ApiRepository implements MetadataRepository {
 
     public listMetadataWithDependencies(options: GetMetadataDependenciesOptions[]): FutureData<MetadataItem[]> {
         return Future.futureMap(options, item =>
-            apiToFuture(this.api.get(`/${item.model}/${item.id}/metadata.json`))
+            apiToFuture<Payload>(this.api.get(`/${item.model}/${item.id}/metadata.json`))
         ).map(data => {
-            const dataWithoutDate = data.map((dataItem: any) => {
-                const { date, ...everythingElse } = dataItem; // eslint-disable-line
-                return everythingElse;
-            });
-            const mergedPayloads = this.mergePayloads(dataWithoutDate);
+            const mergedPayloads = this.mergePayloads(data);
             const dataWithIdsAndName = Object.entries(mergedPayloads).map(([key, value]) => {
                 return value.map(item => ({ ...item, model: key }));
             });
