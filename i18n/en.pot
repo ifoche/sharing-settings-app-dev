@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-08-23T09:35:28.814Z\n"
-"PO-Revision-Date: 2021-08-23T09:35:28.814Z\n"
+"POT-Creation-Date: 2021-08-26T07:01:18.687Z\n"
+"PO-Revision-Date: 2021-08-26T07:01:18.687Z\n"
 
 msgid "Add"
 msgstr ""
@@ -35,9 +35,6 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-msgid "Note: The sharing settings are only applied to the current metadata"
-msgstr ""
-
 msgid "Name"
 msgstr ""
 
@@ -47,22 +44,25 @@ msgstr ""
 msgid "Public Access"
 msgstr ""
 
-msgid "External Access"
+msgid "Users"
+msgstr ""
+
+msgid "User Groups"
+msgstr ""
+
+msgid "Data Sets"
+msgstr ""
+
+msgid "Dashboards"
+msgstr ""
+
+msgid "Programs"
 msgstr ""
 
 msgid "Metadata type"
 msgstr ""
 
 msgid "Search by name"
-msgstr ""
-
-msgid "Origin"
-msgstr ""
-
-msgid "Status"
-msgstr ""
-
-msgid "Summary"
 msgstr ""
 
 msgid "Select Metadata"

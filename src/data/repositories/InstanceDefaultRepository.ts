@@ -41,13 +41,13 @@ export class InstanceDefaultRepository implements InstanceRepository {
         }));
     }
 
-    public async searchUsers(query: string): Promise<UserSearch> {
+    public searchUsers(query: string): FutureData<UserSearch> {
         const options = {
             fields: { id: true, displayName: true },
             filter: { displayName: { ilike: query } },
         };
 
-        return this.api.metadata.get({ users: options, userGroups: options }).getData();
+        return apiToFuture(this.api.metadata.get({ users: options, userGroups: options }));
     }
 
     @cache()

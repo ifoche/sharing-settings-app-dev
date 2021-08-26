@@ -6,5 +6,5 @@ export interface InstanceRepository {
     getBaseUrl(): string;
     getCurrentUser(): FutureData<User>;
     getInstanceVersion(): FutureData<string>;
-    searchUsers(query: string): Promise<UserSearch>;
+    searchUsers(query: string): FutureData<UserSearch>;
 }

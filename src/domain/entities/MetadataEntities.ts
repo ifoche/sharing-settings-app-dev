@@ -3479,71 +3479,6 @@ export type SqlView = {
     userGroupAccesses: UserGroupAccess[];
 };
 
-export type MetadataEntity =
-    | UserRole
-    | Attribute
-    | User
-    | UserGroup
-    | Option
-    | OptionSet
-    | OptionGroupSet
-    | OptionGroup
-    | LegendSet
-    | ColorSet
-    | OrganisationUnit
-    | OrganisationUnitLevel
-    | OrganisationUnitGroup
-    | OrganisationUnitGroupSet
-    | CategoryOption
-    | CategoryOptionGroup
-    | CategoryOptionGroupSet
-    | Category
-    | CategoryCombo
-    | CategoryOptionCombo
-    | DataElement
-    | DataElementGroup
-    | DataElementGroupSet
-    | IndicatorType
-    | Indicator
-    | IndicatorGroup
-    | IndicatorGroupSet
-    | DataEntryForm
-    | DataSet
-    | DataSetNotificationTemplate
-    | Section
-    | DataApprovalLevel
-    | DataApprovalWorkflow
-    | ValidationRule
-    | ValidationRuleGroup
-    | ValidationNotificationTemplate
-    | TrackedEntityAttribute
-    | RelationshipType
-    | TrackedEntityType
-    | ProgramTrackedEntityAttributeGroup
-    | ProgramStageSection
-    | ProgramNotificationTemplate
-    | ProgramStage
-    | Program
-    | EventChart
-    | EventReport
-    | ProgramSection
-    | ProgramIndicator
-    | ProgramRuleVariable
-    | ProgramIndicatorGroup
-    | ProgramRuleAction
-    | ProgramRule
-    | MapView
-    | Report
-    | ReportTable
-    | Map
-    | Chart
-    | Document
-    | Dashboard
-    | MessageConversation
-    | SqlView;
-
-export type MetadataKey = "userRoles" | "attributes" | "";
-
 //TODO: Add as value entoty definitions
 // currently this concept are models with include/exclude rules, collectionName...
 export type MetadataEntities = {
@@ -3609,5 +3544,3 @@ export type MetadataEntities = {
     messageConversations: MessageConversation[];
     sqlViews: SqlView[];
 };
-
-export type MetadataPackage<T = MetadataEntity> = Partial<Record<keyof MetadataEntities, T[]>>;

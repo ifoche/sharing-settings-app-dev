@@ -1,11 +1,17 @@
-import { D2Api } from "@eyeseetea/d2-api/2.34";
 import { Future, FutureData } from "../../domain/entities/Future";
-import { MetadataRepository } from "../../domain/repositories/MetadataRepository";
+import {
+    MetadataRepository,
+    ListAllMetadataParams,
+    GetMetadataDependenciesOptions,
+    Payload,
+    MetadataObject,
+    MetadataItem,
+} from "../../domain/repositories/MetadataRepository";
 import { getD2APiFromInstance } from "../../utils/d2-api";
 import { apiToFuture } from "../../utils/futures";
 import { Instance } from "../entities/Instance";
 import { MetadataEntities } from "../../domain/entities/MetadataEntities";
-import { Model } from "../../types/d2-api";
+import { Model, D2Api } from "../../types/d2-api";
 import _ from "lodash";
 
 export class MetadataD2ApiRepository implements MetadataRepository {
@@ -15,15 +21,9 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         this.api = getD2APiFromInstance(instance);
     }
 
-    public listAllMetadata(options: {
-        model: "dataSets" | "programs" | "dashboards";
-        page?: number;
-        pageSize?: number;
-        search?: string;
-        order?: [string, string];
-    }): FutureData<any> {
-        const { model, page, pageSize, search, order } = options;
-        const [field, orderBy] = order ?? ["name", "asc"];
+    public listAllMetadata(options: ListAllMetadataParams): FutureData<MetadataObject> {
+        const { model, page, pageSize, search, sorting = { field: "id", order: "asc" } } = options;
+
         //@ts-ignore: d2-api incorrectly guessing model with string access
         return apiToFuture(
             this.getApiModel(model).get({
@@ -32,35 +32,38 @@ export class MetadataD2ApiRepository implements MetadataRepository {
                 paging: true,
                 filter: { identifiable: search ? { token: search } : undefined },
                 fields: { $owner: true },
-                order: `${field}:${orderBy}`,
+                order: `${sorting.field}:${sorting.order}`,
             })
         );
     }
-    //with dependencies
-    public listMetadataWithDependencies(options: [{ model: "dataSets" | "programs" | "dashboards"; id: string }]): FutureData<any> {
+
+    public listMetadataWithDependencies(options: GetMetadataDependenciesOptions[]): FutureData<MetadataItem[]> {
         return Future.futureMap(options, item =>
             apiToFuture(this.api.get(`/${item.model}/${item.id}/metadata.json`))
         ).map(data => {
             const dataWithoutDate = data.map((dataItem: any) => {
-                    const { date, ...everythingElse } = dataItem; // eslint-disable-line
-                    return everythingElse;
-                })
-            const mergedData = this.mergePayloads(dataWithoutDate)
-            return mergedData
+                const { date, ...everythingElse } = dataItem; // eslint-disable-line
+                return everythingElse;
+            });
+            const mergedPayloads = this.mergePayloads(dataWithoutDate);
+            const dataWithIdsAndName = Object.entries(mergedPayloads).map(([key, value]) => {
+                return value.map(item => ({ ...item, model: key }));
+            });
+            return _.flatten(dataWithIdsAndName);
         });
     }
-   
+
     private getApiModel(type: keyof MetadataEntities): InstanceType<typeof Model> {
         return this.api.models[type];
     }
 
-    private mergePayloads(payloads: Record<string, any[]>[]): Record<string, any[]> {
+    private mergePayloads(payloads: Payload[]): Payload {
         return _.reduce(
             payloads,
             (result, payload) => {
                 _.forOwn(payload, (value, key) => {
                     if (Array.isArray(value)) {
-                         //@ts-ignore
+                        //@ts-ignore
                         const existing = result[key] ?? [];
                         //@ts-ignore
                         result[key] = _.uniqBy([...existing, ...value], ({ id }) => id);

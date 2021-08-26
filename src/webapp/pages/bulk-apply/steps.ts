@@ -1,9 +1,9 @@
 import { WizardStep } from "@eyeseetea/d2-ui-components";
-import i18n from "../../../../locales";
-import { ListDependenciesStep } from "./ListDependenciesStep";
-import { SelectMetadataStep } from "./SelectMetadataStep";
-import { AccessStep } from "./AccessStep";
-import { SummaryApplyStep } from "./SummaryApplyStep";
+import i18n from "../../../locales";
+import { ListDependenciesStep } from "./steps/ListDependenciesStep";
+import { SelectMetadataStep } from "./steps/SelectMetadataStep";
+import { AccessStep } from "./steps/AccessStep";
+import { SummaryApplyStep } from "./steps/SummaryApplyStep";
 
 export interface MetadataSharingWizardStep extends WizardStep {
     validationKeys: string[];
@@ -15,25 +15,6 @@ export interface MetadataSharingWizardStepProps {
     onChange: (update: any | ((prev: any) => any)) => void;
     onCancel: () => void;
 }
-
-export const columns = [
-    { name: "name", text: i18n.t("Name"), sortable: true },
-    { name: "id", text: i18n.t("ID"), sortable: true },
-    { name: "publicAccess", text: i18n.t("Public Access"), sortable: true },
-    { name: "userAccesses", text: i18n.t("Users"), sortable: true },
-    { name: "userGroupAccesses", text: i18n.t("User Groups"), sortable: true },
-];
-
-export const initialState = {
-    sorting: {
-        field: "displayName" as const,
-        order: "asc" as const,
-    },
-    pagination: {
-        page: 1,
-        pageSize: 25,
-    },
-};
 
 export const metadataSharingWizardSteps: MetadataSharingWizardStep[] = [
     {

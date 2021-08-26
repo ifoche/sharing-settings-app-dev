@@ -7,10 +7,6 @@ export const BulkApply: React.FC = () => {
     const [metadata, setMetadata] = useState<Record<string, any>[]>();
     const [dialogProps, updateDialog] = useState<ConfirmationDialogProps | null>(null);
 
-    const onChange = useCallback((update: Parameters<typeof setMetadata>[0]) => {
-        setMetadata(update);
-    }, []);
-
     const onCancel = useCallback(() => {
         updateDialog({
             title: i18n.t("Cancel sharing action?"),
@@ -25,7 +21,7 @@ export const BulkApply: React.FC = () => {
     return (
         <>
             {dialogProps && <ConfirmationDialog isOpen={true} maxWidth={"xl"} {...dialogProps} />}
-            <SharingWizard onChange={onChange} onCancel={onCancel} metadata={metadata} />;
+            <SharingWizard onChange={update => setMetadata(update)} onCancel={onCancel} metadata={metadata} />;
         </>
     );
 };
