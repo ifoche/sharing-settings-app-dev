@@ -3,7 +3,7 @@ import { SharingWizard } from "./SharingWizard";
 import { ConfirmationDialog, ConfirmationDialogProps } from "@eyeseetea/d2-ui-components";
 import i18n from "@dhis2/d2-i18n";
 
-export const BulkApply: React.FC = () => {
+export const BulkApplyPage: React.FC = () => {
     const [metadata, setMetadata] = useState<Record<string, any>[]>();
     const [dialogProps, updateDialog] = useState<ConfirmationDialogProps | null>(null);
 
@@ -19,9 +19,9 @@ export const BulkApply: React.FC = () => {
     }, []);
 
     return (
-        <>
+        <React.Fragment>
             {dialogProps && <ConfirmationDialog isOpen={true} maxWidth={"xl"} {...dialogProps} />}
             <SharingWizard onChange={update => setMetadata(update)} onCancel={onCancel} metadata={metadata} />;
-        </>
+        </React.Fragment>
     );
 };

@@ -1,6 +1,6 @@
+import { UserSearch } from "../../data/entities/SearchUser";
 import { FutureData } from "../entities/Future";
 import { User } from "../entities/User";
-import { UserSearch } from "../../data/entities/SearchUser";
 
 export interface InstanceRepository {
     getBaseUrl(): string;

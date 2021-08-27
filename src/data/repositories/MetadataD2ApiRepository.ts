@@ -2,10 +2,10 @@ import _ from "lodash";
 import { Future, FutureData } from "../../domain/entities/Future";
 import {
     GetDependenciesItem,
+    ListMetadataResponse,
     ListOptions,
+    MetadataPayload,
     MetadataRepository,
-    MetadataResponse,
-    Payload,
 } from "../../domain/repositories/MetadataRepository";
 import { D2Api } from "../../types/d2-api";
 import { getD2APiFromInstance } from "../../utils/d2-api";
@@ -19,7 +19,7 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         this.api = getD2APiFromInstance(instance);
     }
 
-    public list(options: ListOptions): FutureData<MetadataResponse> {
+    public list(options: ListOptions): FutureData<ListMetadataResponse> {
         const { model, page, pageSize, search, sorting = { field: "id", order: "asc" } } = options;
 
         return apiToFuture(
@@ -35,13 +35,13 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         );
     }
 
-    public getDependencies(options: GetDependenciesItem[]): FutureData<Payload> {
+    public getDependencies(options: GetDependenciesItem[]): FutureData<MetadataPayload> {
         return Future.futureMap(options, item =>
-            apiToFuture<Payload>(this.api.get(`/${item.model}/${item.id}/metadata.json`))
+            apiToFuture<MetadataPayload>(this.api.get(`/${item.model}/${item.id}/metadata.json`))
         ).map(data => this.mergePayloads(data));
     }
 
-    private mergePayloads(payloads: Payload[]): Payload {
+    private mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
         return _.reduce(
             payloads,
             (result, payload) => {
