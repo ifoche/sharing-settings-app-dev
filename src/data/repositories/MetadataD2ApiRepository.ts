@@ -47,15 +47,13 @@ export class MetadataD2ApiRepository implements MetadataRepository {
             (result, payload) => {
                 _.forOwn(payload, (value, key) => {
                     if (Array.isArray(value)) {
-                        //@ts-ignore
                         const existing = result[key] ?? [];
-                        //@ts-ignore
                         result[key] = _.uniqBy([...existing, ...value], ({ id }) => id);
                     }
                 });
                 return result;
             },
-            {}
+            {} as MetadataPayload
         );
     }
 }
