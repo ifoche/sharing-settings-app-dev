@@ -2,8 +2,12 @@ import React, { useState, useCallback } from "react";
 import { SharingWizard } from "./SharingWizard";
 import { ConfirmationDialog, ConfirmationDialogProps } from "@eyeseetea/d2-ui-components";
 import i18n from "@dhis2/d2-i18n";
+import { PageHeader } from "../../components/page-header/PageHeader";
+import { useGoBack } from "../../hooks/useGoBack";
 
 export const BulkApplyPage: React.FC = () => {
+    const goBack = useGoBack();
+
     const [metadata, setMetadata] = useState<Record<string, any>[]>();
     const [dialogProps, updateDialog] = useState<ConfirmationDialogProps | null>(null);
 
@@ -20,6 +24,8 @@ export const BulkApplyPage: React.FC = () => {
 
     return (
         <React.Fragment>
+            <PageHeader title={i18n.t("Bulk apply")} onBackClick={goBack} />
+
             {dialogProps && <ConfirmationDialog isOpen={true} maxWidth={"xl"} {...dialogProps} />}
             <SharingWizard onChange={update => setMetadata(update)} onCancel={onCancel} metadata={metadata} />;
         </React.Fragment>

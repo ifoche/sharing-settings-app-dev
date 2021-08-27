@@ -36,7 +36,7 @@ export interface Card {
 }
 
 const Container = styled.div`
-    margin-left: 30px;
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
 `;
