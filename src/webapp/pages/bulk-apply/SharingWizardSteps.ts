@@ -4,6 +4,8 @@ import { ListDependenciesStep } from "./steps/ListDependenciesStep";
 import { SelectMetadataStep } from "./steps/SelectMetadataStep";
 import { AccessStep } from "./steps/AccessStep";
 import { SummaryApplyStep } from "./steps/SummaryApplyStep";
+import { Ref } from "../../../domain/entities/Ref";
+import { SharedObject } from "../../../domain/entities/SharedObject";
 
 export interface MetadataSharingWizardStep extends WizardStep {
     validationKeys: string[];
@@ -11,10 +13,14 @@ export interface MetadataSharingWizardStep extends WizardStep {
 }
 
 export interface MetadataSharingWizardStepProps {
-    metadata: any;
-    onChange: (update: any | ((prev: any) => any)) => void;
+    selection: Ref[];
+    changeSelection: UpdateMethod<Ref[]>;
+    sharingSettings: SharedObject;
+    changeSharingSettings: UpdateMethod<SharedObject>;
     onCancel: () => void;
 }
+
+type UpdateMethod<T> = (update: T | ((prev: T) => T)) => void;
 
 export const metadataSharingWizardSteps: MetadataSharingWizardStep[] = [
     {

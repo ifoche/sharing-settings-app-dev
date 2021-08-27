@@ -1,7 +1,6 @@
 import _ from "lodash";
 import { Future, FutureData } from "../../domain/entities/Future";
 import {
-    GetDependenciesItem,
     ListMetadataResponse,
     ListOptions,
     MetadataPayload,
@@ -35,10 +34,26 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         );
     }
 
-    public getDependencies(options: GetDependenciesItem[]): FutureData<MetadataPayload> {
-        return Future.futureMap(options, item =>
-            apiToFuture<MetadataPayload>(this.api.get(`/${item.model}/${item.id}/metadata.json`))
-        ).map(data => this.mergePayloads(data));
+    public getDependencies(ids: string[]): FutureData<MetadataPayload> {
+        return this.getMetadata(ids)
+            .flatMap(payload => {
+                const items = _(payload)
+                    .mapValues((items, key) => {
+                        return items.map(item => ({ model: key, id: item.id }));
+                    })
+                    .values()
+                    .flatten()
+                    .value();
+
+                return Future.futureMap(items, item =>
+                    apiToFuture<MetadataPayload>(this.api.get(`/${item.model}/${item.id}/metadata.json`))
+                );
+            })
+            .map(data => this.mergePayloads(data));
+    }
+
+    private getMetadata(ids: string[]): FutureData<MetadataPayload> {
+        return apiToFuture(this.api.get("/metadata", { filter: `id:in:[${ids.join(",")}]` }));
     }
 
     private mergePayloads(payloads: MetadataPayload[]): MetadataPayload {

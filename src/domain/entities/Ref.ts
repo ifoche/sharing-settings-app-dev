@@ -7,7 +7,3 @@ export interface Ref {
 export interface NamedRef extends Ref {
     name: string;
 }
-
-export interface SharingSetting extends NamedRef {
-    access: string;
-}

@@ -5,10 +5,10 @@ import { Ref } from "../../../../domain/entities/Ref";
 import { MetadataItem } from "../../../../domain/repositories/MetadataRepository";
 import i18n from "../../../../locales";
 import { useAppContext } from "../../../contexts/app-context";
-import { MetadataSharingWizardStepProps } from "../steps";
+import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
 
 export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
-    metadata,
+    selection: metadata,
 }: MetadataSharingWizardStepProps) => {
     const { compositionRoot } = useAppContext();
     const [metadataDependencies, setMetadataDependencies] = useState<MetadataItem[]>([]);
@@ -38,7 +38,9 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     useEffect(() => {
         const getMetadataDependencies = async () => {
             setIsLoading(true);
-            const { data = {} } = await compositionRoot.metadata.getDependencies(metadata).runAsync();
+            const { data = {} } = await compositionRoot.metadata
+                .getDependencies(metadata.map(({ id }) => id))
+                .runAsync();
 
             const dataWithIdsAndName = Object.entries(data).map(([key, value]) => {
                 return value.map(item => ({ ...item, model: key }));

@@ -1,15 +1,19 @@
-import React, { useState, useCallback } from "react";
-import { SharingWizard } from "./SharingWizard";
-import { ConfirmationDialog, ConfirmationDialogProps } from "@eyeseetea/d2-ui-components";
 import i18n from "@dhis2/d2-i18n";
+import { ConfirmationDialog, ConfirmationDialogProps } from "@eyeseetea/d2-ui-components";
+import React, { useCallback, useState } from "react";
+import { Ref } from "../../../domain/entities/Ref";
+import { SharedObject } from "../../../domain/entities/SharedObject";
 import { PageHeader } from "../../components/page-header/PageHeader";
 import { useGoBack } from "../../hooks/useGoBack";
+import { SharingWizard } from "./SharingWizard";
 
 export const BulkApplyPage: React.FC = () => {
     const goBack = useGoBack();
 
-    const [metadata, setMetadata] = useState<Record<string, any>[]>();
     const [dialogProps, updateDialog] = useState<ConfirmationDialogProps | null>(null);
+
+    const [selection, setSelection] = useState<Ref[]>([]);
+    const [sharingSettings, setSharingSettings] = useState<SharedObject>(defaultSharedObject);
 
     const onCancel = useCallback(() => {
         updateDialog({
@@ -27,7 +31,14 @@ export const BulkApplyPage: React.FC = () => {
             <PageHeader title={i18n.t("Bulk apply")} onBackClick={goBack} />
 
             {dialogProps && <ConfirmationDialog isOpen={true} maxWidth={"xl"} {...dialogProps} />}
-            <SharingWizard onChange={update => setMetadata(update)} onCancel={onCancel} metadata={metadata} />;
+
+            <SharingWizard onCancel={onCancel} changeSelection={setSelection} selection={selection} sharingSettings={sharingSettings} changeSharingSettings={setSharingSettings} />;
         </React.Fragment>
     );
+};
+
+const defaultSharedObject: SharedObject = {
+    publicAccess: "--------",
+    userAccesses: [],
+    userGroupAccesses: [],
 };
