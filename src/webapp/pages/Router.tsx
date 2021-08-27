@@ -5,16 +5,16 @@ import { LandingPage } from "./landing/LandingPage";
 
 export const Router = () => {
     return (
-        <HashRouter>
-            <Switch>
-                <Container>
+        <Container>
+            <HashRouter>
+                <Switch>
                     <Route path="/apply" render={() => <BulkApplyPage />} />
 
                     {/* Default route */}
                     <Route render={() => <LandingPage />} />
-                </Container>
-            </Switch>
-        </HashRouter>
+                </Switch>
+            </HashRouter>
+        </Container>
     );
 };
 
