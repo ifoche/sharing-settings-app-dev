@@ -1,18 +1,17 @@
+import _ from "lodash";
 import { Future, FutureData } from "../../domain/entities/Future";
+import { MetadataEntities } from "../../domain/entities/MetadataEntities";
 import {
+    GetDependenciesOptions,
+    ListOptions,
     MetadataRepository,
-    ListAllMetadataParams,
-    GetMetadataDependenciesOptions,
+    MetadataResponse,
     Payload,
-    MetadataObject,
-    MetadataItem,
 } from "../../domain/repositories/MetadataRepository";
+import { D2Api, Model } from "../../types/d2-api";
 import { getD2APiFromInstance } from "../../utils/d2-api";
 import { apiToFuture } from "../../utils/futures";
 import { Instance } from "../entities/Instance";
-import { MetadataEntities } from "../../domain/entities/MetadataEntities";
-import { Model, D2Api } from "../../types/d2-api";
-import _ from "lodash";
 
 export class MetadataD2ApiRepository implements MetadataRepository {
     private api: D2Api;
@@ -21,7 +20,7 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         this.api = getD2APiFromInstance(instance);
     }
 
-    public listAllMetadata(options: ListAllMetadataParams): FutureData<MetadataObject> {
+    public list(options: ListOptions): FutureData<MetadataResponse> {
         const { model, page, pageSize, search, sorting = { field: "id", order: "asc" } } = options;
 
         //@ts-ignore: d2-api incorrectly guessing model with string access
@@ -37,16 +36,10 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         );
     }
 
-    public listMetadataWithDependencies(options: GetMetadataDependenciesOptions[]): FutureData<MetadataItem[]> {
+    public getDependencies(options: GetDependenciesOptions[]): FutureData<Payload> {
         return Future.futureMap(options, item =>
             apiToFuture<Payload>(this.api.get(`/${item.model}/${item.id}/metadata.json`))
-        ).map(data => {
-            const mergedPayloads = this.mergePayloads(data);
-            const dataWithIdsAndName = Object.entries(mergedPayloads).map(([key, value]) => {
-                return value.map(item => ({ ...item, model: key }));
-            });
-            return _.flatten(dataWithIdsAndName);
-        });
+        ).map(data => this.mergePayloads(data));
     }
 
     private getApiModel(type: keyof MetadataEntities): InstanceType<typeof Model> {

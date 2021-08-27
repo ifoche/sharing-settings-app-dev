@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useCallback } from "react";
-import { useAppContext } from "../../../contexts/app-context";
 import { ObjectsTable, TableSelection, TableState } from "@eyeseetea/d2-ui-components";
 import _ from "lodash";
-import { MetadataSharingWizardStepProps } from "../steps";
+import React, { useCallback, useEffect, useState } from "react";
 import { Ref } from "../../../../domain/entities/Ref";
-import i18n from "../../../../locales";
 import { MetadataItem } from "../../../../domain/repositories/MetadataRepository";
+import i18n from "../../../../locales";
+import { useAppContext } from "../../../contexts/app-context";
+import { MetadataSharingWizardStepProps } from "../steps";
 
 export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     metadata,
@@ -38,8 +38,13 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     useEffect(() => {
         const getMetadataDependencies = async () => {
             setIsLoading(true);
-            const { data = [] } = await compositionRoot.metadata.getDependencies(metadata).runAsync();
-            setMetadataDependencies(data);
+            const { data = {} } = await compositionRoot.metadata.getDependencies(metadata).runAsync();
+
+            const dataWithIdsAndName = Object.entries(data).map(([key, value]) => {
+                return value.map(item => ({ ...item, model: key }));
+            });
+
+            setMetadataDependencies(_.flatten(dataWithIdsAndName));
             setIsLoading(false);
         };
         getMetadataDependencies();

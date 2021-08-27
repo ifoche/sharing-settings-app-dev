@@ -1,13 +1,11 @@
 import { Instance } from "./data/entities/Instance";
 import { InstanceDefaultRepository } from "./data/repositories/InstanceDefaultRepository";
 import { MetadataD2ApiRepository } from "./data/repositories/MetadataD2ApiRepository";
-
+import { ListMetadataUseCase } from "./domain/usecases/ListMetadataUseCase";
 import { GetCurrentUserUseCase } from "./domain/usecases/GetCurrentUserUseCase";
-import { SearchUserUseCase } from "./domain/usecases/SearchUserUseCase";
-
 import { GetInstanceVersionUseCase } from "./domain/usecases/GetInstanceVersionUseCase";
-import { GetAllMetadataUseCase } from "./domain/usecases/GetAllMetadataUseCase";
-import { GetMetadataWithDependenciesUseCase } from "./domain/usecases/GetMetadataWithDependenciesUseCase";
+import { GetMetadataDependenciesUseCase } from "./domain/usecases/GetMetadataWithDependenciesUseCase";
+import { SearchUsersUseCase } from "./domain/usecases/SearchUsersUseCase";
 
 export function getCompositionRoot(instance: Instance) {
     const instanceRepository = new InstanceDefaultRepository(instance);
@@ -17,11 +15,11 @@ export function getCompositionRoot(instance: Instance) {
         instance: getExecute({
             getCurrentUser: new GetCurrentUserUseCase(instanceRepository),
             getVersion: new GetInstanceVersionUseCase(instanceRepository),
-            searchUsers: new SearchUserUseCase(instanceRepository),
+            searchUsers: new SearchUsersUseCase(instanceRepository),
         }),
         metadata: getExecute({
-            listAll: new GetAllMetadataUseCase(metadataRepository),
-            getDependencies: new GetMetadataWithDependenciesUseCase(metadataRepository),
+            list: new ListMetadataUseCase(metadataRepository),
+            getDependencies: new GetMetadataDependenciesUseCase(metadataRepository),
         }),
     };
 }

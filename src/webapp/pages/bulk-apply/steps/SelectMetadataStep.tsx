@@ -1,21 +1,20 @@
-import React, { useState, useEffect, useCallback } from "react";
-import _ from "lodash";
-import { useAppContext } from "../../../contexts/app-context";
-import { ObjectsTable, TableSelection, TableState, TablePagination } from "@eyeseetea/d2-ui-components";
 import i18n from "@dhis2/d2-i18n";
-
-import { MetadataSharingWizardStepProps } from "../steps";
-import Dropdown from "../../../components/dropdown/Dropdown";
+import { ObjectsTable, TablePagination, TableSelection, TableState } from "@eyeseetea/d2-ui-components";
+import React, { useCallback, useEffect, useState } from "react";
 import { GetMetadataModel, MetadataItem } from "../../../../domain/repositories/MetadataRepository";
+import Dropdown from "../../../components/dropdown/Dropdown";
+import { useAppContext } from "../../../contexts/app-context";
+import { MetadataSharingWizardStepProps } from "../steps";
+
+const initialState = {
+    sorting: { field: "displayName" as const, order: "asc" as const },
+    pagination: { page: 1, pageSize: 25 },
+};
 
 export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
     metadata,
     onChange,
 }: MetadataSharingWizardStepProps) => {
-    const initialState = {
-        sorting: { field: "displayName" as const, order: "asc" as const },
-        pagination: { page: 1, pageSize: 25 },
-    };
     const { compositionRoot } = useAppContext();
     const [allMetadata, setAllMetadata] = useState<{
         objects: MetadataItem[];
@@ -37,7 +36,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
     useEffect(() => {
         const getMetadata = async () => {
             setIsLoading(true);
-            const { data } = await compositionRoot.metadata.listAll({ ...initialState, model, search }).runAsync();
+            const { data } = await compositionRoot.metadata.list({ ...initialState, model, search }).runAsync();
             if (data) {
                 const rows = data.objects.map((item: MetadataItem) => ({
                     ...item,
@@ -48,7 +47,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
             }
         };
         getMetadata();
-    }, [compositionRoot.metadata, search, model]);
+    }, [compositionRoot, search, model]);
 
     const onTableChange = useCallback(
         async (tableState: TableState<MetadataItem>, model) => {
@@ -61,7 +60,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
 
             const { pagination, sorting } = tableState ?? initialState;
             const { data } = await compositionRoot.metadata
-                .listAll({
+                .list({
                     pageSize: pagination.pageSize,
                     page: pagination.page,
                     sorting: { field: sorting.field.toString(), order: sorting.order },
@@ -74,7 +73,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
             }
             setIsLoading(false);
         },
-        [search, compositionRoot, model]
+        [search, compositionRoot]
     );
 
     const changeModelFilter = (modelName: GetMetadataModel) => {

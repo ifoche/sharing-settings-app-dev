@@ -1,11 +1,11 @@
 import { FutureData } from "../entities/Future";
 
 export interface MetadataRepository {
-    listAllMetadata(options: ListAllMetadataParams): FutureData<MetadataObject>;
-    listMetadataWithDependencies(options: GetMetadataDependenciesOptions[]): FutureData<MetadataItem[]>;
+    list(options: ListOptions): FutureData<MetadataResponse>;
+    getDependencies(options: GetDependenciesOptions[]): FutureData<Payload>;
 }
 
-export interface ListAllMetadataParams {
+export interface ListOptions {
     model: GetMetadataModel;
     page?: number;
     pageSize?: number;
@@ -15,13 +15,13 @@ export interface ListAllMetadataParams {
 
 export type GetMetadataModel = "dataSets" | "programs" | "dashboards";
 
-export type GetMetadataDependenciesOptions = { model: GetMetadataModel; id: string };
+export type GetDependenciesOptions = { model: GetMetadataModel; id: string };
 
 export type Payload = Record<string, MetadataItem[]>;
 
 export type MetadataItem = { id: string; [key: string]: string | number | boolean | undefined };
 
-export interface MetadataObject {
+export interface MetadataResponse {
     objects: MetadataItem[];
     pager: Pager;
 }

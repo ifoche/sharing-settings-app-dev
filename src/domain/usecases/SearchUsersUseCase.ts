@@ -1,9 +1,9 @@
 import { UseCase } from "../../CompositionRoot";
 import { UserSearch } from "../../data/entities/SearchUser";
+import { FutureData } from "../entities/Future";
 import { InstanceRepository } from "../repositories/InstanceRepository";
-import { FutureData } from "../../domain/entities/Future";
 
-export class SearchUserUseCase implements UseCase {
+export class SearchUsersUseCase implements UseCase {
     constructor(private instanceRepository: InstanceRepository) {}
 
     public execute(query: string): FutureData<UserSearch> {

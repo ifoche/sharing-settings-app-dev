@@ -1,11 +1,11 @@
 import { UseCase } from "../../CompositionRoot";
 import { FutureData } from "../entities/Future";
-import { MetadataRepository, GetMetadataDependenciesOptions, MetadataItem } from "../repositories/MetadataRepository";
+import { GetDependenciesOptions, MetadataRepository, Payload } from "../repositories/MetadataRepository";
 
-export class GetMetadataWithDependenciesUseCase implements UseCase {
+export class GetMetadataDependenciesUseCase implements UseCase {
     constructor(private metadataRepository: MetadataRepository) {}
 
-    public execute(params: GetMetadataDependenciesOptions[]): FutureData<MetadataItem[]> {
-        return this.metadataRepository.listMetadataWithDependencies(params);
+    public execute(params: GetDependenciesOptions[]): FutureData<Payload> {
+        return this.metadataRepository.getDependencies(params);
     }
 }
