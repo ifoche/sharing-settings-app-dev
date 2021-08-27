@@ -28,12 +28,12 @@ import {
     FormattedStringFromDate,
     Integer,
     IntegerFromString,
+    Interface,
     JsonFromString,
     NonEmptyString,
     NumberFromString,
     NumberRangedIn,
     StringLengthRangedIn,
-    RegExpMatchedString,
 } from "purify-ts-extra-codec";
 import { Either } from "../domain/entities/Either";
 
@@ -95,11 +95,8 @@ export const falseType = Codec.custom<false>({
     schema: () => ({ type: "boolean" }),
 });
 
-// DHIS2 valid uid
-const dhis2Uid = /^[a-zA-Z]{1}[a-zA-Z0-9]{10}$/;
-
 export const Schema = {
-    object: Codec.interface,
+    object: Interface,
     stringObject: JsonFromString,
     array,
     nonEmptyArray: nonEmptyList,
@@ -111,6 +108,8 @@ export const Schema = {
     number: oneOf([number, NumberFromString]),
     numberBetween: NumberRangedIn,
     boolean: booleanFromString,
+    true: trueType,
+    false: falseType,
     null: nullType,
     undefined: undefinedType,
     unknown,
@@ -125,7 +124,6 @@ export const Schema = {
     exact: exactly,
     extend: intersect,
     maybe,
-    dhis2Id: RegExpMatchedString(dhis2Uid),
     chain: chainCodec,
     custom: Codec.custom,
     lazy,
@@ -137,4 +135,3 @@ export declare type FromType<T> = {
 
 export { Codec, parseError as parseSchemaError } from "purify-ts";
 export type { DecodeError as SchemaDecodeError } from "purify-ts";
-export type { FromType as GetTypeFromSchema, GetType as GetSchemaType } from "purify-ts";
