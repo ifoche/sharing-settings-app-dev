@@ -1,14 +1,13 @@
 import _ from "lodash";
 import { Future, FutureData } from "../../domain/entities/Future";
-import { MetadataEntities } from "../../domain/entities/MetadataEntities";
 import {
-    GetDependenciesOptions,
+    GetDependenciesItem,
     ListOptions,
     MetadataRepository,
     MetadataResponse,
     Payload,
 } from "../../domain/repositories/MetadataRepository";
-import { D2Api, Model } from "../../types/d2-api";
+import { D2Api } from "../../types/d2-api";
 import { getD2APiFromInstance } from "../../utils/d2-api";
 import { apiToFuture } from "../../utils/futures";
 import { Instance } from "../entities/Instance";
@@ -23,9 +22,9 @@ export class MetadataD2ApiRepository implements MetadataRepository {
     public list(options: ListOptions): FutureData<MetadataResponse> {
         const { model, page, pageSize, search, sorting = { field: "id", order: "asc" } } = options;
 
-        //@ts-ignore: d2-api incorrectly guessing model with string access
         return apiToFuture(
-            this.getApiModel(model).get({
+            //@ts-ignore: d2-api incorrectly guessing model with string access
+            this.api.models[model].get({
                 page,
                 pageSize,
                 paging: true,
@@ -36,14 +35,10 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         );
     }
 
-    public getDependencies(options: GetDependenciesOptions[]): FutureData<Payload> {
+    public getDependencies(options: GetDependenciesItem[]): FutureData<Payload> {
         return Future.futureMap(options, item =>
             apiToFuture<Payload>(this.api.get(`/${item.model}/${item.id}/metadata.json`))
         ).map(data => this.mergePayloads(data));
-    }
-
-    private getApiModel(type: keyof MetadataEntities): InstanceType<typeof Model> {
-        return this.api.models[type];
     }
 
     private mergePayloads(payloads: Payload[]): Payload {

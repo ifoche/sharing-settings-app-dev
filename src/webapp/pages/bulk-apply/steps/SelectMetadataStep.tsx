@@ -1,7 +1,7 @@
 import i18n from "@dhis2/d2-i18n";
 import { ObjectsTable, TablePagination, TableSelection, TableState } from "@eyeseetea/d2-ui-components";
 import React, { useCallback, useEffect, useState } from "react";
-import { GetMetadataModel, MetadataItem } from "../../../../domain/repositories/MetadataRepository";
+import { MetadataModel, MetadataItem } from "../../../../domain/repositories/MetadataRepository";
 import Dropdown from "../../../components/dropdown/Dropdown";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../steps";
@@ -22,7 +22,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
     }>({ objects: [], pager: initialState.pagination });
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [selection, setSelection] = useState<TableSelection[]>(metadata ?? []);
-    const [model, setModel] = useState<GetMetadataModel>("dashboards");
+    const [model, setModel] = useState<MetadataModel>("dashboards");
     const [search, setSearch] = useState<string>("");
 
     const columns = [
@@ -76,7 +76,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
         [search, compositionRoot]
     );
 
-    const changeModelFilter = (modelName: GetMetadataModel) => {
+    const changeModelFilter = (modelName: MetadataModel) => {
         setModel(modelName);
     };
 

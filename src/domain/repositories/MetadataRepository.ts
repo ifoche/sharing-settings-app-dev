@@ -2,20 +2,20 @@ import { FutureData } from "../entities/Future";
 
 export interface MetadataRepository {
     list(options: ListOptions): FutureData<MetadataResponse>;
-    getDependencies(options: GetDependenciesOptions[]): FutureData<Payload>;
+    getDependencies(items: GetDependenciesItem[]): FutureData<Payload>;
 }
 
 export interface ListOptions {
-    model: GetMetadataModel;
+    model: MetadataModel;
     page?: number;
     pageSize?: number;
     search?: string;
     sorting?: { field: string; order: "asc" | "desc" };
 }
 
-export type GetMetadataModel = "dataSets" | "programs" | "dashboards";
+export type MetadataModel = "dataSets" | "programs" | "dashboards";
 
-export type GetDependenciesOptions = { model: GetMetadataModel; id: string };
+export type GetDependenciesItem = { model: MetadataModel; id: string };
 
 export type Payload = Record<string, MetadataItem[]>;
 
