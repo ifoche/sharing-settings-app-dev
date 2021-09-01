@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-08-26T11:56:17.100Z\n"
-"PO-Revision-Date: 2021-08-26T11:56:17.100Z\n"
+"POT-Creation-Date: 2021-08-27T08:28:36.728Z\n"
+"PO-Revision-Date: 2021-08-27T08:28:36.728Z\n"
 
 msgid "Add"
 msgstr ""
@@ -35,37 +35,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-msgid "Name"
-msgstr ""
-
-msgid "ID"
-msgstr ""
-
-msgid "Metadata Type"
-msgstr ""
-
-msgid "Public Access"
-msgstr ""
-
-msgid "Users"
-msgstr ""
-
-msgid "User Groups"
-msgstr ""
-
-msgid "Data Sets"
-msgstr ""
-
-msgid "Dashboards"
-msgstr ""
-
-msgid "Programs"
-msgstr ""
-
-msgid "Metadata type"
-msgstr ""
-
-msgid "Search by name"
+msgid "Bulk apply"
 msgstr ""
 
 msgid "Select Metadata"
@@ -86,10 +56,37 @@ msgstr ""
 msgid "List errors and warnings and apply metadata sharing"
 msgstr ""
 
-msgid "Hello {{name}}"
+msgid "Name"
 msgstr ""
 
-msgid "Bulk apply"
+msgid "ID"
+msgstr ""
+
+msgid "Metadata Type"
+msgstr ""
+
+msgid "Public Access"
+msgstr ""
+
+msgid "Users"
+msgstr ""
+
+msgid "User Groups"
+msgstr ""
+
+msgid "Metadata type"
+msgstr ""
+
+msgid "Search by name"
+msgstr ""
+
+msgid "Data Sets"
+msgstr ""
+
+msgid "Dashboards"
+msgstr ""
+
+msgid "Programs"
 msgstr ""
 
 msgid "Edit sharing settings to data sets, programs and dashboards."

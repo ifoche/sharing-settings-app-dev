@@ -29,10 +29,15 @@ export const BulkApplyPage: React.FC = () => {
     return (
         <React.Fragment>
             <PageHeader title={i18n.t("Bulk apply")} onBackClick={goBack} />
-
             {dialogProps && <ConfirmationDialog isOpen={true} maxWidth={"xl"} {...dialogProps} />}
-
-            <SharingWizard onCancel={onCancel} changeSelection={setSelection} selection={selection} sharingSettings={sharingSettings} changeSharingSettings={setSharingSettings} />;
+            <SharingWizard
+                onCancel={onCancel}
+                changeSelection={setSelection}
+                selection={selection}
+                sharingSettings={sharingSettings}
+                changeSharingSettings={setSharingSettings}
+            />
+            ;
         </React.Fragment>
     );
 };

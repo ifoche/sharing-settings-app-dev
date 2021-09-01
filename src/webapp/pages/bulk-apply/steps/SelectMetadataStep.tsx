@@ -5,7 +5,7 @@ import {
     ListMetadataResponse,
     ListOptions,
     MetadataItem,
-    MetadataModel
+    MetadataModel,
 } from "../../../../domain/repositories/MetadataRepository";
 import Dropdown, { DropdownOption } from "../../../components/dropdown/Dropdown";
 import { useAppContext } from "../../../contexts/app-context";
@@ -18,7 +18,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
     const { compositionRoot } = useAppContext();
     const snackbar = useSnackbar();
 
-    const [isLoading, setLoading] = useState<boolean>(false);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const [response, setResponse] = useState<ListMetadataResponse>(initialResponse);
     const [listOptions, setListOptions] = useState<ListOptions>(initialState);
@@ -35,7 +35,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
     );
 
     useEffect(() => {
-        setLoading(true);
+        setIsLoading(true);
 
         compositionRoot.metadata.list(listOptions).run(
             data => {
@@ -45,7 +45,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
                 }));
 
                 setResponse({ objects: rows, pager: data.pager });
-                setLoading(false);
+                setIsLoading(false);
             },
             error => snackbar.error(error)
         );

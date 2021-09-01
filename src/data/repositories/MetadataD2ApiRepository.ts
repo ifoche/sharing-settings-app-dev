@@ -39,10 +39,12 @@ export class MetadataD2ApiRepository implements MetadataRepository {
             .flatMap(payload => {
                 const items = _(payload)
                     .mapValues((items, key) => {
+                        if (!Array.isArray(items)) return undefined;
                         return items.map(item => ({ model: key, id: item.id }));
                     })
                     .values()
                     .flatten()
+                    .compact()
                     .value();
 
                 return Future.futureMap(items, item =>

@@ -1,6 +1,6 @@
-import { ObjectsTable, TableSelection, TableState } from "@eyeseetea/d2-ui-components";
+import { ObjectsTable, TableSelection, TableState, useSnackbar } from "@eyeseetea/d2-ui-components";
 import _ from "lodash";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState, useMemo } from "react";
 import { Ref } from "../../../../domain/entities/Ref";
 import { MetadataItem } from "../../../../domain/repositories/MetadataRepository";
 import i18n from "../../../../locales";
@@ -11,18 +11,23 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     selection: metadata,
 }: MetadataSharingWizardStepProps) => {
     const { compositionRoot } = useAppContext();
+    const snackbar = useSnackbar();
     const [metadataDependencies, setMetadataDependencies] = useState<MetadataItem[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [selection, setSelection] = useState<TableSelection[]>([]);
 
-    const columns = [
-        { name: "name", text: i18n.t("Name"), sortable: true },
-        { name: "id", text: i18n.t("ID"), sortable: true },
-        { name: "model", text: i18n.t("Metadata Type"), sortable: false },
-        { name: "publicAccess", text: i18n.t("Public Access"), sortable: true },
-        { name: "userAccesses", text: i18n.t("Users"), sortable: true },
-        { name: "userGroupAccesses", text: i18n.t("User Groups"), sortable: true },
-    ];
+    const columns = useMemo(
+        () => [
+            { name: "name", text: i18n.t("Name"), sortable: true },
+            { name: "id", text: i18n.t("ID"), sortable: true },
+            { name: "model", text: i18n.t("Metadata Type"), sortable: false },
+
+            { name: "publicAccess", text: i18n.t("Public Access"), sortable: true },
+            { name: "userAccesses", text: i18n.t("Users"), sortable: true },
+            { name: "userGroupAccesses", text: i18n.t("User Groups"), sortable: true },
+        ],
+        []
+    );
 
     const initialState = {
         sorting: {
@@ -36,25 +41,25 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     };
 
     useEffect(() => {
-        const getMetadataDependencies = async () => {
-            setIsLoading(true);
-            const { data = {} } = await compositionRoot.metadata
-                .getDependencies(metadata.map(({ id }) => id))
-                .runAsync();
+        setIsLoading(true);
+        compositionRoot.metadata.getDependencies(metadata.map(({ id }) => id)).run(
+            data => {
+                const dataWithIdsAndName = Object.entries(data).map(([key, value]) => {
+                    return value.map(item => ({ ...item, model: key }));
+                });
+                setMetadataDependencies(_.flatten(dataWithIdsAndName));
+                setIsLoading(false);
+            },
+            error => snackbar.error(error)
+        );
+    }, [metadata, compositionRoot, snackbar]);
 
-            const dataWithIdsAndName = Object.entries(data).map(([key, value]) => {
-                return value.map(item => ({ ...item, model: key }));
-            });
-
-            setMetadataDependencies(_.flatten(dataWithIdsAndName));
-            setIsLoading(false);
-        };
-        getMetadataDependencies();
-    }, [metadata, compositionRoot]);
-
-    const onTableChange = useCallback(({ selection }: TableState<Ref>) => {
-        setSelection(selection);
-    }, []);
+    const onTableChange = useCallback(
+        ({ selection }: TableState<Ref>) => {
+            setSelection(selection);
+        },
+        [setSelection]
+    );
 
     return (
         <div>
