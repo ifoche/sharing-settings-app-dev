@@ -37,7 +37,6 @@ export const BulkApplyPage: React.FC = () => {
                 sharingSettings={sharingSettings}
                 changeSharingSettings={setSharingSettings}
             />
-            ;
         </React.Fragment>
     );
 };
