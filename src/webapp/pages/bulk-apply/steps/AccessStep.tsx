@@ -1,5 +1,5 @@
 import { ShareUpdate, Sharing, SharingRule } from "@eyeseetea/d2-ui-components";
-import React, { useCallback, useState } from "react";
+import React, { useCallback } from "react";
 import { SharingSetting } from "../../../../domain/entities/SharedObject";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
@@ -9,15 +9,15 @@ import i18n from "@dhis2/d2-i18n";
 export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({
     sharingSettings,
     changeSharingSettings,
+    updateStrategy,
+    setUpdateStrategy,
 }: MetadataSharingWizardStepProps) => {
     const { compositionRoot } = useAppContext();
-    const [updateStrategy, setUpdateStrategy] = useState<string>("Replace");
-
     const search = useCallback(
         (query: string) => compositionRoot.instance.searchUsers(query).toPromise(),
         [compositionRoot]
     );
-    const label = i18n.t("Update strategy:") + " "+i18n.t(updateStrategy)
+    const label = i18n.t("Update strategy:") + " " + i18n.t(updateStrategy);
     const setModuleSharing = useCallback(
         async ({ publicAccess, userAccesses, userGroupAccesses }: ShareUpdate) => {
             changeSharingSettings(metadata => ({
@@ -48,18 +48,16 @@ export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({
             />
             <h4>Advanced options</h4>
             <FormControlLabel
-        control={
-          <Switch
-                name="updateStrategy"
-                checked={updateStrategy === "Replace"}
-                onChange={() =>
-                    setUpdateStrategy(strategy => strategy === "Merge" ? "Replace" : "Merge")
+                control={
+                    <Switch
+                        name="updateStrategy"
+                        checked={updateStrategy === "Replace"}
+                        onChange={() => setUpdateStrategy(strategy => (strategy === "Merge" ? "Replace" : "Merge"))}
+                        color="primary"
+                    />
                 }
-                color="primary"
+                label={label}
             />
-        }
-        label={label}
-      />
         </React.Fragment>
     );
 };

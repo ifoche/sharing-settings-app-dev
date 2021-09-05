@@ -6,6 +6,7 @@ import { GetCurrentUserUseCase } from "./domain/usecases/GetCurrentUserUseCase";
 import { GetInstanceVersionUseCase } from "./domain/usecases/GetInstanceVersionUseCase";
 import { GetMetadataDependenciesUseCase } from "./domain/usecases/GetMetadataWithDependenciesUseCase";
 import { SearchUsersUseCase } from "./domain/usecases/SearchUsersUseCase";
+import { SaveMetadataSharingSettingsUseCase } from "./domain/usecases/SaveMetadataSharingSettingsUseCase";
 
 export function getCompositionRoot(instance: Instance) {
     const instanceRepository = new InstanceDefaultRepository(instance);
@@ -20,6 +21,7 @@ export function getCompositionRoot(instance: Instance) {
         metadata: getExecute({
             list: new ListMetadataUseCase(metadataRepository),
             getDependencies: new GetMetadataDependenciesUseCase(metadataRepository),
+            save: new SaveMetadataSharingSettingsUseCase(metadataRepository)
         }),
     };
 }

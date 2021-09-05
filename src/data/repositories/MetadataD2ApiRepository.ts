@@ -6,7 +6,7 @@ import {
     MetadataPayload,
     MetadataRepository,
 } from "../../domain/repositories/MetadataRepository";
-import { D2Api } from "../../types/d2-api";
+import { MetadataResponse, D2Api } from "../../types/d2-api";
 import { getD2APiFromInstance } from "../../utils/d2-api";
 import { apiToFuture } from "../../utils/futures";
 import { Instance } from "../entities/Instance";
@@ -32,6 +32,10 @@ export class MetadataD2ApiRepository implements MetadataRepository {
                 order: `${sorting.field}:${sorting.order}`,
             })
         );
+    }
+
+    public save(payload: MetadataPayload): FutureData<MetadataResponse> {
+        return apiToFuture(this.api.metadata.post(payload));
     }
 
     public getDependencies(ids: string[]): FutureData<MetadataPayload> {

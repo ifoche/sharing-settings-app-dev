@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-08-27T08:28:36.728Z\n"
-"PO-Revision-Date: 2021-08-27T08:28:36.728Z\n"
+"POT-Creation-Date: 2021-09-02T14:46:58.729Z\n"
+"PO-Revision-Date: 2021-09-02T14:46:58.729Z\n"
 
 msgid "Add"
 msgstr ""
@@ -72,6 +72,9 @@ msgid "Users"
 msgstr ""
 
 msgid "User Groups"
+msgstr ""
+
+msgid "Exclude Metadata"
 msgstr ""
 
 msgid "Metadata type"

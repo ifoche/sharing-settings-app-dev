@@ -15,6 +15,10 @@ export interface MetadataSharingWizardStep extends WizardStep {
 export interface MetadataSharingWizardStepProps {
     selection: Ref[];
     changeSelection: UpdateMethod<Ref[]>;
+    excluded: string[];
+    setExcluded: UpdateMethod<string[]>;
+    updateStrategy: string;
+    setUpdateStrategy: UpdateMethod<string>;
     sharingSettings: SharedObject;
     changeSharingSettings: UpdateMethod<SharedObject>;
     onCancel: () => void;

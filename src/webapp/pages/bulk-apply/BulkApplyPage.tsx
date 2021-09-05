@@ -13,6 +13,8 @@ export const BulkApplyPage: React.FC = () => {
     const [dialogProps, updateDialog] = useState<ConfirmationDialogProps | null>(null);
 
     const [selection, setSelection] = useState<Ref[]>([]);
+    const [excluded, setExcluded] = useState<string[]>([]);
+    const [updateStrategy, setUpdateStrategy] = useState<string>("Replace");
     const [sharingSettings, setSharingSettings] = useState<SharedObject>(defaultSharedObject);
 
     const onCancel = useCallback(() => {
@@ -34,6 +36,10 @@ export const BulkApplyPage: React.FC = () => {
                 onCancel={onCancel}
                 changeSelection={setSelection}
                 selection={selection}
+                setExcluded={setExcluded}
+                excluded={excluded}
+                updateStrategy={updateStrategy}
+                setUpdateStrategy={setUpdateStrategy}
                 sharingSettings={sharingSettings}
                 changeSharingSettings={setSharingSettings}
             />

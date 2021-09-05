@@ -1,14 +1,17 @@
-import { ObjectsTable, TableSelection, TableState, useSnackbar } from "@eyeseetea/d2-ui-components";
+import { ObjectsTable, useSnackbar, TableSelection, TableState } from "@eyeseetea/d2-ui-components"; // TableSelection, TableState,
 import _ from "lodash";
-import React, { useCallback, useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, useCallback } from "react"; //useCallback,
 import { Ref } from "../../../../domain/entities/Ref";
 import { MetadataItem } from "../../../../domain/repositories/MetadataRepository";
 import i18n from "../../../../locales";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
+import NotInterestedIcon from "@material-ui/icons/NotInterested";
 
 export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     selection: metadata,
+    changeSelection: onChange,
+    setExcluded,
 }: MetadataSharingWizardStepProps) => {
     const { compositionRoot } = useAppContext();
     const snackbar = useSnackbar();
@@ -47,12 +50,13 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 const dataWithIdsAndName = Object.entries(data).map(([key, value]) => {
                     return value.map(item => ({ ...item, model: key }));
                 });
+                onChange(_.flatten(dataWithIdsAndName));
                 setMetadataDependencies(_.flatten(dataWithIdsAndName));
                 setIsLoading(false);
             },
             error => snackbar.error(error)
         );
-    }, [metadata, compositionRoot, snackbar]);
+    }, [onChange, compositionRoot, snackbar]);
 
     const onTableChange = useCallback(
         ({ selection }: TableState<Ref>) => {
@@ -61,17 +65,32 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
         [setSelection]
     );
 
+    const excludeMetadata = (selectedMDs: string[]) => {
+        setExcluded(metadata => [...new Set(metadata.concat(selectedMDs))]);
+    };
+
+    const tableActions = [
+        {
+            name: "exclude",
+            text: i18n.t("Exclude Metadata"),
+            multiple: true,
+            onClick: excludeMetadata,
+            icon: <NotInterestedIcon />,
+        },
+    ];
+
     return (
         <div>
             <ObjectsTable<MetadataItem>
                 rows={metadataDependencies}
                 columns={columns}
-                onChange={onTableChange}
                 sorting={{ field: "displayName", order: "asc" }}
                 initialState={initialState}
-                selection={selection}
                 forceSelectionColumn={true}
                 loading={isLoading}
+                actions={tableActions}
+                onChange={onTableChange}
+                selection={selection}
             />
         </div>
     );
