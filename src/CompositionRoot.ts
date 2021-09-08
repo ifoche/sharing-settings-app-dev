@@ -21,7 +21,7 @@ export function getCompositionRoot(instance: Instance) {
         metadata: getExecute({
             list: new ListMetadataUseCase(metadataRepository),
             getDependencies: new GetMetadataDependenciesUseCase(metadataRepository),
-            save: new SaveMetadataSharingSettingsUseCase(metadataRepository)
+            save: new SaveMetadataSharingSettingsUseCase(metadataRepository),
         }),
     };
 }

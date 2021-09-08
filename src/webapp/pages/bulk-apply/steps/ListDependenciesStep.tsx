@@ -56,7 +56,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
             },
             error => snackbar.error(error)
         );
-    }, [onChange, compositionRoot, snackbar]);
+    }, [metadata, onChange, compositionRoot, snackbar]);
 
     const onTableChange = useCallback(
         ({ selection }: TableState<Ref>) => {
