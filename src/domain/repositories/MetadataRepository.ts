@@ -5,6 +5,7 @@ export interface MetadataRepository {
     list(options: ListOptions): FutureData<ListMetadataResponse>;
     getDependencies(ids: string[]): FutureData<MetadataPayload>;
     save(payload: MetadataPayload): FutureData<ImportResult>;
+    getModelName(model: string): string;
 }
 
 export interface ListOptions {

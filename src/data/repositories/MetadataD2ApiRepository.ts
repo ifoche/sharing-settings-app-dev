@@ -10,7 +10,7 @@ import {
     MetadataPayload,
     MetadataRepository,
 } from "../../domain/repositories/MetadataRepository";
-import { MetadataResponse, D2Api, Stats } from "../../types/d2-api";
+import { MetadataResponse, D2Api, Stats, D2ApiDefinition } from "../../types/d2-api";
 import { getD2APiFromInstance } from "../../utils/d2-api";
 import { apiToFuture } from "../../utils/futures";
 import { Instance } from "../entities/Instance";
@@ -58,6 +58,10 @@ export class MetadataD2ApiRepository implements MetadataRepository {
                 return Future.futureMap(items, ({ model, id }) => this.fetchMetadataWithDependencies(model, id));
             })
             .map(data => mergePayloads(data));
+    }
+
+    public getModelName(model: string): string {
+        return this.api.models[model as ModelIndex].schema.displayName ?? i18n.t("Unknown model");
     }
 
     private fetchMetadata(ids: string[]): FutureData<MetadataPayload> {
@@ -121,3 +125,5 @@ function formatStats(stats: Stats, type?: string): ImportStats {
 function getClassName(className: string): string | undefined {
     return _(className).split(".").last();
 }
+
+type ModelIndex = keyof D2ApiDefinition["schemas"];
