@@ -31,3 +31,7 @@ export interface Pager {
     pageSize: number;
     total: number;
 }
+
+export function isValidModel(model: string): model is MetadataModel {
+    return ["dataSets", "programs", "dashboards"].includes(model);
+}

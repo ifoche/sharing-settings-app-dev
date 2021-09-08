@@ -1,8 +1,10 @@
 import _ from "lodash";
 import { Future, FutureData } from "../../domain/entities/Future";
 import {
+    isValidModel,
     ListMetadataResponse,
     ListOptions,
+    MetadataModel,
     MetadataPayload,
     MetadataRepository,
 } from "../../domain/repositories/MetadataRepository";
@@ -39,11 +41,11 @@ export class MetadataD2ApiRepository implements MetadataRepository {
     }
 
     public getDependencies(ids: string[]): FutureData<MetadataPayload> {
-        return this.getMetadata(ids)
+        return this.fetchMetadata(ids)
             .flatMap(payload => {
                 const items = _(payload)
                     .mapValues((items, key) => {
-                        if (!Array.isArray(items)) return undefined;
+                        if (!Array.isArray(items) || !isValidModel(key)) return undefined;
                         return items.map(item => ({ model: key, id: item.id }));
                     })
                     .values()
@@ -51,15 +53,17 @@ export class MetadataD2ApiRepository implements MetadataRepository {
                     .compact()
                     .value();
 
-                return Future.futureMap(items, item =>
-                    apiToFuture<MetadataPayload>(this.api.get(`/${item.model}/${item.id}/metadata.json`))
-                );
+                return Future.futureMap(items, ({ model, id }) => this.fetchMetadataWithDependencies(model, id));
             })
             .map(data => this.mergePayloads(data));
     }
 
-    private getMetadata(ids: string[]): FutureData<MetadataPayload> {
+    private fetchMetadata(ids: string[]): FutureData<MetadataPayload> {
         return apiToFuture(this.api.get("/metadata", { filter: `id:in:[${ids.join(",")}]` }));
+    }
+
+    private fetchMetadataWithDependencies(model: MetadataModel, id: string): FutureData<MetadataPayload> {
+        return apiToFuture<MetadataPayload>(this.api.get(`/${model}/${id}/metadata.json`));
     }
 
     private mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
