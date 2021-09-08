@@ -1,11 +1,10 @@
 import { WizardStep } from "@eyeseetea/d2-ui-components";
+import { SharingUpdate } from "../../../domain/entities/SharingUpdate";
 import i18n from "../../../locales";
+import { AccessStep } from "./steps/AccessStep";
 import { ListDependenciesStep } from "./steps/ListDependenciesStep";
 import { SelectMetadataStep } from "./steps/SelectMetadataStep";
-import { AccessStep } from "./steps/AccessStep";
 import { SummaryApplyStep } from "./steps/SummaryApplyStep";
-import { Ref } from "../../../domain/entities/Ref";
-import { SharedObject } from "../../../domain/entities/SharedObject";
 
 export interface MetadataSharingWizardStep extends WizardStep {
     validationKeys: string[];
@@ -13,14 +12,8 @@ export interface MetadataSharingWizardStep extends WizardStep {
 }
 
 export interface MetadataSharingWizardStepProps {
-    selection: Ref[];
-    changeSelection: UpdateMethod<Ref[]>;
-    excluded: string[];
-    setExcluded: UpdateMethod<string[]>;
-    updateStrategy: string;
-    setUpdateStrategy: UpdateMethod<string>;
-    sharingSettings: SharedObject;
-    changeSharingSettings: UpdateMethod<SharedObject>;
+    builder: SharingUpdate;
+    updateBuilder: UpdateMethod<SharingUpdate>;
     onCancel: () => void;
 }
 

@@ -11,15 +11,11 @@ import Dropdown, { DropdownOption } from "../../../components/dropdown/Dropdown"
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
 
-export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
-    selection,
-    changeSelection: onChange,
-}: MetadataSharingWizardStepProps) => {
+export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, updateBuilder }) => {
     const { compositionRoot } = useAppContext();
     const snackbar = useSnackbar();
 
     const [isLoading, setIsLoading] = useState<boolean>(false);
-
     const [response, setResponse] = useState<ListMetadataResponse>(initialResponse);
     const [listOptions, setListOptions] = useState<ListOptions>(initialState);
 
@@ -33,6 +29,10 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
         ],
         []
     );
+
+    const selection = useMemo(() => {
+        return builder.baseElements.map(id => ({ id }));
+    }, [builder]);
 
     useEffect(() => {
         setIsLoading(true);
@@ -53,7 +53,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
 
     const onTableChange = useCallback(
         async ({ pagination, sorting, selection }: TableState<MetadataItem>) => {
-            onChange(selection);
+            updateBuilder(builder => ({ ...builder, baseElements: selection.map(({ id }) => id) }));
             setListOptions(options => ({
                 ...options,
                 pageSize: pagination.pageSize,
@@ -61,7 +61,7 @@ export const SelectMetadataStep: React.FC<MetadataSharingWizardStepProps> = ({
                 sorting: { field: String(sorting.field), order: sorting.order },
             }));
         },
-        [onChange]
+        [updateBuilder]
     );
 
     const filterComponents = (

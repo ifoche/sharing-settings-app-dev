@@ -1,32 +1,44 @@
+import i18n from "@dhis2/d2-i18n";
 import { ShareUpdate, Sharing, SharingRule } from "@eyeseetea/d2-ui-components";
+import { FormControlLabel, Switch } from "@material-ui/core";
 import React, { useCallback } from "react";
 import { SharingSetting } from "../../../../domain/entities/SharedObject";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
-import { Switch, FormControlLabel } from "@material-ui/core";
-import i18n from "@dhis2/d2-i18n";
 
-export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({
-    sharingSettings,
-    changeSharingSettings,
-    updateStrategy,
-    setUpdateStrategy,
-}: MetadataSharingWizardStepProps) => {
+export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, updateBuilder }) => {
     const { compositionRoot } = useAppContext();
+
+    const strategyName = builder.replaceExistingSharings ? i18n.t("Replace") : i18n.t("Merge");
+    const label = `${i18n.t("Update strategy")}: ${strategyName}`;
+
     const search = useCallback(
         (query: string) => compositionRoot.instance.searchUsers(query).toPromise(),
         [compositionRoot]
     );
-    const label = i18n.t("Update strategy:") + " " + i18n.t(updateStrategy);
+
     const setModuleSharing = useCallback(
         async ({ publicAccess, userAccesses, userGroupAccesses }: ShareUpdate) => {
-            changeSharingSettings(metadata => ({
-                publicAccess: publicAccess ?? metadata.publicAccess,
-                userAccesses: mapSharingSettings(userAccesses) ?? metadata.userAccesses,
-                userGroupAccesses: mapSharingSettings(userGroupAccesses) ?? metadata.userGroupAccesses,
+            updateBuilder(builder => ({
+                ...builder,
+                sharings: {
+                    publicAccess: publicAccess ?? builder.sharings.publicAccess,
+                    userAccesses: mapSharingSettings(userAccesses) ?? builder.sharings.userAccesses,
+                    userGroupAccesses: mapSharingSettings(userGroupAccesses) ?? builder.sharings.userGroupAccesses,
+                },
             }));
         },
-        [changeSharingSettings]
+        [updateBuilder]
+    );
+
+    const setReplaceStragegy = useCallback(
+        (_event: React.ChangeEvent<HTMLInputElement>, replaceExistingSharings: boolean) => {
+            updateBuilder(builder => ({
+                ...builder,
+                replaceExistingSharings,
+            }));
+        },
+        [updateBuilder]
     );
 
     return (
@@ -39,20 +51,21 @@ export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({
                     meta: { allowPublicAccess: true, allowExternalAccess: false },
                     object: {
                         id: "meta-object",
-                        displayName: "Sharing settings",
-                        publicAccess: sharingSettings.publicAccess,
-                        userAccesses: mapSharingRules(sharingSettings.userAccesses),
-                        userGroupAccesses: mapSharingRules(sharingSettings.userGroupAccesses),
+                        displayName: i18n.t("Global sharing settings"),
+                        publicAccess: builder.sharings.publicAccess,
+                        userAccesses: mapSharingRules(builder.sharings.userAccesses),
+                        userGroupAccesses: mapSharingRules(builder.sharings.userGroupAccesses),
                     },
                 }}
             />
+
             <h4>Advanced options</h4>
             <FormControlLabel
                 control={
                     <Switch
-                        name="updateStrategy"
-                        checked={updateStrategy === "Replace"}
-                        onChange={() => setUpdateStrategy(strategy => (strategy === "Merge" ? "Replace" : "Merge"))}
+                        name="replace-existing-sharings"
+                        checked={builder.replaceExistingSharings}
+                        onChange={setReplaceStragegy}
                         color="primary"
                     />
                 }

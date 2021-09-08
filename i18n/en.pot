@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-09-08T07:43:06.311Z\n"
-"PO-Revision-Date: 2021-09-08T07:43:06.311Z\n"
+"POT-Creation-Date: 2021-09-08T08:12:35.138Z\n"
+"PO-Revision-Date: 2021-09-08T08:12:35.138Z\n"
 
 msgid "Metadata"
 msgstr ""
@@ -51,6 +51,18 @@ msgid "Sharing Access"
 msgstr ""
 
 msgid "Summary and Apply Metadata"
+msgstr ""
+
+msgid "Replace"
+msgstr ""
+
+msgid "Merge"
+msgstr ""
+
+msgid "Update strategy"
+msgstr ""
+
+msgid "Global sharing settings"
 msgstr ""
 
 msgid "Name"
