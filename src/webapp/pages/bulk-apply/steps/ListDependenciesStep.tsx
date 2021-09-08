@@ -11,8 +11,8 @@ import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import _ from "lodash";
 import React, { useCallback, useEffect, useMemo, useState } from "react"; //useCallback,
+import { MetadataItem } from "../../../../domain/entities/MetadataItem";
 import { Ref } from "../../../../domain/entities/Ref";
-import { MetadataItem } from "../../../../domain/repositories/MetadataRepository";
 import i18n from "../../../../locales";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
@@ -86,7 +86,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
 
     useEffect(() => {
         setIsLoading(true);
-        compositionRoot.metadata.getDependencies(builder.baseElements).run(
+        compositionRoot.metadata.listDependencies(builder.baseElements).run(
             data => {
                 const rows = _(data)
                     .mapValues((value, key) => {

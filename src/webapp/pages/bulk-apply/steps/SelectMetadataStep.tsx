@@ -1,12 +1,8 @@
 import i18n from "@dhis2/d2-i18n";
 import { ObjectsTable, TableState, useSnackbar } from "@eyeseetea/d2-ui-components";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import {
-    ListMetadataResponse,
-    ListOptions,
-    MetadataItem,
-    MetadataModel,
-} from "../../../../domain/repositories/MetadataRepository";
+import { MetadataItem, MetadataModel } from "../../../../domain/entities/MetadataItem";
+import { ListMetadataResponse, ListOptions } from "../../../../domain/repositories/MetadataRepository";
 import Dropdown, { DropdownOption } from "../../../components/dropdown/Dropdown";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";

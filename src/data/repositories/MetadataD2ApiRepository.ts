@@ -2,15 +2,9 @@ import i18n from "@eyeseetea/d2-ui-components/locales";
 import _ from "lodash";
 import { Future, FutureData } from "../../domain/entities/Future";
 import { ImportResult, ImportStats } from "../../domain/entities/ImportResult";
-import {
-    isValidModel,
-    ListMetadataResponse,
-    ListOptions,
-    MetadataModel,
-    MetadataPayload,
-    MetadataRepository,
-} from "../../domain/repositories/MetadataRepository";
-import { MetadataResponse, D2Api, Stats, D2ApiDefinition } from "../../types/d2-api";
+import { isValidModel, MetadataModel, MetadataPayload } from "../../domain/entities/MetadataItem";
+import { ListMetadataResponse, ListOptions, MetadataRepository } from "../../domain/repositories/MetadataRepository";
+import { D2Api, D2ApiDefinition, MetadataResponse, Stats } from "../../types/d2-api";
 import { getD2APiFromInstance } from "../../utils/d2-api";
 import { apiToFuture } from "../../utils/futures";
 import { Instance } from "../entities/Instance";
@@ -57,11 +51,20 @@ export class MetadataD2ApiRepository implements MetadataRepository {
 
                 return Future.futureMap(items, ({ model, id }) => this.fetchMetadataWithDependencies(model, id));
             })
-            .map(data => mergePayloads(data));
+            .map(payloads => mergePayloads(payloads))
+            .map(payload => removeDefaults(payload));
     }
 
     public getModelName(model: string): string {
         return this.api.models[model as ModelIndex].schema.displayName ?? i18n.t("Unknown model");
+    }
+
+    public isShareable(model: string): boolean {
+        return this.api.models[model as ModelIndex].schema.shareable ?? false;
+    }
+
+    public isDataShareable(model: string): boolean {
+        return this.api.models[model as ModelIndex].schema.dataShareable ?? false;
     }
 
     private fetchMetadata(ids: string[]): FutureData<MetadataPayload> {
@@ -87,6 +90,10 @@ function mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
         },
         {} as MetadataPayload
     );
+}
+
+function removeDefaults(payload: MetadataPayload): MetadataPayload {
+    return _.mapValues(payload, items => items.filter(({ code, name }) => code !== "default" && name !== "default"));
 }
 
 function buildMetadataImportResult(response: MetadataResponse): ImportResult {
