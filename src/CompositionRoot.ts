@@ -6,6 +6,7 @@ import { GetInstanceVersionUseCase } from "./domain/usecases/instance/GetInstanc
 import { SearchUsersUseCase } from "./domain/usecases/instance/SearchUsersUseCase";
 import { ApplySharingSettingsUseCase } from "./domain/usecases/metadata/ApplySharingSettingsUseCase";
 import { GetModelNameUseCase } from "./domain/usecases/metadata/GetModelNameUseCase";
+import { ImportMetadataUseCase } from "./domain/usecases/metadata/ImportMetadataUseCase";
 import { ListDependenciesUseCase } from "./domain/usecases/metadata/ListDependenciesUseCase";
 import { ListMetadataUseCase } from "./domain/usecases/metadata/ListMetadataUseCase";
 
@@ -24,6 +25,7 @@ export function getCompositionRoot(instance: Instance) {
             listDependencies: new ListDependenciesUseCase(metadataRepository),
             applySharingSettings: new ApplySharingSettingsUseCase(metadataRepository),
             getModelName: new GetModelNameUseCase(metadataRepository),
+            import: new ImportMetadataUseCase(metadataRepository),
         }),
     };
 }

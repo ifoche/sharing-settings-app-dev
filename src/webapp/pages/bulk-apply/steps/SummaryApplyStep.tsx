@@ -13,10 +13,13 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
     const [importResult, setImportResult] = useState<ImportResult>();
 
     const applySharingSync = useCallback(() => {
-        compositionRoot.metadata.applySharingSettings(builder).run(
-            result => setImportResult(result),
-            error => snackbar.error(error)
-        );
+        compositionRoot.metadata
+            .applySharingSettings(builder)
+            .flatMap(payload => compositionRoot.metadata.import(payload))
+            .run(
+                result => setImportResult(result),
+                error => snackbar.error(error)
+            );
     }, [builder, compositionRoot, snackbar]);
 
     return (

@@ -1,7 +1,6 @@
 import _ from "lodash";
 import { UseCase } from "../../../CompositionRoot";
 import { FutureData } from "../../entities/Future";
-import { ImportResult } from "../../entities/ImportResult";
 import { isValidMetadataItem, MetadataItem, MetadataPayload } from "../../entities/MetadataItem";
 import { buildAccessString, getAccessFromString, SharedObject, SharingSetting } from "../../entities/SharedObject";
 import { SharingUpdate } from "../../entities/SharingUpdate";
@@ -10,14 +9,13 @@ import { MetadataRepository } from "../../repositories/MetadataRepository";
 export class ApplySharingSettingsUseCase implements UseCase {
     constructor(private metadataRepository: MetadataRepository) {}
 
-    public execute(update: SharingUpdate): FutureData<ImportResult> {
+    public execute(update: SharingUpdate): FutureData<MetadataPayload> {
         const { baseElements, excludedDependencies, sharings, replaceExistingSharings } = update;
 
         return this.metadataRepository
             .getDependencies(baseElements)
             .map(payload => this.cleanPayload(payload, excludedDependencies))
-            .map(payload => this.sharePayload(payload, sharings, replaceExistingSharings))
-            .flatMap(payload => this.metadataRepository.save(payload));
+            .map(payload => this.sharePayload(payload, sharings, replaceExistingSharings));
     }
 
     private cleanPayload(payload: Record<string, any[]>, excludedDependencies: string[]): MetadataPayload {
