@@ -12,16 +12,9 @@ export const LandingPage: React.FC = () => {
             key: "main",
             children: [
                 {
-                    name: i18n.t("Bulk apply"),
+                    name: i18n.t("Apply update"),
                     description: i18n.t("Edit sharing settings to data sets, programs and dashboards."),
                     listAction: () => history.push("/apply"),
-                },
-                {
-                    name: i18n.t("List depedencies"),
-                    description: i18n.t(
-                        "List the dependencies of a data set, program or dashboard and their sharing settings."
-                    ),
-                    listAction: () => history.push("/list-dependencies"),
                 },
             ],
         },
