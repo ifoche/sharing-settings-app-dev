@@ -1,8 +1,6 @@
-import React, { useMemo } from "react";
 import { Wizard, WizardStep } from "@eyeseetea/d2-ui-components";
+import React, { useMemo } from "react";
 import { useLocation } from "react-router-dom";
-import _ from "lodash";
-
 import { MetadataSharingWizardStepProps, metadataSharingWizardSteps } from "./SharingWizardSteps";
 
 export interface MetadataSharingWizardProps extends MetadataSharingWizardStepProps {
