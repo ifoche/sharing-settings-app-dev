@@ -1,6 +1,6 @@
-import { UseCase } from "../../CompositionRoot";
-import { FutureData } from "../entities/Future";
-import { ListMetadataResponse, ListOptions, MetadataRepository } from "../repositories/MetadataRepository";
+import { UseCase } from "../../../CompositionRoot";
+import { FutureData } from "../../entities/Future";
+import { ListMetadataResponse, ListOptions, MetadataRepository } from "../../repositories/MetadataRepository";
 
 export class ListMetadataUseCase implements UseCase {
     constructor(private metadataRepository: MetadataRepository) {}

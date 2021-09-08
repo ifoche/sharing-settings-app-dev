@@ -1,12 +1,12 @@
 import { Instance } from "./data/entities/Instance";
 import { InstanceDefaultRepository } from "./data/repositories/InstanceDefaultRepository";
 import { MetadataD2ApiRepository } from "./data/repositories/MetadataD2ApiRepository";
-import { ListMetadataUseCase } from "./domain/usecases/ListMetadataUseCase";
-import { GetCurrentUserUseCase } from "./domain/usecases/GetCurrentUserUseCase";
-import { GetInstanceVersionUseCase } from "./domain/usecases/GetInstanceVersionUseCase";
-import { GetMetadataDependenciesUseCase } from "./domain/usecases/GetMetadataWithDependenciesUseCase";
-import { SearchUsersUseCase } from "./domain/usecases/SearchUsersUseCase";
-import { SaveMetadataSharingSettingsUseCase } from "./domain/usecases/SaveMetadataSharingSettingsUseCase";
+import { GetCurrentUserUseCase } from "./domain/usecases/instance/GetCurrentUserUseCase";
+import { GetInstanceVersionUseCase } from "./domain/usecases/instance/GetInstanceVersionUseCase";
+import { SearchUsersUseCase } from "./domain/usecases/instance/SearchUsersUseCase";
+import { GetDependenciesUseCase } from "./domain/usecases/metadata/GetDependenciesUseCase";
+import { ListMetadataUseCase } from "./domain/usecases/metadata/ListMetadataUseCase";
+import { SaveSharingSettingsUseCase } from "./domain/usecases/metadata/SaveSharingSettingsUseCase";
 
 export function getCompositionRoot(instance: Instance) {
     const instanceRepository = new InstanceDefaultRepository(instance);
@@ -20,8 +20,8 @@ export function getCompositionRoot(instance: Instance) {
         }),
         metadata: getExecute({
             list: new ListMetadataUseCase(metadataRepository),
-            getDependencies: new GetMetadataDependenciesUseCase(metadataRepository),
-            save: new SaveMetadataSharingSettingsUseCase(metadataRepository),
+            getDependencies: new GetDependenciesUseCase(metadataRepository),
+            save: new SaveSharingSettingsUseCase(metadataRepository),
         }),
     };
 }
