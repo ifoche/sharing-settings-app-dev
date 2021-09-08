@@ -1,5 +1,7 @@
+import i18n from "@eyeseetea/d2-ui-components/locales";
 import _ from "lodash";
 import { Future, FutureData } from "../../domain/entities/Future";
+import { ImportResult, ImportStats } from "../../domain/entities/ImportResult";
 import {
     isValidModel,
     ListMetadataResponse,
@@ -8,7 +10,7 @@ import {
     MetadataPayload,
     MetadataRepository,
 } from "../../domain/repositories/MetadataRepository";
-import { MetadataResponse, D2Api } from "../../types/d2-api";
+import { MetadataResponse, D2Api, Stats } from "../../types/d2-api";
 import { getD2APiFromInstance } from "../../utils/d2-api";
 import { apiToFuture } from "../../utils/futures";
 import { Instance } from "../entities/Instance";
@@ -36,8 +38,8 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         );
     }
 
-    public save(payload: MetadataPayload): FutureData<MetadataResponse> {
-        return apiToFuture(this.api.metadata.post(payload));
+    public save(payload: MetadataPayload): FutureData<ImportResult> {
+        return apiToFuture(this.api.metadata.post(payload)).map(response => buildMetadataImportResult(response));
     }
 
     public getDependencies(ids: string[]): FutureData<MetadataPayload> {
@@ -55,7 +57,7 @@ export class MetadataD2ApiRepository implements MetadataRepository {
 
                 return Future.futureMap(items, ({ model, id }) => this.fetchMetadataWithDependencies(model, id));
             })
-            .map(data => this.mergePayloads(data));
+            .map(data => mergePayloads(data));
     }
 
     private fetchMetadata(ids: string[]): FutureData<MetadataPayload> {
@@ -65,20 +67,57 @@ export class MetadataD2ApiRepository implements MetadataRepository {
     private fetchMetadataWithDependencies(model: MetadataModel, id: string): FutureData<MetadataPayload> {
         return apiToFuture<MetadataPayload>(this.api.get(`/${model}/${id}/metadata.json`));
     }
+}
 
-    private mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
-        return _.reduce(
-            payloads,
-            (result, payload) => {
-                _.forOwn(payload, (value, key) => {
-                    if (Array.isArray(value)) {
-                        const existing = result[key] ?? [];
-                        result[key] = _.uniqBy([...existing, ...value], ({ id }) => id);
-                    }
-                });
-                return result;
-            },
-            {} as MetadataPayload
-        );
-    }
+function mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
+    return _.reduce(
+        payloads,
+        (result, payload) => {
+            _.forOwn(payload, (value, key) => {
+                if (Array.isArray(value)) {
+                    const existing = result[key] ?? [];
+                    result[key] = _.uniqBy([...existing, ...value], ({ id }) => id);
+                }
+            });
+            return result;
+        },
+        {} as MetadataPayload
+    );
+}
+
+function buildMetadataImportResult(response: MetadataResponse): ImportResult {
+    const { status, stats, typeReports = [] } = response;
+    const typeStats = typeReports.flatMap(({ klass, stats }) => formatStats(stats, getClassName(klass)));
+
+    const messages = typeReports.flatMap(({ objectReports = [] }) =>
+        objectReports.flatMap(({ uid: id, errorReports = [] }) =>
+            _.take(errorReports, 1).map(({ mainKlass, errorProperty, message }) => ({
+                id,
+                type: getClassName(mainKlass),
+                property: errorProperty,
+                message: message,
+            }))
+        )
+    );
+
+    return {
+        title: i18n.t("Metadata"),
+        date: new Date(),
+        status: status === "OK" ? "SUCCESS" : status,
+        stats: [formatStats(stats), ...typeStats],
+        errors: messages,
+        rawResponse: response,
+    };
+}
+
+function formatStats(stats: Stats, type?: string): ImportStats {
+    return {
+        ..._.omit(stats, ["created"]),
+        imported: stats.created,
+        type,
+    };
+}
+
+function getClassName(className: string): string | undefined {
+    return _(className).split(".").last();
 }

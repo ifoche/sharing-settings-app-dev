@@ -1,10 +1,10 @@
 import { FutureData } from "../entities/Future";
-import { MetadataResponse } from "../../types/d2-api";
+import { ImportResult } from "../entities/ImportResult";
 
 export interface MetadataRepository {
     list(options: ListOptions): FutureData<ListMetadataResponse>;
     getDependencies(ids: string[]): FutureData<MetadataPayload>;
-    save(payload: MetadataPayload): FutureData<MetadataResponse>;
+    save(payload: MetadataPayload): FutureData<ImportResult>;
 }
 
 export interface ListOptions {
