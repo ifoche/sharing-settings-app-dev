@@ -44,7 +44,7 @@ const App: React.FC<AppProps> = ({ api, d2, instance }) => {
         <MuiThemeProvider theme={muiTheme}>
             <OldMuiThemeProvider muiTheme={muiThemeLegacy}>
                 <SnackbarProvider>
-                    <HeaderBar appName="Skeleton App" />
+                    <HeaderBar appName="Sharing Settings App" />
 
                     <div id="app" className="content">
                         <AppContext.Provider value={appContext}>
