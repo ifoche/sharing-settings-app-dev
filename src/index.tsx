@@ -46,7 +46,7 @@ async function main() {
         const d2 = await init({ baseUrl: baseUrl + "/api", schemas: [] });
         const instance = new Instance({ url: baseUrl });
         const api = getD2APiFromInstance(instance);
- if (isDev) window.api = api;
+        if (isDev) window.api = api;
 
         const userSettings = await api.get<{ keyUiLocale: string }>("/userSettings").getData();
         configI18n(userSettings);
@@ -59,7 +59,7 @@ async function main() {
         );
     } catch (err: any) {
         console.error(err);
-        const feedback  = err.toString().match("Unable to get schemas") ? (
+        const feedback = err.toString().match("Unable to get schemas") ? (
             <h3 style={{ margin: 20 }}>
                 <a rel="noopener noreferrer" target="_blank" href={baseUrl}>
                     Login
