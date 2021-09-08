@@ -6,11 +6,11 @@ import {
     TableSelection,
     TableState,
     useSnackbar,
-} from "@eyeseetea/d2-ui-components"; // TableSelection, TableState,
+} from "@eyeseetea/d2-ui-components";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import _ from "lodash";
-import React, { useCallback, useEffect, useMemo, useState } from "react"; //useCallback,
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { MetadataItem } from "../../../../domain/entities/MetadataItem";
 import { Ref } from "../../../../domain/entities/Ref";
 import i18n from "../../../../locales";
