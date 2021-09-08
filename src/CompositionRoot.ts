@@ -1,15 +1,27 @@
 import { Instance } from "./data/entities/Instance";
 import { InstanceDefaultRepository } from "./data/repositories/InstanceDefaultRepository";
+import { MetadataD2ApiRepository } from "./data/repositories/MetadataD2ApiRepository";
+import { ListMetadataUseCase } from "./domain/usecases/ListMetadataUseCase";
 import { GetCurrentUserUseCase } from "./domain/usecases/GetCurrentUserUseCase";
 import { GetInstanceVersionUseCase } from "./domain/usecases/GetInstanceVersionUseCase";
+import { GetMetadataDependenciesUseCase } from "./domain/usecases/GetMetadataWithDependenciesUseCase";
+import { SearchUsersUseCase } from "./domain/usecases/SearchUsersUseCase";
+import { SaveMetadataSharingSettingsUseCase } from "./domain/usecases/SaveMetadataSharingSettingsUseCase";
 
 export function getCompositionRoot(instance: Instance) {
     const instanceRepository = new InstanceDefaultRepository(instance);
+    const metadataRepository = new MetadataD2ApiRepository(instance);
 
     return {
         instance: getExecute({
             getCurrentUser: new GetCurrentUserUseCase(instanceRepository),
             getVersion: new GetInstanceVersionUseCase(instanceRepository),
+            searchUsers: new SearchUsersUseCase(instanceRepository),
+        }),
+        metadata: getExecute({
+            list: new ListMetadataUseCase(metadataRepository),
+            getDependencies: new GetMetadataDependenciesUseCase(metadataRepository),
+            save: new SaveMetadataSharingSettingsUseCase(metadataRepository),
         }),
     };
 }

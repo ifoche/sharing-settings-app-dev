@@ -5,8 +5,4 @@ context("Example page", () => {
         cy.login("admin");
         cy.visit("/");
     });
-
-    it("should contain sections", () => {
-        cy.contains("Section");
-    });
 });

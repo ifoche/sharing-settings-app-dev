@@ -5,13 +5,19 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2021-08-16T11:24:41.915Z\n"
-"PO-Revision-Date: 2021-08-16T11:24:41.915Z\n"
+"POT-Creation-Date: 2021-09-08T07:00:27.891Z\n"
+"PO-Revision-Date: 2021-09-08T07:00:27.891Z\n"
+
+msgid "Metadata"
+msgstr ""
 
 msgid "Add"
 msgstr ""
 
 msgid "List"
+msgstr ""
+
+msgid "<No value>"
 msgstr ""
 
 msgid "Back"
@@ -20,10 +26,73 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-msgid "Hello {{name}}"
+msgid "Cancel sharing action?"
+msgstr ""
+
+msgid "All your changes will be lost. Are you sure you want to proceed?"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
 msgstr ""
 
 msgid "Bulk apply"
+msgstr ""
+
+msgid "Select Metadata"
+msgstr ""
+
+msgid "Select metadata to share"
+msgstr ""
+
+msgid "List Dependencies and Exclude"
+msgstr ""
+
+msgid "Sharing Access"
+msgstr ""
+
+msgid "Summary and Apply Metadata"
+msgstr ""
+
+msgid "List errors and warnings and apply metadata sharing"
+msgstr ""
+
+msgid "Name"
+msgstr ""
+
+msgid "ID"
+msgstr ""
+
+msgid "Metadata Type"
+msgstr ""
+
+msgid "Public Access"
+msgstr ""
+
+msgid "Users"
+msgstr ""
+
+msgid "User Groups"
+msgstr ""
+
+msgid "Exclude Metadata"
+msgstr ""
+
+msgid "Metadata type"
+msgstr ""
+
+msgid "Search by name"
+msgstr ""
+
+msgid "Data Sets"
+msgstr ""
+
+msgid "Dashboards"
+msgstr ""
+
+msgid "Programs"
 msgstr ""
 
 msgid "Edit sharing settings to data sets, programs and dashboards."
