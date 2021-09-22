@@ -11,11 +11,10 @@ export class ApplySharingSettingsUseCase implements UseCase {
 
     public execute(update: SharingUpdate): FutureData<MetadataPayload> {
         const { baseElements, excludedDependencies, sharings, replaceExistingSharings } = update;
-
         return this.metadataRepository
-            .getDependencies(baseElements)
-            .map(payload => this.cleanPayload(payload, excludedDependencies))
-            .map(payload => this.sharePayload(payload, sharings, replaceExistingSharings));
+        .getDependencies(baseElements)
+        .map(payload => this.cleanPayload(payload, excludedDependencies))
+        .map(payload => this.sharePayload(payload, sharings, replaceExistingSharings));
     }
 
     private cleanPayload(payload: Record<string, any[]>, excludedDependencies: string[]): MetadataPayload {
