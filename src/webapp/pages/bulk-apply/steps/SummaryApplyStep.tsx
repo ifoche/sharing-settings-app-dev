@@ -11,6 +11,7 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
     const snackbar = useSnackbar();
 
     const [importResult, setImportResult] = useState<ImportResult>();
+
     const applySharingSync = useCallback(() => {
         compositionRoot.metadata
             .applySharingSettings(builder)
