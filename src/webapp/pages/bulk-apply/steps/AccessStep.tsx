@@ -8,7 +8,6 @@ import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
 
 export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, updateBuilder }) => {
     const { compositionRoot } = useAppContext();
-
     const strategyName = builder.replaceExistingSharings ? i18n.t("Replace") : i18n.t("Merge");
     const label = `${i18n.t("Update strategy")}: ${strategyName}`;
 
