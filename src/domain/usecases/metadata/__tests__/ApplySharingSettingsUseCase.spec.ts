@@ -20,10 +20,8 @@ describe("Apply sharing settings use case", () => {
     for (const update of tests) {
         it(buildTitle(update), async () => {
             const { baseElements, excludedDependencies, sharings, replaceExistingSharings } = update;
-
             const { data: result, error } = await usecase.execute(update).runAsync();
             expect(error).toBeUndefined();
-
             const items = _(result).values().flatten().value();
             const itemIds = items.map(item => item.id);
 
@@ -105,5 +103,4 @@ class MockMetadataRepository implements MetadataRepository {
     }
 }
 
-export { };
-
+export {};

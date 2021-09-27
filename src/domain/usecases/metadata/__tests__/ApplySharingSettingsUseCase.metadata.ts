@@ -1,3 +1,5 @@
+import "lodash.product";
+import _ from "lodash";
 import { SharingUpdate } from "../../../entities/SharingUpdate";
 
 export const metadata: Record<string, Record<string, any[]>> = {
@@ -5963,105 +5965,27 @@ export const metadata: Record<string, Record<string, any[]>> = {
     },
 };
 
-export const tests: SharingUpdate[] = [
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: ["dTenEaC7Qeu", "oMz2k4EvzR8"],
-        replaceExistingSharings: false,
-        sharings: {
-            userAccesses: [],
-            userGroupAccesses: [{ id: "sCjEPgiOhP1", access: "rw------", name: "WIDP admins" }],
-            publicAccess: "rw------",
-        },
+//legend: MDtype, exclude/noexclude, replace/merge, user/nouser, usergroup/nousergroup, public/nopublic
+const product = _.product(
+    _.product(["program1", "dashboard1"], ["program2", "dashboard2"]),
+    ["exclude", "noexclude"],
+    [true, false],
+    ["user", "nouser"],
+    ["usergroup", "nousergroup"],
+    ["public", "nopublic"]
+);
+
+const user = [{ id: "s5EVHUwoFKu", access: "rw------", name: "Alexis Rico" }];
+const userGroup = [{ id: "sCjEPgiOhP1", access: "rw------", name: "WIDP admins" }];
+const excluded = ["dTenEaC7Qeu", "oMz2k4EvzR8"];
+
+export const tests: SharingUpdate[] = product.map((item: string[]) => ({
+    baseElements: item[0],
+    excludedDependencies: item[1] === "exclude" ? excluded : [],
+    replaceExistingSharings: item[2],
+    sharings: {
+        userAccesses: item[3] === "user" ? user : [],
+        userGroupAccesses: item[4] === "usergroup" ? userGroup : [],
+        publicAccess: item[5] === "public" ? "rw------" : "--------",
     },
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: ["dTenEaC7Qeu", "oMz2k4EvzR8"],
-        replaceExistingSharings: false,
-        sharings: {
-            userAccesses: [],
-            userGroupAccesses: [{ id: "sCjEPgiOhP1", access: "rw------", name: "WIDP admins" }],
-            publicAccess: "--------",
-        },
-    },
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: ["dTenEaC7Qeu", "oMz2k4EvzR8"],
-        replaceExistingSharings: false,
-        sharings: {
-            userAccesses: [{ id: "s5EVHUwoFKu", access: "rw------", name: "Alexis Rico" }],
-            userGroupAccesses: [],
-            publicAccess: "--------",
-        },
-    },
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: [],
-        replaceExistingSharings: false,
-        sharings: {
-            userAccesses: [],
-            userGroupAccesses: [{ id: "sCjEPgiOhP1", access: "rw------", name: "WIDP admins" }],
-            publicAccess: "rw------",
-        },
-    },
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: [],
-        replaceExistingSharings: false,
-        sharings: {
-            userAccesses: [{ id: "s5EVHUwoFKu", access: "rw------", name: "Alexis Rico" }],
-            userGroupAccesses: [],
-            publicAccess: "--------",
-        },
-    },
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: ["dTenEaC7Qeu", "oMz2k4EvzR8"],
-        replaceExistingSharings: true,
-        sharings: {
-            userAccesses: [],
-            userGroupAccesses: [{ id: "sCjEPgiOhP1", access: "rw------", name: "WIDP admins" }],
-            publicAccess: "rw------",
-        },
-    },
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: ["dTenEaC7Qeu", "oMz2k4EvzR8"],
-        replaceExistingSharings: true,
-        sharings: {
-            userAccesses: [],
-            userGroupAccesses: [{ id: "sCjEPgiOhP1", access: "rw------", name: "WIDP admins" }],
-            publicAccess: "--------",
-        },
-    },
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: ["dTenEaC7Qeu", "oMz2k4EvzR8"],
-        replaceExistingSharings: true,
-        sharings: {
-            userAccesses: [{ id: "s5EVHUwoFKu", access: "rw------", name: "Alexis Rico" }],
-            userGroupAccesses: [],
-            publicAccess: "--------",
-        },
-    },
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: [],
-        replaceExistingSharings: true,
-        sharings: {
-            userAccesses: [],
-            userGroupAccesses: [{ id: "sCjEPgiOhP1", access: "rw------", name: "WIDP admins" }],
-            publicAccess: "rw------",
-        },
-    },
-    {
-        baseElements: ["dashboard1", "dashboard2", "program1", "program2"],
-        excludedDependencies: [],
-        replaceExistingSharings: true,
-        sharings: {
-            userAccesses: [{ id: "s5EVHUwoFKu", access: "rw------", name: "Alexis Rico" }],
-            userGroupAccesses: [],
-            publicAccess: "--------",
-        },
-    },
-];
+}));

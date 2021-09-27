@@ -95,7 +95,6 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                     .values()
                     .flatten()
                     .value();
-
                 setRows(rows);
                 setIsLoading(false);
             },
