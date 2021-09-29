@@ -1,8 +1,26 @@
 import { Ref } from "./Ref";
 import { SharedObject } from "./SharedObject";
 
-export type MetadataModel = "dataSets" | "programs" | "dashboards" | "reports" | "visualizations" | "eventReports" | "eventCharts" | 
-"maps" | "interpretations" | "documents" | "categoryCombos" | "dataElements" | "categoryOptions" | "categories" | "indicators" | "optionSets" | "legendSets" | "programStages" | "programIndicators";
+export type MetadataModel =
+    | "dataSets"
+    | "programs"
+    | "dashboards"
+    | "reports"
+    | "visualizations"
+    | "eventReports"
+    | "eventCharts"
+    | "maps"
+    | "interpretations"
+    | "documents"
+    | "categoryCombos"
+    | "dataElements"
+    | "categoryOptions"
+    | "categories"
+    | "indicators"
+    | "optionSets"
+    | "legendSets"
+    | "programStages"
+    | "programIndicators";
 
 export const displayName: Record<string, string> = {
     dataSets: "Data Sets",
@@ -23,8 +41,8 @@ export const displayName: Record<string, string> = {
     optionSets: "Option Sets",
     legendSets: "Legend Sets",
     programStages: "Program Stages",
-    programIndicators: "Program Indicators"
-}
+    programIndicators: "Program Indicators",
+};
 export type MetadataPayload = Record<string, MetadataItem[]>;
 
 export type MetadataItem = Ref & SharedObject & { [key: string]: any | undefined };

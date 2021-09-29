@@ -89,21 +89,26 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
         [builder]
     );
 
-    const applyFilterChanges = useCallback((model: MetadataModel) => {
-        setListOptions(options => ({ ...options, model }));
-        setFilteredRows(rows.filter(row => row.metadataType === model))
-    }, [rows]);
+    const applyFilterChanges = useCallback(
+        (model: MetadataModel) => {
+            setListOptions(options => ({ ...options, model }));
+            setFilteredRows(rows.filter(row => row.metadataType === model));
+        },
+        [rows]
+    );
 
-    const onSearchChange = useCallback((search: string) => {
-        setListOptions(options => ({ ...options, search }));
-        if(search === "") {
-            setFilteredRows(rows.filter(row => row.metadataType === listOptions.model));
-        }
-        else {
-            setFilteredRows(filteredRows.filter(row => row.name.includes(search)))
-        }
-        // eslint-disable-next-line
-    }, [listOptions]);
+    const onSearchChange = useCallback(
+        (search: string) => {
+            setListOptions(options => ({ ...options, search }));
+            if (search === "") {
+                setFilteredRows(rows.filter(row => row.metadataType === listOptions.model));
+            } else {
+                setFilteredRows(filteredRows.filter(row => row.name.includes(search)));
+            }
+            // eslint-disable-next-line
+        },
+        [listOptions]
+    );
 
     useEffect(() => {
         setIsLoading(true);
@@ -120,8 +125,11 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
 
                 setRows(rows);
                 //getting all the possible MDTypes from the dependencies
-                const filterModels: DropdownOption<MetadataModel>[] = Object.keys(data).map(item => ({id: (item as MetadataModel), name: i18n.t(displayName[item] || "")}));
-                setFilterOptions(filterModels)
+                const filterModels: DropdownOption<MetadataModel>[] = Object.keys(data).map(item => ({
+                    id: item as MetadataModel,
+                    name: i18n.t(displayName[item] || ""),
+                }));
+                setFilterOptions(filterModels);
                 setListOptions(options => ({ ...options, model: filterModels[0]?.id || "dashboards" }));
                 //the filteredRows will be the only type that I show in the UI, but I want to save the rows somewhere so I don't lose them
                 setFilteredRows(rows.filter(row => row.metadataType === filterModels[0]?.id));
@@ -165,5 +173,5 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
 const initialState: ListOptions = {
     model: "dashboards",
     sorting: { field: "name", order: "asc" },
-    pageSize: 25
+    pageSize: 25,
 };
