@@ -11,19 +11,24 @@ import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import _ from "lodash";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { MetadataItem } from "../../../../domain/entities/MetadataItem";
+import { MetadataItem, MetadataModel, displayName } from "../../../../domain/entities/MetadataItem";
+import { ListOptions } from "../../../../domain/repositories/MetadataRepository";
 import { Ref } from "../../../../domain/entities/Ref";
 import i18n from "../../../../locales";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
+import Dropdown, { DropdownOption } from "../../../components/dropdown/Dropdown";
 
 export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, updateBuilder }) => {
     const { compositionRoot } = useAppContext();
     const snackbar = useSnackbar();
 
     const [rows, setRows] = useState<MetadataItem[]>([]);
+    const [filteredRows, setFilteredRows] = useState<MetadataItem[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [selection, setSelection] = useState<TableSelection[]>([]);
+    const [filterOptions, setFilterOptions] = useState<DropdownOption<MetadataModel>[]>([]);
+    const [listOptions, setListOptions] = useState<ListOptions>(initialState);
 
     const columns = useMemo(
         (): TableColumn<MetadataItem>[] => [
@@ -84,10 +89,27 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
         [builder]
     );
 
+    const applyFilterChanges = useCallback((model: MetadataModel) => {
+        setListOptions(options => ({ ...options, model }));
+        setFilteredRows(rows.filter(row => row.metadataType === model))
+    }, [rows]);
+
+    const onSearchChange = useCallback((search: string) => {
+        setListOptions(options => ({ ...options, search }));
+        if(search === "") {
+            setFilteredRows(rows.filter(row => row.metadataType === listOptions.model));
+        }
+        else {
+            setFilteredRows(filteredRows.filter(row => row.name.includes(search)))
+        }
+        // eslint-disable-next-line
+    }, [listOptions]);
+
     useEffect(() => {
         setIsLoading(true);
         compositionRoot.metadata.listDependencies(builder.baseElements).run(
             data => {
+                //getting all the dependencies and saving them
                 const rows = _(data)
                     .mapValues((value, key) => {
                         return value.map(item => ({ ...item, metadataType: key }));
@@ -97,16 +119,32 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                     .value();
 
                 setRows(rows);
+                //getting all the possible MDTypes from the dependencies
+                const filterModels: DropdownOption<MetadataModel>[] = Object.keys(data).map(item => ({id: (item as MetadataModel), name: i18n.t(displayName[item] || "")}));
+                setFilterOptions(filterModels)
+                setListOptions(options => ({ ...options, model: filterModels[0]?.id || "dashboards" }));
+                //the filteredRows will be the only type that I show in the UI, but I want to save the rows somewhere so I don't lose them
+                setFilteredRows(rows.filter(row => row.metadataType === filterModels[0]?.id));
                 setIsLoading(false);
             },
             error => snackbar.error(error)
         );
     }, [builder, compositionRoot, snackbar]);
 
+    const filterComponents = (
+        <Dropdown<MetadataModel>
+            items={filterOptions}
+            onValueChange={applyFilterChanges}
+            value={listOptions.model}
+            label={i18n.t("Metadata type")}
+            hideEmpty={true}
+        />
+    );
+
     return (
         <div>
             <ObjectsTable<MetadataItem>
-                rows={rows}
+                rows={filteredRows}
                 columns={columns}
                 sorting={{ field: "displayName", order: "asc" }}
                 initialState={initialState}
@@ -116,18 +154,16 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 onChange={onTableChange}
                 selection={selection}
                 rowConfig={rowConfig}
+                filterComponents={filterComponents}
+                searchBoxLabel={i18n.t(`Search by name`)}
+                onChangeSearch={onSearchChange}
             />
         </div>
     );
 };
 
-const initialState = {
-    sorting: {
-        field: "displayName" as const,
-        order: "asc" as const,
-    },
-    pagination: {
-        page: 1,
-        pageSize: 25,
-    },
+const initialState: ListOptions = {
+    model: "dashboards",
+    sorting: { field: "name", order: "asc" },
+    pageSize: 25
 };

@@ -11,7 +11,6 @@ export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, 
 
     const strategyName = builder.replaceExistingSharings ? i18n.t("Replace") : i18n.t("Merge");
     const label = `${i18n.t("Update strategy")}: ${strategyName}`;
-
     const search = useCallback(
         (query: string) => compositionRoot.instance.searchUsers(query).toPromise(),
         [compositionRoot]
