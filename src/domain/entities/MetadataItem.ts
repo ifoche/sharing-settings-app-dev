@@ -5,6 +5,12 @@ export type MetadataModel = "dataSets" | "programs" | "dashboards";
 
 export type MetadataPayload = Record<string, MetadataItem[]>;
 
+export interface DataDimensionItem {
+    dataDimensionItemType: string;
+    indicator?: Ref;
+    programIndicator?: Ref;
+}
+
 export type MetadataItem = Ref & SharedObject & { [key: string]: any | undefined };
 
 export function isValidModel(model: string): model is MetadataModel {

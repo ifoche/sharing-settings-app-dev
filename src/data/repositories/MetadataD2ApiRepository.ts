@@ -2,7 +2,7 @@ import i18n from "@eyeseetea/d2-ui-components/locales";
 import _ from "lodash";
 import { Future, FutureData } from "../../domain/entities/Future";
 import { ImportResult, ImportStats } from "../../domain/entities/ImportResult";
-import { isValidModel, MetadataModel, MetadataPayload } from "../../domain/entities/MetadataItem";
+import { isValidModel, MetadataModel, MetadataPayload, DataDimensionItem } from "../../domain/entities/MetadataItem";
 import { ListMetadataResponse, ListOptions, MetadataRepository } from "../../domain/repositories/MetadataRepository";
 import { D2Api, D2ApiDefinition, MetadataResponse, Stats } from "../../types/d2-api";
 import { getD2APiFromInstance } from "../../utils/d2-api";
@@ -52,7 +52,15 @@ export class MetadataD2ApiRepository implements MetadataRepository {
                 return Future.futureMap(items, ({ model, id }) => this.fetchMetadataWithDependencies(model, id));
             })
             .map(payloads => mergePayloads(payloads))
-            .map(payload => removeDefaults(payload));
+            .map(payload => removeDefaults(payload))
+            .map(payload => {
+                const indicatorIds = checkIfIndicatorsExist(payload);
+                if(indicatorIds.length !== 0) {
+                    return this.fetchMetadata(indicatorIds)
+                    .map(indicatorPayloads => mergePayloads([indicatorPayloads, payload]))
+                }
+                else return payload;
+            });
     }
 
     public getModelName(model: string): string {
@@ -94,6 +102,28 @@ function mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
 
 function removeDefaults(payload: MetadataPayload): MetadataPayload {
     return _.mapValues(payload, items => items.filter(({ code, name }) => code !== "default" && name !== "default"));
+}
+
+function checkIfIndicatorsExist(payload: MetadataPayload): string[] {
+    if('visualizations' in payload) {
+        const indicatorIds = _(payload.visualizations).flatMap(items => {
+            return items?.dataDimensionItems.map((dataDimensionItem: DataDimensionItem) => {
+                if('indicator' in dataDimensionItem) {
+                    return dataDimensionItem?.indicator?.id;
+                }
+                else if('programIndicator' in dataDimensionItem) {
+                    return dataDimensionItem?.programIndicator?.id;
+                }
+                return;
+            });
+            
+        })
+        .uniq()
+        .value();
+        return indicatorIds;
+    }
+    else return [];
+
 }
 
 function buildMetadataImportResult(response: MetadataResponse): ImportResult {
