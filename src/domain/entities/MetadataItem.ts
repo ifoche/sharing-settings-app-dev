@@ -45,6 +45,16 @@ export const displayName: Record<string, string> = {
 };
 export type MetadataPayload = Record<string, MetadataItem[]>;
 
+export interface Visualization extends MetadataItem {
+    dataDimensionItems?: DataDimensionItem[];
+}
+
+export interface DataDimensionItem {
+    dataDimensionItemType: string;
+    indicator?: Ref;
+    programIndicator?: Ref;
+}
+
 export type MetadataItem = Ref & SharedObject & { [key: string]: any | undefined };
 
 export function isValidModel(model: string): model is MetadataModel {
