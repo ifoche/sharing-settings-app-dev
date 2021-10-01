@@ -96,7 +96,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                     .flatten()
                     .value();
 
-                    setRows(rows);
+                setRows(rows);
                 setIsLoading(false);
             },
             error => snackbar.error(error)
