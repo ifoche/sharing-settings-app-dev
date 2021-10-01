@@ -1,4 +1,5 @@
 import _ from "lodash";
+import "lodash.product";
 import { mergePayloads } from "../../../../data/repositories/MetadataD2ApiRepository";
 import { Future, FutureData } from "../../../entities/Future";
 import { ImportResult } from "../../../entities/ImportResult";
@@ -6,7 +7,7 @@ import { MetadataPayload } from "../../../entities/MetadataItem";
 import { SharingUpdate } from "../../../entities/SharingUpdate";
 import { ListMetadataResponse, ListOptions, MetadataRepository } from "../../../repositories/MetadataRepository";
 import { ApplySharingSettingsUseCase } from "../ApplySharingSettingsUseCase";
-import { metadata, tests } from "./ApplySharingSettingsUseCase.metadata";
+import { metadata } from "./ApplySharingSettingsUseCase.metadata";
 
 describe("Apply sharing settings use case", () => {
     let metadataRepository: MetadataRepository;
@@ -17,7 +18,7 @@ describe("Apply sharing settings use case", () => {
         usecase = new ApplySharingSettingsUseCase(metadataRepository);
     });
 
-    for (const update of tests) {
+    for (const update of buildTestCases()) {
         it(buildTitle(update), async () => {
             const { baseElements, excludedDependencies, sharings, replaceExistingSharings } = update;
             const { data: result, error } = await usecase.execute(update).runAsync();
@@ -72,6 +73,38 @@ function buildTitle(update: SharingUpdate): string {
     ].join(", ");
 
     return `Should apply sharing setting with ${message}`;
+}
+
+function buildTestCases(): SharingUpdate[] {
+    //@ts-ignore Lodash product is not typed
+    const product = _.product(
+        //@ts-ignore Lodash product is not typed
+        _.product(
+            ["dataset1", "program1", "dashboard1"],
+            ["dataset2", "program2", "dashboard2"],
+            ["dataset3", "program3", "dashboard3"]
+        ),
+        ["exclude", "noexclude"],
+        [true, false],
+        ["user", "nouser"],
+        ["usergroup", "nousergroup"],
+        ["public", "nopublic"]
+    );
+
+    const user = [{ id: "s5EVHUwoFKu", access: "rw------", name: "Alexis Rico" }];
+    const userGroup = [{ id: "sCjEPgiOhP1", access: "rw------", name: "WIDP admins" }];
+    const excluded = ["dTenEaC7Qeu", "oMz2k4EvzR8"];
+
+    return product.map((item: string[]) => ({
+        baseElements: item[0],
+        excludedDependencies: item[1] === "exclude" ? excluded : [],
+        replaceExistingSharings: item[2],
+        sharings: {
+            userAccesses: item[3] === "user" ? user : [],
+            userGroupAccesses: item[4] === "usergroup" ? userGroup : [],
+            publicAccess: item[5] === "public" ? "rw------" : "--------",
+        },
+    }));
 }
 
 class MockMetadataRepository implements MetadataRepository {

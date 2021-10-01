@@ -1,6 +1,4 @@
-import "lodash.product";
 import _ from "lodash";
-import { SharingUpdate } from "../../../entities/SharingUpdate";
 
 export const metadata: Record<string, Record<string, any[]>> = {
     dashboard1: {
@@ -58083,28 +58081,3 @@ export const metadata: Record<string, Record<string, any[]>> = {
         ]
       }
 };
-
-//legend: MDtype, exclude/noexclude, replace/merge, user/nouser, usergroup/nousergroup, public/nopublic
-const product = _.product(
-    _.product(["dataset1", "program1", "dashboard1"], ["dataset2", "program2", "dashboard2"], ["dataset3", "program3", "dashboard3"]),
-    ["exclude", "noexclude"],
-    [true, false],
-    ["user", "nouser"],
-    ["usergroup", "nousergroup"],
-    ["public", "nopublic"]
-);
-
-const user = [{ id: "s5EVHUwoFKu", access: "rw------", name: "Alexis Rico" }];
-const userGroup = [{ id: "sCjEPgiOhP1", access: "rw------", name: "WIDP admins" }];
-const excluded = ["dTenEaC7Qeu", "oMz2k4EvzR8"];
-
-export const tests: SharingUpdate[] = product.map((item: string[]) => ({
-    baseElements: item[0],
-    excludedDependencies: item[1] === "exclude" ? excluded : [],
-    replaceExistingSharings: item[2],
-    sharings: {
-        userAccesses: item[3] === "user" ? user : [],
-        userGroupAccesses: item[4] === "usergroup" ? userGroup : [],
-        publicAccess: item[5] === "public" ? "rw------" : "--------",
-    },
-}));
