@@ -1,5 +1,5 @@
 {
-    "name": "sharing-settings-app",
+    "name": "est-sharing-settings-app",
     "description": "DHIS2 Sharing Settings App",
     "version": "0.1.0",
     "license": "GPL-3.0",
@@ -108,7 +108,7 @@
         "prepare": "husky install"
     },
     "manifest.webapp": {
-        "name": "Sharing Settings App",
+        "name": "Sharing Settings",
         "description": "DHIS2 Sharing Settings App",
         "icons": {
             "48": "icon.png"
