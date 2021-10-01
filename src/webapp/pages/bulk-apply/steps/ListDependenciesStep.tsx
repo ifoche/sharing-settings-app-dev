@@ -11,13 +11,13 @@ import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import _ from "lodash";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { MetadataItem, MetadataModel, displayName } from "../../../../domain/entities/MetadataItem";
-import { ListOptions } from "../../../../domain/repositories/MetadataRepository";
+import { displayName, MetadataItem, MetadataModel } from "../../../../domain/entities/MetadataItem";
 import { Ref } from "../../../../domain/entities/Ref";
+import { ListOptions } from "../../../../domain/repositories/MetadataRepository";
 import i18n from "../../../../locales";
+import Dropdown, { DropdownOption } from "../../../components/dropdown/Dropdown";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
-import Dropdown, { DropdownOption } from "../../../components/dropdown/Dropdown";
 
 export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, updateBuilder }) => {
     const { compositionRoot } = useAppContext();
@@ -105,16 +105,14 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
             } else {
                 setFilteredRows(filteredRows.filter(row => row.name.includes(search)));
             }
-            // eslint-disable-next-line
         },
-        [listOptions]
+        [listOptions, filteredRows, rows]
     );
 
     useEffect(() => {
         setIsLoading(true);
         compositionRoot.metadata.listDependencies(builder.baseElements).run(
             data => {
-                //getting all the dependencies and saving them
                 const rows = _(data)
                     .mapValues((value, key) => {
                         return value.map(item => ({ ...item, metadataType: key }));
@@ -123,15 +121,14 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                     .flatten()
                     .value();
 
-                setRows(rows);
-                //getting all the possible MDTypes from the dependencies
-                const filterModels: DropdownOption<MetadataModel>[] = Object.keys(data).map(item => ({
+                const filterModels = _.keys(data).map(item => ({
                     id: item as MetadataModel,
-                    name: i18n.t(displayName[item] || ""),
+                    name: displayName[item] ?? i18n.t("Unknown model"),
                 }));
+
+                setRows(rows);
                 setFilterOptions(filterModels);
-                setListOptions(options => ({ ...options, model: filterModels[0]?.id || "dashboards" }));
-                //the filteredRows will be the only type that I show in the UI, but I want to save the rows somewhere so I don't lose them
+                setListOptions(options => ({ ...options, model: filterModels[0]?.id ?? "dashboards" }));
                 setFilteredRows(rows.filter(row => row.metadataType === filterModels[0]?.id));
                 setIsLoading(false);
             },
@@ -163,7 +160,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 selection={selection}
                 rowConfig={rowConfig}
                 filterComponents={filterComponents}
-                searchBoxLabel={i18n.t(`Search by name`)}
+                searchBoxLabel={i18n.t("Search by name")}
                 onChangeSearch={onSearchChange}
             />
         </div>
