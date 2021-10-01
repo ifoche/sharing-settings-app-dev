@@ -84,7 +84,7 @@ export class MetadataD2ApiRepository implements MetadataRepository {
     }
 }
 
-function mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
+export function mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
     return _.reduce(
         payloads,
         (result, payload) => {
