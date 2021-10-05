@@ -103,6 +103,16 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
         );
     }, [builder, compositionRoot, snackbar]);
 
+    useEffect(() => {
+        compositionRoot.excludedDependencies.list().run(
+            data => {
+                const plainIds = data.map(({ id }) => id);
+                updateBuilder(builder => ({ ...builder, excludedDependencies: plainIds }))
+            },
+            error => snackbar.error(error)
+        );
+    }, [compositionRoot.excludedDependencies, snackbar]);
+
     return (
         <div>
             <ObjectsTable<MetadataItem>
