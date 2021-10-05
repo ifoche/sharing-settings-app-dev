@@ -1,49 +1,37 @@
 import i18n from "@dhis2/d2-i18n";
 import _ from "lodash";
-import { ConfirmationDialog, ConfirmationDialogProps,
-    TableAction,
-    TableColumn,
-    TableSelection, RowConfig
+import { 
+    ConfirmationDialog, 
+    TableAction, 
+    RowConfig,
+    ObjectsTable,
+    TableState, 
+    useSnackbar,
  } from "@eyeseetea/d2-ui-components";
+ import { Button } from "@dhis2/ui";
 import React, { useCallback, useState, useMemo, useEffect } from "react";
-import { SharingUpdate } from "../../../domain/entities/SharingUpdate";
 import { PageHeader } from "../../components/page-header/PageHeader";
 import { useGoBack } from "../../hooks/useGoBack";
-import { ObjectsTable, TableState, useSnackbar } from "@eyeseetea/d2-ui-components";
 import { useAppContext } from "../../contexts/app-context";
 import { ListMetadataResponse, ListOptions } from "../../../domain/repositories/MetadataRepository";
 import { MetadataItem, MetadataModel } from "../../../domain/entities/MetadataItem";
 import Dropdown, { DropdownOption } from "../../components/dropdown/Dropdown";
-import { Checkbox, DialogContent } from "@material-ui/core";
+import { DialogContent } from "@material-ui/core";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
-import { Button } from "@dhis2/ui";
 import { TransferFF, TransferFFProps } from "../../components/transfer-ff/TransferFF";
-
 
 export const SettingsPage: React.FC = () => {
     const { compositionRoot } = useAppContext();
     const snackbar = useSnackbar();
+    const goBack = useGoBack();
     const [builder, updateBuilder] = useState<Builder>(defaultBuilder);
-    console.log(builder)
 
 
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [response, setResponse] = useState<ListMetadataResponse>(initialResponse);
     const [listOptions, setListOptions] = useState<ListOptions>(initialState);
     const [isOpen, setIsOpen] = useState<boolean>(false);
-
-    const saveExcludedDependencies = async () => {
-        try {
-            await compositionRoot.excludedDependencies.save(builder.excludedDependencies).toPromise();
-            snackbar.success("Successfully saved global excluded dependencies!")
-        }
-    catch (error) {
-        //@ts-ignore
-        snackbar.error(error)
-    }
-    }
-
 
     const columns = useMemo(
         () => [
@@ -139,6 +127,17 @@ export const SettingsPage: React.FC = () => {
         [updateBuilder]
     );
 
+    const saveExcludedDependencies = async () => {
+        try {
+            await compositionRoot.excludedDependencies.save(builder.excludedDependencies).toPromise();
+            snackbar.success("Successfully saved global excluded dependencies!")
+        }
+    catch (error) {
+        //@ts-ignore
+        snackbar.error(error)
+    }
+    }
+
     const filterComponents = (
         <Dropdown<MetadataModel>
             items={filterModels}
@@ -155,10 +154,7 @@ export const SettingsPage: React.FC = () => {
         },
         [builder]
     );
-    const props = {
-        name: "test name",
-        placeholder: "test test",
-    };
+
     /*
          <TransferFF
             {...props}
@@ -174,41 +170,47 @@ export const SettingsPage: React.FC = () => {
         <ConfirmationDialog
             isOpen={isOpen}
             onCancel={() => setIsOpen(false)}
-            title={i18n.t("Columns to show in table")}
+            title={i18n.t("Metadata type inclusion")}
             cancelText={i18n.t("Close")}
             fullWidth
             disableEnforceFocus>
         <DialogContent>
-            <h1>Hallo</h1>
+            <h1>This is where the TransferFF component will go</h1>
         </DialogContent>
         </ConfirmationDialog>
 
     return (
-        <>
-        {FilterDialog()}
-        <Button onClick={() => setIsOpen(true)}>click me</Button>
-        <ObjectsTable<MetadataItem>
-            rows={response.objects}
-            columns={columns}
-            onChange={onTableChange}
-            pagination={response.pager}
-            sorting={{ field: "displayName", order: "asc" }}
-            loading={isLoading}
-            initialState={initialState}
-            forceSelectionColumn={true}
-            filterComponents={filterComponents}
-            onChangeSearch={search => setListOptions(options => ({ ...options, search }))}
-            searchBoxLabel={i18n.t(`Search by name`)}
-            actions={actions}
-            rowConfig={rowConfig}
-            selection={selection}
-        />
-        <Button type="submit" onClick={saveExcludedDependencies} primary>
-                    {i18n.t("Save global excluded dependencies")}
-                </Button>
-        </>
+        <React.Fragment>
+            <PageHeader title={i18n.t("Global exclusion settings")} onBackClick={goBack} />
+            {FilterDialog()}
+            <Button onClick={() => setIsOpen(true)}>click me</Button>
+            <ObjectsTable<MetadataItem>
+                rows={response.objects}
+                columns={columns}
+                onChange={onTableChange}
+                pagination={response.pager}
+                sorting={{ field: "displayName", order: "asc" }}
+                loading={isLoading}
+                initialState={initialState}
+                forceSelectionColumn={true}
+                filterComponents={filterComponents}
+                onChangeSearch={search => setListOptions(options => ({ ...options, search }))}
+                searchBoxLabel={i18n.t("Search by name")}
+                actions={actions}
+                rowConfig={rowConfig}
+                selection={selection}
+            />
+            <Button type="submit" onClick={saveExcludedDependencies} primary>
+                {i18n.t("Save global excluded dependencies")}
+            </Button>
+        </React.Fragment>
     );
 };
+
+interface Builder {
+    baseElements: string[];
+    excludedDependencies: string[];
+}
 
 const initialState: ListOptions = {
     model: "dashboards",
@@ -226,10 +228,6 @@ const filterModels: DropdownOption<MetadataModel>[] = [
     { id: "dashboards", name: i18n.t("Dashboards") },
     { id: "programs", name: i18n.t("Programs") },
 ];
-interface Builder {
-    baseElements: string[];
-    excludedDependencies: string[];
-}
 
 const defaultBuilder: Builder = {
     baseElements: [],

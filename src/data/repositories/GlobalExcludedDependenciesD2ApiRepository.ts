@@ -5,7 +5,7 @@ import { DataStoreStorageClient } from "../clients/storage/DataStoreStorageClien
 import { Namespaces } from "../clients/storage/Namespaces";
 import { StorageClient } from "../clients/storage/StorageClient";
 import { Ref } from "../../domain/entities/Ref";
-import { Future, FutureData } from "../../domain/entities/Future";
+import { FutureData } from "../../domain/entities/Future";
 
 export class GlobalExcludedDependenciesD2ApiRepository implements GlobalExcludedDependenciesRepository {
     private storageClient: StorageClient;
@@ -15,8 +15,8 @@ export class GlobalExcludedDependenciesD2ApiRepository implements GlobalExcluded
     }
 
     public list(): FutureData<Ref[]> {
-        //I don't know if I need ot save the excluded Dependencies based on the user
-            const currentUser = this.instanceRepository.getCurrentUser();
+        //I don't know if I need to save the excluded Dependencies based on the user
+            //const currentUser = this.instanceRepository.getCurrentUser();
             const excludedDependencies = this.storageClient.listObjectsInCollection<Ref>(
                 Namespaces.EXCLUDED_DEPENDENCIES
             );
@@ -25,7 +25,7 @@ export class GlobalExcludedDependenciesD2ApiRepository implements GlobalExcluded
     }
 
     public save(excludedDependencies: string[]): FutureData<void> {
-        //I need to compare the excludedDependencies and remove the ones that aren't there
+        //I need to compare the excludedDependencies and call remove on the ones that aren't there
         const properFormat = excludedDependencies.map(dependency => ({id: dependency}));
 
         /*const currentDependencies = this.storageClient.listObjectsInCollection<Ref>(
@@ -36,7 +36,6 @@ export class GlobalExcludedDependenciesD2ApiRepository implements GlobalExcluded
             },
             error => console.error(error)
         );*/
-        console.log(properFormat)
        // console.log(currentDependencies);
         return this.storageClient.saveObjectsInCollection<Ref>(
             Namespaces.EXCLUDED_DEPENDENCIES,

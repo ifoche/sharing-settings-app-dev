@@ -21,7 +21,6 @@ export abstract class StorageClient {
     public saveObjectsInCollection<T extends Ref>(key: string, elements: T[]): FutureData<void> {
         return this.getObject<Ref[]>(key, []).flatMap(oldData => {
             const cleanData = oldData.filter(item => !elements.some(element => item.id === element.id));
-            console.log(cleanData);
             return this.saveObject(key, [...cleanData, ...elements]);
         });
     }
