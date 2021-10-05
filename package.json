@@ -1,5 +1,5 @@
 {
-    "name": "sharing-settings-app",
+    "name": "est-sharing-settings-app",
     "description": "DHIS2 Sharing Settings App",
     "version": "0.1.0",
     "license": "GPL-3.0",
@@ -32,6 +32,7 @@
         "fluture": "14.0.0",
         "font-awesome": "4.7.0",
         "lodash": "4.17.21",
+        "lodash.product": "18.9.19",
         "postcss-rtl": "1.7.3",
         "purify-ts": "1.0.0",
         "purify-ts-extra-codec": "0.6.0",
@@ -97,7 +98,7 @@
         "prebuild": "yarn localize && yarn test",
         "build-folder": "rm -rf build/ && d2-manifest package.json manifest.webapp && react-scripts build && yarn run manifest && cp -r i18n icon.png build",
         "build": "yarn build-folder && rm -f $npm_package_name.zip && cd build && zip --quiet -r ../$npm_package_name.zip *",
-        "test": "jest --passWithNoTests",
+        "test": "jest",
         "lint": "eslint src cypress --ext .js,.jsx,.ts,.tsx",
         "eject": "react-scripts eject",
         "prettify": "prettier \"./**/*.{js,jsx,json,css,ts,tsx}\" --write",
@@ -111,7 +112,7 @@
         "prepare": "husky install"
     },
     "manifest.webapp": {
-        "name": "Sharing Settings App",
+        "name": "Sharing Settings",
         "description": "DHIS2 Sharing Settings App",
         "icons": {
             "48": "icon.png"

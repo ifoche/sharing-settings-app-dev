@@ -2,7 +2,13 @@ import i18n from "@eyeseetea/d2-ui-components/locales";
 import _ from "lodash";
 import { Future, FutureData } from "../../domain/entities/Future";
 import { ImportResult, ImportStats } from "../../domain/entities/ImportResult";
-import { isValidModel, MetadataModel, MetadataPayload } from "../../domain/entities/MetadataItem";
+import {
+    DataDimensionItem,
+    isValidModel,
+    MetadataModel,
+    MetadataPayload,
+    Visualization,
+} from "../../domain/entities/MetadataItem";
 import { ListMetadataResponse, ListOptions, MetadataRepository } from "../../domain/repositories/MetadataRepository";
 import { D2Api, D2ApiDefinition, MetadataResponse, Stats } from "../../types/d2-api";
 import { getD2APiFromInstance } from "../../utils/d2-api";
@@ -51,7 +57,13 @@ export class MetadataD2ApiRepository implements MetadataRepository {
 
                 return Future.futureMap(items, ({ model, id }) => this.fetchMetadataWithDependencies(model, id));
             })
-            .map(payloads => mergePayloads(payloads))
+            .flatMap(payloads => {
+                const payload = mergePayloads(payloads);
+                const extraIds = extractExtraDependencies(payload);
+                if (extraIds.length === 0) return Future.success(payload);
+
+                return this.fetchMetadata(extraIds).map(dependencies => mergePayloads([payload, dependencies]));
+            })
             .map(payload => removeDefaults(payload));
     }
 
@@ -76,7 +88,7 @@ export class MetadataD2ApiRepository implements MetadataRepository {
     }
 }
 
-function mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
+export function mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
     return _.reduce(
         payloads,
         (result, payload) => {
@@ -94,6 +106,28 @@ function mergePayloads(payloads: MetadataPayload[]): MetadataPayload {
 
 function removeDefaults(payload: MetadataPayload): MetadataPayload {
     return _.mapValues(payload, items => items.filter(({ code, name }) => code !== "default" && name !== "default"));
+}
+
+function extractExtraDependencies(payload: MetadataPayload): string[] {
+    return _(payload)
+        .mapValues((value, key) => {
+            if (key === "visualizations") {
+                return _.flatten(
+                    value.map((element: Visualization) =>
+                        _.flatMap(element.dataDimensionItems ?? [], (item: DataDimensionItem) => {
+                            const indicator = item.indicator?.id;
+                            const programIndicator = item.programIndicator?.id;
+                            return _.compact([indicator, programIndicator]);
+                        })
+                    )
+                );
+            }
+
+            return [];
+        })
+        .values()
+        .flatten()
+        .value();
 }
 
 function buildMetadataImportResult(response: MetadataResponse): ImportResult {
