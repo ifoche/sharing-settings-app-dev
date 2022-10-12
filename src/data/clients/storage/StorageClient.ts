@@ -40,7 +40,3 @@ export abstract class StorageClient {
         });
     }
 }
-
-export const Namespaces = {
-    EXCLUDED_DEPENDENCIES: "excludedDependencies",
-};
