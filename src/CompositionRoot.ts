@@ -12,11 +12,12 @@ import { ListDependenciesUseCase } from "./domain/usecases/metadata/ListDependen
 import { ListMetadataUseCase } from "./domain/usecases/metadata/ListMetadataUseCase";
 import { SaveExcludedDependenciesUseCase } from "./domain/usecases/excludedDependencies/SaveExcludedDependenciesUseCase";
 import { ListExcludedDependenciesUseCase } from "./domain/usecases/excludedDependencies/ListExcludedDependenciesUseCase";
+import { DeleteExcludedDependenciesUseCase } from "./domain/usecases/excludedDependencies/DeleteExcludedDependenciesUseCase";
 
 export function getCompositionRoot(instance: Instance) {
     const instanceRepository = new InstanceDefaultRepository(instance);
     const metadataRepository = new MetadataD2ApiRepository(instance);
-    const globalExcludedDependenciesRepository = new GlobalExcludedDependenciesD2ApiRepository(instance, instanceRepository);
+    const globalExcludedDependenciesRepository = new GlobalExcludedDependenciesD2ApiRepository(instance);
     return {
         instance: getExecute({
             getCurrentUser: new GetCurrentUserUseCase(instanceRepository),
@@ -32,7 +33,8 @@ export function getCompositionRoot(instance: Instance) {
         }),
         excludedDependencies: getExecute({
             list: new ListExcludedDependenciesUseCase(globalExcludedDependenciesRepository),
-            save: new SaveExcludedDependenciesUseCase(globalExcludedDependenciesRepository)
+            save: new SaveExcludedDependenciesUseCase(globalExcludedDependenciesRepository),
+            delete: new DeleteExcludedDependenciesUseCase(globalExcludedDependenciesRepository),
         }),
     };
 }

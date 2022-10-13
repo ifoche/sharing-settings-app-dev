@@ -63,12 +63,13 @@ export const SettingsPage: React.FC = () => {
                 onClick: (selection: string[]) => {
                     updateBuilder(builder => ({
                         ...builder,
+                        includedDependencies: _.uniq([...builder.includedDependencies, ...selection]),
                         excludedDependencies: _.difference(builder.excludedDependencies, selection),
                     }));
                 },
             },
         ],
-        [builder, updateBuilder]
+        [builder.excludedDependencies]
     );
 
     const selection = useMemo(() => {
@@ -117,6 +118,9 @@ export const SettingsPage: React.FC = () => {
     const saveExcludedDependencies = async () => {
         try {
             await compositionRoot.excludedDependencies.save(builder.excludedDependencies).toPromise();
+            await builder.includedDependencies.map(selected =>
+                compositionRoot.excludedDependencies.delete(selected).toPromise()
+            );
             snackbar.success("Successfully saved global excluded dependencies!");
         } catch (error) {
             //@ts-ignore
@@ -133,6 +137,7 @@ export const SettingsPage: React.FC = () => {
             hideEmpty={true}
         />
     );
+
     const rowConfig = useCallback(
         (row: MetadataItem): RowConfig => {
             const isExcluded = builder.excludedDependencies.includes(row.id);
@@ -170,6 +175,7 @@ export const SettingsPage: React.FC = () => {
 interface Builder {
     baseElements: string[];
     excludedDependencies: string[];
+    includedDependencies: string[];
 }
 
 const initialState: ListOptions = {
@@ -193,4 +199,5 @@ const filterModels: DropdownOption<MetadataModel>[] = Object.entries(displayName
 const defaultBuilder: Builder = {
     baseElements: [],
     excludedDependencies: [],
+    includedDependencies: [],
 };

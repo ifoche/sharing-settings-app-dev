@@ -76,7 +76,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 },
             },
         ],
-        [builder, updateBuilder]
+        [builder.excludedDependencies, globalExclusions, updateBuilder]
     );
 
     const onTableChange = useCallback(({ selection }: TableState<Ref>) => setSelection(selection), [setSelection]);
@@ -145,7 +145,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
             },
             error => snackbar.error(error)
         );
-    }, [compositionRoot.excludedDependencies, snackbar]);
+    }, [compositionRoot.excludedDependencies, snackbar, updateBuilder]);
 
     const filterComponents = (
         <Dropdown<MetadataModel>
