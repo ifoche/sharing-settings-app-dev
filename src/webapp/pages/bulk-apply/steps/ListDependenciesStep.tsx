@@ -23,7 +23,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     const { compositionRoot } = useAppContext();
     const snackbar = useSnackbar();
     const [rows, setRows] = useState<MetadataItem[]>([]);
-    const[globalExclusions, setGlobalExclusions] = useState<string[]>([]);
+    const [globalExclusions, setGlobalExclusions] = useState<string[]>([]);
     const [filteredRows, setFilteredRows] = useState<MetadataItem[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [selection, setSelection] = useState<TableSelection[]>([]);
@@ -67,7 +67,11 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 text: i18n.t("Include dependency"),
                 multiple: true,
                 icon: <AddCircleOutlineIcon />,
-                isActive: (rows: MetadataItem[]) => _.every(rows, row => builder.excludedDependencies.includes(row.id) && !globalExclusions.includes(row.id)),
+                isActive: (rows: MetadataItem[]) =>
+                    _.every(
+                        rows,
+                        row => builder.excludedDependencies.includes(row.id) && !globalExclusions.includes(row.id)
+                    ),
                 onClick: (selection: string[]) => {
                     updateBuilder(builder => ({
                         ...builder,
@@ -136,12 +140,15 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
         );
     }, [builder, compositionRoot, snackbar]);
 
-   useEffect(() => {
+    useEffect(() => {
         compositionRoot.excludedDependencies.list().run(
             data => {
                 const plainIds = data.map(({ id }) => id);
                 setGlobalExclusions(plainIds);
-                updateBuilder(builder => ({ ...builder, excludedDependencies: _.uniq([...builder.excludedDependencies, ...plainIds]) }));
+                updateBuilder(builder => ({
+                    ...builder,
+                    excludedDependencies: _.uniq([...builder.excludedDependencies, ...plainIds]),
+                }));
             },
             error => snackbar.error(error)
         );

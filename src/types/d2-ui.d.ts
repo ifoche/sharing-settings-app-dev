@@ -109,9 +109,4 @@ declare module "@dhis2/ui" {
     export function NoticeBox(props: NoticeBoxProps): React.ReactElement;
     export function Transfer(props: TransferProps): React.ReactElement;
     export function HeaderBar(props: { className?: string; appName?: string }): React.ReactElement;
-
-
-
-
-
 }
