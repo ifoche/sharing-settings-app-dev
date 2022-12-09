@@ -7,6 +7,7 @@ import {
     TableState,
     useSnackbar,
 } from "@eyeseetea/d2-ui-components";
+import Button from "@material-ui/core/Button";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import _ from "lodash";
@@ -137,13 +138,27 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     }, [builder, compositionRoot, snackbar]);
 
     const filterComponents = (
-        <Dropdown<MetadataModel>
-            items={filterOptions}
-            onValueChange={applyFilterChanges}
-            value={listOptions.model}
-            label={i18n.t("Metadata type")}
-            hideEmpty={true}
-        />
+        <>
+            <Dropdown<MetadataModel>
+                items={filterOptions}
+                onValueChange={applyFilterChanges}
+                value={listOptions.model}
+                label={i18n.t("Metadata type")}
+                hideEmpty={true}
+            />
+            <Button
+                variant="contained"
+                color="primary"
+                onClick={() =>
+                    updateBuilder(builder => ({
+                        ...builder,
+                        excludedDependencies: [],
+                    }))
+                }
+            >
+                Reset exclusions
+            </Button>
+        </>
     );
 
     return (
