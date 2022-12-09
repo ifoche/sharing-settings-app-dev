@@ -64,6 +64,23 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 },
             },
             {
+                name: "excludeExcept",
+                text: i18n.t("Exclude all but selected"),
+                multiple: true,
+                icon: <RemoveCircleOutlineIcon />,
+                isActive: (rows: MetadataItem[]) => _.some(rows, row => !builder.excludedDependencies.includes(row.id)),
+                onClick: (selection: string[]) => {
+                    const rowsToExclude = _.difference(
+                        filteredRows.map(row => row.id),
+                        selection
+                    );
+                    updateBuilder(builder => ({
+                        ...builder,
+                        excludedDependencies: _.uniq([...builder.excludedDependencies, ...rowsToExclude]),
+                    }));
+                },
+            },
+            {
                 name: "include",
                 text: i18n.t("Include dependency"),
                 multiple: true,
@@ -77,7 +94,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 },
             },
         ],
-        [builder, updateBuilder]
+        [builder.excludedDependencies, filteredRows, updateBuilder]
     );
 
     const onTableChange = useCallback(({ selection }: TableState<Ref>) => setSelection(selection), [setSelection]);
