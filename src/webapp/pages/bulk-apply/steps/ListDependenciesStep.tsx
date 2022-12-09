@@ -44,8 +44,14 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
             { name: "publicAccess", text: i18n.t("Public Access"), sortable: true },
             { name: "userAccesses", text: i18n.t("Users"), sortable: true },
             { name: "userGroupAccesses", text: i18n.t("User Groups"), sortable: true },
+            {
+                name: "status",
+                text: i18n.t("Exclusion Status"),
+                sortable: true,
+                getValue: (row: MetadataItem) => builder.excludedDependencies.includes(row.id) ? "Excluded" : "Included",
+            },
         ],
-        [compositionRoot]
+        [builder.excludedDependencies, compositionRoot.metadata]
     );
 
     const actions = useMemo(
