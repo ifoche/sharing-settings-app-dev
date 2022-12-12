@@ -48,7 +48,8 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 name: "status",
                 text: i18n.t("Exclusion Status"),
                 sortable: true,
-                getValue: (row: MetadataItem) => builder.excludedDependencies.includes(row.id) ? "Excluded" : "Included",
+                getValue: (row: MetadataItem) =>
+                    builder.excludedDependencies.includes(row.id) ? "Excluded" : "Included",
             },
         ],
         [builder.excludedDependencies, compositionRoot.metadata]
