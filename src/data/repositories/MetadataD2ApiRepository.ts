@@ -136,7 +136,7 @@ function extractExtraDependencies(payload: MetadataPayload): string[] {
 
 function buildMetadataImportResult(response: FullMetadataResponse): ImportResult {
     const { status, stats, typeReports = [] } = response.response ?? response;
-    
+
     const typeStats = typeReports.flatMap(({ klass, stats }) => formatStats(stats, getClassName(klass)));
 
     const messages = typeReports.flatMap(({ objectReports = [] }) =>
