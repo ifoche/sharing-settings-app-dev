@@ -1,5 +1,5 @@
 import { Ref } from "./Ref";
-import { SharedObject } from "./SharedObject";
+import { SharedObject, SharingSetting } from "./SharedObject";
 
 export type MetadataModel =
     | "dataSets"
@@ -55,12 +55,18 @@ export interface DataDimensionItem {
     programIndicator?: Ref;
 }
 
-export type MetadataItem = Ref & SharedObject & { [key: string]: any | undefined };
+export type MetadataItem = Ref & {
+    sharing: {
+        userGroups: Record<string, SharingSetting>;
+        users: Record<string, SharingSetting>;
+        public: string;
+    };
+} & SharedObject & { [key: string]: any | undefined };
 
 export function isValidModel(model: string): model is MetadataModel {
     return ["dataSets", "programs", "dashboards"].includes(model);
 }
 
 export function isValidMetadataItem(item: any): item is MetadataItem {
-    return item.id && item.publicAccess && item.userAccesses && item.userGroupAccesses;
+    return item.id && item.sharing;
 }
