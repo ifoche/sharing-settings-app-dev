@@ -37,15 +37,17 @@ export class ApplySharingSettingsUseCase implements UseCase {
     }
 
     private updateSharingSettings(item: MetadataItem, sharings: SharedObject, replace: boolean): MetadataItem {
+        const { users, userGroups } = item.sharing;
+
         return {
             ...item,
             publicAccess: sharings.publicAccess,
             userAccesses: replace
                 ? sharings.userAccesses
-                : joinSharingSettings(sharings.userAccesses, item.userAccesses),
+                : joinSharingSettings(sharings.userAccesses, users ?? item.userAccesses),
             userGroupAccesses: replace
                 ? sharings.userGroupAccesses
-                : joinSharingSettings(sharings.userGroupAccesses, item.userGroupAccesses),
+                : joinSharingSettings(sharings.userGroupAccesses, userGroups ?? item.userGroupAccesses),
         };
     }
 
@@ -71,6 +73,11 @@ export class ApplySharingSettingsUseCase implements UseCase {
     }
 }
 
-function joinSharingSettings(base: SharingSetting[], update: SharingSetting[]): SharingSetting[] {
-    return _.uniqBy([...base, ...update], ({ id }) => id);
+function joinSharingSettings(
+    base: SharingSetting[],
+    update: SharingSetting[] | Record<string, SharingSetting>
+): SharingSetting[] {
+    const updateArray = _.isArray(update) ? update : Object.values(update);
+
+    return _.uniqBy([...base, ...updateArray], ({ id }) => id);
 }
