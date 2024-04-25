@@ -189,12 +189,13 @@ const initialResponse: ListMetadataResponse = {
     pager: { pageSize: 10, page: 1, total: 0 },
 };
 
-const filterModels: DropdownOption<MetadataModel>[] = Object.entries(displayName)
-    .map(([id, name]) => ({
+const filterModels: DropdownOption<MetadataModel>[] = _(displayName)
+    .map((name, id) => ({
         id: id as MetadataModel,
-        name,
+        name: i18n.t(name),
     }))
-    .sort((a, b) => (a.id > b.id ? 1 : b.id > a.id ? -1 : 0));
+    .sortBy("name")
+    .value();
 
 const defaultBuilder: Builder = {
     baseElements: [],
