@@ -55,18 +55,24 @@ export interface DataDimensionItem {
     programIndicator?: Ref;
 }
 
-export type MetadataItem = Ref & {
-    sharing: {
-        userGroups: Record<string, SharingSetting>;
-        users: Record<string, SharingSetting>;
-        public: string;
-    };
-} & SharedObject & { [key: string]: any | undefined };
+export type Sharing = {
+    sharing: SharingObject;
+};
+
+export type SharingItem = Record<string, SharingSetting>;
+
+export type SharingObject = {
+    userGroups: SharingItem;
+    users: SharingItem;
+    public: string;
+};
+
+export type MetadataItem = Ref & Sharing & SharedObject & { [key: string]: any | undefined };
 
 export function isValidModel(model: string): model is MetadataModel {
     return ["dataSets", "programs", "dashboards"].includes(model);
 }
 
 export function isValidMetadataItem(item: any): item is MetadataItem {
-    return item.id && item.sharing;
+    return item.id && (item.sharing || (item.publicAccess && item.userAccesses && item.userGroupAccesses));
 }

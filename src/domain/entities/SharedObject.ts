@@ -1,8 +1,6 @@
-import { NamedRef } from "./Ref";
+import { SharingRule } from "@eyeseetea/d2-ui-components";
 
-export interface SharingSetting extends NamedRef {
-    access: string;
-}
+export type SharingSetting = SharingRule & { name: string };
 
 export interface SharedObject {
     publicAccess: string;

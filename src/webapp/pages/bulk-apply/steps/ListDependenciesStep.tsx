@@ -18,6 +18,7 @@ import i18n from "../../../../locales";
 import Dropdown, { DropdownOption } from "../../../components/dropdown/Dropdown";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
+import { EllipsizedList } from "../../../components/ellipsized-list/EllipsizedList";
 
 export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, updateBuilder }) => {
     const { compositionRoot } = useAppContext();
@@ -40,9 +41,28 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 sortable: false,
                 getValue: (row: MetadataItem) => compositionRoot.metadata.getModelName(String(row.metadataType)),
             },
-            { name: "publicAccess", text: i18n.t("Public Access"), sortable: true },
-            { name: "userAccesses", text: i18n.t("Users"), sortable: true },
-            { name: "userGroupAccesses", text: i18n.t("User Groups"), sortable: true },
+            {
+                name: "publicAccess",
+                text: i18n.t("Public Access"),
+                sortable: true,
+                getValue: (row: MetadataItem) => row.sharing.public ?? row.publicAccess,
+            },
+            {
+                name: "userAccesses",
+                text: i18n.t("Users"),
+                sortable: true,
+                getValue: (row: MetadataItem) => (
+                    <EllipsizedList items={Object.values(row.userAccesses ?? row.sharing.users)} />
+                ),
+            },
+            {
+                name: "userGroupAccesses",
+                text: i18n.t("User Groups"),
+                sortable: true,
+                getValue: (row: MetadataItem) => (
+                    <EllipsizedList items={Object.values(row.userGroupAccesses ?? row.sharing.userGroups)} />
+                ),
+            },
         ],
         [compositionRoot]
     );

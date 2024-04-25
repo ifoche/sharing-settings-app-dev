@@ -77,7 +77,7 @@ export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, 
 
 const mapSharingSettings = (settings?: SharingRule[]): SharingSetting[] | undefined => {
     return settings?.map(item => {
-        return { id: item.id, access: item.access, name: item.displayName };
+        return { ...item, name: item.displayName };
     });
 };
 
