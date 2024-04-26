@@ -11,6 +11,7 @@ import { displayName, MetadataItem, MetadataModel } from "../../../domain/entiti
 import Dropdown, { DropdownOption } from "../../components/dropdown/Dropdown";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
+import { EllipsizedList } from "../../components/ellipsized-list/EllipsizedList";
 
 export const SettingsPage: React.FC = () => {
     const { compositionRoot } = useAppContext();
@@ -32,9 +33,28 @@ export const SettingsPage: React.FC = () => {
                 sortable: false,
                 getValue: (row: MetadataItem) => compositionRoot.metadata.getModelName(String(row.model)),
             },
-            { name: "publicAccess", text: i18n.t("Public Access"), sortable: true },
-            { name: "userAccesses", text: i18n.t("Users"), sortable: true },
-            { name: "userGroupAccesses", text: i18n.t("User Groups"), sortable: true },
+            {
+                name: "publicAccess",
+                text: i18n.t("Public Access"),
+                sortable: true,
+                getValue: (row: MetadataItem) => row.publicAccess ?? row.sharing.public,
+            },
+            {
+                name: "userAccesses",
+                text: i18n.t("Users"),
+                sortable: true,
+                getValue: (row: MetadataItem) => (
+                    <EllipsizedList items={Object.values(row.userAccesses ?? row.sharing.users)} />
+                ),
+            },
+            {
+                name: "userGroupAccesses",
+                text: i18n.t("User Groups"),
+                sortable: true,
+                getValue: (row: MetadataItem) => (
+                    <EllipsizedList items={Object.values(row.userGroupAccesses ?? row.sharing.userGroups)} />
+                ),
+            },
         ],
         [compositionRoot.metadata]
     );
