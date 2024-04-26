@@ -1,6 +1,6 @@
-import { SharingRule } from "@eyeseetea/d2-ui-components";
+import { Id } from "./Ref";
 
-export type SharingSetting = SharingRule & { name: string };
+export type SharingSetting = { id: Id; displayName: string; access: string; name: string };
 
 export interface SharedObject {
     publicAccess: string;
