@@ -78,7 +78,7 @@ export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, 
                 fullWidth={true}
             >
                 You are about to use the &quot;replace&quot; strategy. Doing so will remove pre-existing permissions and
-                is therefore a potentially dangerous operation Would you like to continue?
+                is therefore a potentially dangerous operation. Would you like to continue?
             </ConfirmationDialog>
 
             <h4>Advanced options</h4>

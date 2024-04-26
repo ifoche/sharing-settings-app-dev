@@ -13,21 +13,22 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
 
     const [importResult, setImportResult] = useState<ImportResult>();
     const [openDialog, setDialogOpen] = useState<boolean>(false);
+    const [loading, setLoading] = useState<boolean>(false);
 
     const applySharingSync = useCallback(() => {
+        setLoading(true);
         compositionRoot.metadata
             .applySharingSettings(builder)
             .flatMap(payload => compositionRoot.metadata.import(payload))
             .run(
-                result => setImportResult(result),
+                result => {
+                    openDialog && setDialogOpen(false);
+                    setLoading(false);
+                    setImportResult(result);
+                },
                 error => snackbar.error(error)
             );
-    }, [builder, compositionRoot, snackbar]);
-
-    const saveSharingSync = useCallback(() => {
-        applySharingSync();
-        setDialogOpen(false);
-    }, [applySharingSync]);
+    }, [builder, compositionRoot.metadata, openDialog, snackbar]);
 
     return (
         <React.Fragment>
@@ -36,12 +37,16 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
             <ConfirmationDialog
                 isOpen={openDialog}
                 title={i18n.t("Warning")}
-                onCancel={() => setDialogOpen(false)}
-                onSave={saveSharingSync}
-                saveText={i18n.t("Continue")}
+                onCancel={() => {
+                    setLoading(false);
+                    setDialogOpen(false);
+                }}
+                onSave={applySharingSync}
+                saveText={loading ? i18n.t("Saving") : i18n.t("Continue")}
                 cancelText={i18n.t("Go back")}
                 maxWidth={"sm"}
                 fullWidth={true}
+                disableSave={loading}
             >
                 You are about to change the public access sharing setting. Would you like to continue?
             </ConfirmationDialog>
