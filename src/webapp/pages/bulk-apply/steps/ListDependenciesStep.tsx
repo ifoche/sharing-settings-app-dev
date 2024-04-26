@@ -19,6 +19,7 @@ import i18n from "../../../../locales";
 import Dropdown, { DropdownOption } from "../../../components/dropdown/Dropdown";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
+import styled from "styled-components";
 
 export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, updateBuilder }) => {
     const { compositionRoot } = useAppContext();
@@ -170,7 +171,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 label={i18n.t("Metadata type")}
                 hideEmpty={true}
             />
-            <Button
+            <StyledButton
                 variant="contained"
                 color="primary"
                 onClick={() =>
@@ -181,7 +182,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 }
             >
                 Reset exclusions
-            </Button>
+            </StyledButton>
         </>
     );
 
@@ -205,6 +206,10 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
         </div>
     );
 };
+
+const StyledButton = styled(Button)`
+    margin-left: 1rem;
+`;
 
 const initialState: ListOptions = {
     model: "dashboards",

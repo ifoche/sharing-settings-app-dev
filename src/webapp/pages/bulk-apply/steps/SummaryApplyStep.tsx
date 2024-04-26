@@ -24,6 +24,11 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
             );
     }, [builder, compositionRoot, snackbar]);
 
+    const saveSharingSync = useCallback(() => {
+        applySharingSync();
+        setDialogOpen(false);
+    }, [applySharingSync]);
+
     return (
         <React.Fragment>
             {importResult && <ImportSummary results={[importResult]} onClose={() => setImportResult(undefined)} />}
@@ -32,7 +37,7 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
                 isOpen={openDialog}
                 title={i18n.t("Warning")}
                 onCancel={() => setDialogOpen(false)}
-                onSave={applySharingSync}
+                onSave={saveSharingSync}
                 saveText={i18n.t("Continue")}
                 cancelText={i18n.t("Go back")}
                 maxWidth={"sm"}

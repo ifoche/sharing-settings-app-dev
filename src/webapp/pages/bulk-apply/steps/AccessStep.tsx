@@ -87,10 +87,10 @@ export const AccessStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, 
                     <Switch
                         name="replace-existing-sharings"
                         checked={builder.replaceExistingSharings}
-                        onChange={e =>
-                            builder.replaceExistingSharings
-                                ? setReplaceStragegy(e, !builder.replaceExistingSharings)
-                                : setDialogOpen(true)
+                        onChange={(event: React.ChangeEvent<HTMLInputElement>, isReplacingExistingSharings: boolean) =>
+                            isReplacingExistingSharings
+                                ? setDialogOpen(true)
+                                : setReplaceStragegy(event, isReplacingExistingSharings)
                         }
                         color="primary"
                     />
