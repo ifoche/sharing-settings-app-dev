@@ -48,15 +48,18 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
                 fullWidth={true}
                 disableSave={loading}
             >
-                You are about to change the public access sharing setting. Would you like to continue?
+                {i18n.t("You are about to change the public access sharing setting. Would you like to continue?")}
             </ConfirmationDialog>
 
             <Button
                 variant="contained"
                 color="primary"
-                onClick={() => (builder.sharings.publicAccess !== "--------" ? setDialogOpen(true) : applySharingSync)}
+                onClick={() =>
+                    builder.sharings.publicAccess !== "--------" ? setDialogOpen(true) : applySharingSync()
+                }
+                disabled={loading}
             >
-                Apply Sharing Settings
+                {i18n.t("Apply Sharing Settings")}
             </Button>
         </React.Fragment>
     );
