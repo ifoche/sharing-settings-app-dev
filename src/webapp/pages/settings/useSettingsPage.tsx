@@ -54,21 +54,12 @@ export function useSettingsPage() {
         (row: MetadataItem): string => compositionRoot.metadata.getModelName(String(row.model)),
         [compositionRoot.metadata]
     );
-    const isExcluded = useMemo(
-        () =>
-            (row: MetadataItem): boolean =>
-                builder.excludedDependencies.includes(row.id),
+    const isExcluded = useCallback(
+        (row: MetadataItem): boolean => builder.excludedDependencies.includes(row.id),
         [builder.excludedDependencies]
     );
-    const isExcludeActive = useMemo(
-        () => (rows: MetadataItem[]) => _.some(rows, row => !isExcluded(row)),
-        [isExcluded]
-    );
-
-    const isIncludeActive = useMemo(
-        () => (rows: MetadataItem[]) => _.every(rows, row => isExcluded(row)),
-        [isExcluded]
-    );
+    const isExcludeActive = useCallback((rows: MetadataItem[]) => _.some(rows, row => !isExcluded(row)), [isExcluded]);
+    const isIncludeActive = useCallback((rows: MetadataItem[]) => _.every(rows, row => isExcluded(row)), [isExcluded]);
 
     const rowConfig = useCallback(
         (row: MetadataItem): RowConfig => (isExcluded(row) ? { style: { backgroundColor: "#ffcdd2" } } : {}),
