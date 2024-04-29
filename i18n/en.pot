@@ -201,3 +201,12 @@ msgstr ""
 
 msgid "Settings"
 msgstr ""
+
+msgid "Exclude metadata items globally"
+msgstr ""
+
+msgid "Global exclusion settings"
+msgstr ""
+
+msgid "Save global excluded dependencies"
+msgstr ""
