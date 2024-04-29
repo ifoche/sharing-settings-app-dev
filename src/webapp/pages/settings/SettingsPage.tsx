@@ -37,12 +37,12 @@ export const SettingsPage: React.FC = () => {
 
     useEffect(() => {
         if (!errorMessage) return;
-        else snackbar.error(errorMessage);
+        snackbar.error(errorMessage);
     }, [errorMessage, snackbar]);
 
     useEffect(() => {
         if (!successMessage) return;
-        else snackbar.success(successMessage);
+        snackbar.success(successMessage);
     }, [successMessage, snackbar]);
 
     const columns = useMemo(
