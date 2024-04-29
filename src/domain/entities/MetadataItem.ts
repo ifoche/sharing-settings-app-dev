@@ -1,5 +1,5 @@
 import { Ref } from "./Ref";
-import { SharedObject } from "./SharedObject";
+import { SharedObject, SharingSetting } from "./SharedObject";
 
 export type MetadataModel =
     | "dataSets"
@@ -20,7 +20,11 @@ export type MetadataModel =
     | "optionSets"
     | "legendSets"
     | "programStages"
-    | "programIndicators";
+    | "programIndicators"
+    | "dataElementGroups"
+    | "dataElementGroupSets"
+    | "organisationUnitGroups"
+    | "organisationUnitGroupSets";
 
 export const displayName: Record<string, string> = {
     dataSets: "Data Sets",
@@ -42,6 +46,10 @@ export const displayName: Record<string, string> = {
     legendSets: "Legend Sets",
     programStages: "Program Stages",
     programIndicators: "Program Indicators",
+    dataElementGroups: "Data Element Group",
+    dataElementGroupSets: "Data Element Group Set",
+    organisationUnitGroups: "Organisation Unit Group",
+    organisationUnitGroupSets: "Organisation Unit Group Set",
 };
 export type MetadataPayload = Record<string, MetadataItem[]>;
 
@@ -55,12 +63,24 @@ export interface DataDimensionItem {
     programIndicator?: Ref;
 }
 
-export type MetadataItem = Ref & SharedObject & { [key: string]: any | undefined };
+export type Sharing = {
+    sharing: SharingObject;
+};
+
+export type SharingItem = Record<string, SharingSetting>;
+
+export type SharingObject = {
+    userGroups: SharingItem;
+    users: SharingItem;
+    public: string;
+};
+
+export type MetadataItem = Ref & Sharing & SharedObject & { [key: string]: any | undefined };
 
 export function isValidModel(model: string): model is MetadataModel {
     return ["dataSets", "programs", "dashboards"].includes(model);
 }
 
 export function isValidMetadataItem(item: any): item is MetadataItem {
-    return item.id && item.publicAccess && item.userAccesses && item.userGroupAccesses;
+    return item.id && (item.sharing || (item.publicAccess && item.userAccesses && item.userGroupAccesses));
 }

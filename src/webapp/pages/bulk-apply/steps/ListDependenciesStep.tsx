@@ -7,6 +7,7 @@ import {
     TableState,
     useSnackbar,
 } from "@eyeseetea/d2-ui-components";
+import Button from "@material-ui/core/Button";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import _ from "lodash";
@@ -18,6 +19,8 @@ import i18n from "../../../../locales";
 import Dropdown, { DropdownOption } from "../../../components/dropdown/Dropdown";
 import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
+import styled from "styled-components";
+import { EllipsizedList } from "../../../components/ellipsized-list/EllipsizedList";
 
 export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({ builder, updateBuilder }) => {
     const { compositionRoot } = useAppContext();
@@ -40,11 +43,37 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 sortable: false,
                 getValue: (row: MetadataItem) => compositionRoot.metadata.getModelName(String(row.metadataType)),
             },
-            { name: "publicAccess", text: i18n.t("Public Access"), sortable: true },
-            { name: "userAccesses", text: i18n.t("Users"), sortable: true },
-            { name: "userGroupAccesses", text: i18n.t("User Groups"), sortable: true },
+            {
+                name: "publicAccess",
+                text: i18n.t("Public Access"),
+                sortable: true,
+                getValue: (row: MetadataItem) => row.sharing.public ?? row.publicAccess,
+            },
+            {
+                name: "userAccesses",
+                text: i18n.t("Users"),
+                sortable: true,
+                getValue: (row: MetadataItem) => (
+                    <EllipsizedList items={Object.values(row.userAccesses ?? row.sharing.users)} />
+                ),
+            },
+            {
+                name: "userGroupAccesses",
+                text: i18n.t("User Groups"),
+                sortable: true,
+                getValue: (row: MetadataItem) => (
+                    <EllipsizedList items={Object.values(row.userGroupAccesses ?? row.sharing.userGroups)} />
+                ),
+            },
+            {
+                name: "status",
+                text: i18n.t("Exclusion Status"),
+                sortable: true,
+                getValue: (row: MetadataItem) =>
+                    builder.excludedDependencies.includes(row.id) ? "Excluded" : "Included",
+            },
         ],
-        [compositionRoot]
+        [builder.excludedDependencies, compositionRoot.metadata]
     );
 
     const actions = useMemo(
@@ -63,6 +92,23 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 },
             },
             {
+                name: "excludeExcept",
+                text: i18n.t("Exclude all but selected"),
+                multiple: true,
+                icon: <RemoveCircleOutlineIcon />,
+                isActive: (rows: MetadataItem[]) => _.some(rows, row => !builder.excludedDependencies.includes(row.id)),
+                onClick: (selection: string[]) => {
+                    const rowsToExclude = _.difference(
+                        filteredRows.map(row => row.id),
+                        selection
+                    );
+                    updateBuilder(builder => ({
+                        ...builder,
+                        excludedDependencies: _.uniq([...builder.excludedDependencies, ...rowsToExclude]),
+                    }));
+                },
+            },
+            {
                 name: "include",
                 text: i18n.t("Include dependency"),
                 multiple: true,
@@ -76,7 +122,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
                 },
             },
         ],
-        [builder, updateBuilder]
+        [builder.excludedDependencies, filteredRows, updateBuilder]
     );
 
     const onTableChange = useCallback(({ selection }: TableState<Ref>) => setSelection(selection), [setSelection]);
@@ -137,13 +183,27 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     }, [builder, compositionRoot, snackbar]);
 
     const filterComponents = (
-        <Dropdown<MetadataModel>
-            items={filterOptions}
-            onValueChange={applyFilterChanges}
-            value={listOptions.model}
-            label={i18n.t("Metadata type")}
-            hideEmpty={true}
-        />
+        <>
+            <Dropdown<MetadataModel>
+                items={filterOptions}
+                onValueChange={applyFilterChanges}
+                value={listOptions.model}
+                label={i18n.t("Metadata type")}
+                hideEmpty={true}
+            />
+            <StyledButton
+                variant="contained"
+                color="primary"
+                onClick={() =>
+                    updateBuilder(builder => ({
+                        ...builder,
+                        excludedDependencies: [],
+                    }))
+                }
+            >
+                Reset exclusions
+            </StyledButton>
+        </>
     );
 
     return (
@@ -166,6 +226,10 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
         </div>
     );
 };
+
+const StyledButton = styled(Button)`
+    margin-left: 1rem;
+`;
 
 const initialState: ListOptions = {
     model: "dashboards",
