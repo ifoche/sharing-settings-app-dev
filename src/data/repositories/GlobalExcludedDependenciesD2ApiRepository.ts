@@ -3,7 +3,7 @@ import { GlobalExcludedDependenciesRepository } from "../../domain/repositories/
 import { DataStoreStorageClient } from "../clients/storage/DataStoreStorageClient";
 import { Namespaces } from "../clients/storage/Namespaces";
 import { StorageClient } from "../clients/storage/StorageClient";
-import { Id, Ref } from "../../domain/entities/Ref";
+import { Ref } from "../../domain/entities/Ref";
 import { FutureData } from "../../domain/entities/Future";
 
 export class GlobalExcludedDependenciesD2ApiRepository implements GlobalExcludedDependenciesRepository {
@@ -20,12 +20,12 @@ export class GlobalExcludedDependenciesD2ApiRepository implements GlobalExcluded
     }
 
     public save(excludedDependencies: string[]): FutureData<void> {
-        const properFormat = excludedDependencies.map(dependency => ({ id: dependency }));
+        const excludedIds = buildRefs(excludedDependencies);
 
-        return this.storageClient.saveObjectsInCollection<Ref>(Namespaces.EXCLUDED_DEPENDENCIES, properFormat);
+        return this.storageClient.saveObject<Ref[]>(Namespaces.EXCLUDED_DEPENDENCIES, excludedIds);
     }
+}
 
-    public delete(id: Id): FutureData<void> {
-        return this.storageClient.removeObjectInCollection(Namespaces.EXCLUDED_DEPENDENCIES, id);
-    }
+function buildRefs(dependencies: string[]): Ref[] {
+    return dependencies.map(dependency => ({ id: dependency }));
 }

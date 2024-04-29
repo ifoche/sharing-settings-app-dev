@@ -76,13 +76,17 @@ export function useSettingsPage() {
     );
 
     const includeDependency = useCallback(
-        (selection: string[]) =>
-            updateBuilder(builder => ({
+        (selection: string[]) => {
+            const includedDependencies = _.uniq([...builder.includedDependencies, ...selection]);
+            const excludedDependencies = _.difference(builder.excludedDependencies, selection);
+
+            return updateBuilder(builder => ({
                 ...builder,
-                includedDependencies: _.uniq([...builder.includedDependencies, ...selection]),
-                excludedDependencies: _.difference(builder.excludedDependencies, selection),
-            })),
-        []
+                includedDependencies: includedDependencies,
+                excludedDependencies: excludedDependencies,
+            }));
+        },
+        [builder.excludedDependencies, builder.includedDependencies]
     );
 
     const onChangeSearch = useCallback((search: string) => setListOptions(options => ({ ...options, search })), []);
@@ -101,14 +105,11 @@ export function useSettingsPage() {
     );
 
     const saveExcludedDependencies = useCallback(() => {
-        compositionRoot.excludedDependencies.save(builder.excludedDependencies);
-        builder.includedDependencies.map(selected =>
-            compositionRoot.excludedDependencies.delete(selected).run(
-                () => snackbar.success("Successfully saved global excluded dependencies!"),
-                error => snackbar.error(error)
-            )
+        compositionRoot.excludedDependencies.save(builder.excludedDependencies).run(
+            () => snackbar.success("Successfully saved global excluded dependencies!"),
+            error => snackbar.error(error)
         );
-    }, [builder.excludedDependencies, builder.includedDependencies, compositionRoot.excludedDependencies, snackbar]);
+    }, [builder, compositionRoot.excludedDependencies, snackbar]);
 
     return {
         isLoading: isLoading,
