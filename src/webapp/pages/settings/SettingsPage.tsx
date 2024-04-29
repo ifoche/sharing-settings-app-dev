@@ -1,8 +1,7 @@
 import i18n from "@dhis2/d2-i18n";
-import _ from "lodash";
-import { TableAction, ObjectsTable } from "@eyeseetea/d2-ui-components";
+import { TableAction, ObjectsTable, useSnackbar } from "@eyeseetea/d2-ui-components";
 import { Button } from "@dhis2/ui";
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { PageHeader } from "../../components/page-header/PageHeader";
 import { useGoBack } from "../../hooks/useGoBack";
 import { ListOptions } from "../../../domain/repositories/MetadataRepository";
@@ -15,8 +14,11 @@ import { Filter } from "./Filter";
 
 export const SettingsPage: React.FC = () => {
     const goBack = useGoBack();
+    const snackbar = useSnackbar();
 
     const {
+        errorMessage,
+        successMessage,
         isLoading,
         response,
         selection,
@@ -24,13 +26,24 @@ export const SettingsPage: React.FC = () => {
         excludeDependency,
         getModelName,
         includeDependency,
-        isExcluded,
+        isExcludeActive,
+        isIncludeActive,
         onChangeSearch,
         onChangeModel,
         onTableChange,
         rowConfig,
         saveExcludedDependencies,
     } = useSettingsPage();
+
+    useEffect(() => {
+        if (!errorMessage) return;
+        else snackbar.error(errorMessage);
+    }, [errorMessage, snackbar]);
+
+    useEffect(() => {
+        if (!successMessage) return;
+        else snackbar.success(successMessage);
+    }, [successMessage, snackbar]);
 
     const columns = useMemo(
         () => [
@@ -40,7 +53,7 @@ export const SettingsPage: React.FC = () => {
                 name: "model",
                 text: i18n.t("Metadata Type"),
                 sortable: false,
-                getValue: (row: MetadataItem) => getModelName(row),
+                getValue: getModelName,
             },
             {
                 name: "publicAccess",
@@ -75,19 +88,19 @@ export const SettingsPage: React.FC = () => {
                 text: i18n.t("Exclude dependency"),
                 multiple: true,
                 icon: <RemoveCircleOutlineIcon />,
-                isActive: (rows: MetadataItem[]) => _.some(rows, row => !isExcluded(row)),
-                onClick: (selection: string[]) => excludeDependency(selection),
+                isActive: isExcludeActive,
+                onClick: excludeDependency,
             },
             {
                 name: "include",
                 text: i18n.t("Include dependency"),
                 multiple: true,
                 icon: <AddCircleOutlineIcon />,
-                isActive: (rows: MetadataItem[]) => _.every(rows, row => isExcluded(row)),
-                onClick: (selection: string[]) => includeDependency(selection),
+                isActive: isIncludeActive,
+                onClick: includeDependency,
             },
         ],
-        [excludeDependency, includeDependency, isExcluded]
+        [excludeDependency, includeDependency, isExcludeActive, isIncludeActive]
     );
 
     return (

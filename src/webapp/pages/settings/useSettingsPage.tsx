@@ -1,4 +1,4 @@
-import { RowConfig, TableState, useSnackbar } from "@eyeseetea/d2-ui-components";
+import { RowConfig, TableState } from "@eyeseetea/d2-ui-components";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { MetadataItem, MetadataModel } from "../../../domain/entities/MetadataItem";
 import { ListMetadataResponse, ListOptions } from "../../../domain/repositories/MetadataRepository";
@@ -13,12 +13,13 @@ interface Builder {
 
 export function useSettingsPage() {
     const { compositionRoot } = useAppContext();
-    const snackbar = useSnackbar();
 
     const [builder, updateBuilder] = useState<Builder>(defaultBuilder);
     const [listOptions, setListOptions] = useState<ListOptions>(initialState);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [response, setResponse] = useState<ListMetadataResponse>(initialResponse);
+    const [errorMessage, setErrorMessage] = useState("");
+    const [successMessage, setSuccessMessage] = useState("");
 
     useEffect(() => {
         setIsLoading(true);
@@ -34,9 +35,9 @@ export function useSettingsPage() {
                 setResponse({ objects: rows, pager: pager });
                 setIsLoading(false);
             },
-            error => snackbar.error(error)
+            error => setErrorMessage(error)
         );
-    }, [compositionRoot, snackbar, listOptions]);
+    }, [compositionRoot, listOptions]);
 
     useEffect(() => {
         compositionRoot.excludedDependencies.list().run(
@@ -44,15 +45,13 @@ export function useSettingsPage() {
                 const excludedIds = excludedDependencies.map(({ id }) => id);
                 updateBuilder(builder => ({ ...builder, excludedDependencies: excludedIds }));
             },
-            error => snackbar.error(error)
+            error => setErrorMessage(error)
         );
-    }, [compositionRoot.excludedDependencies, snackbar]);
+    }, [compositionRoot.excludedDependencies]);
 
     const selection = useMemo(() => builder.baseElements.map(id => ({ id })), [builder]);
-    const getModelName = useMemo(
-        () =>
-            (row: MetadataItem): string =>
-                compositionRoot.metadata.getModelName(String(row.model)),
+    const getModelName = useCallback(
+        (row: MetadataItem): string => compositionRoot.metadata.getModelName(String(row.model)),
         [compositionRoot.metadata]
     );
     const isExcluded = useMemo(
@@ -61,6 +60,16 @@ export function useSettingsPage() {
                 builder.excludedDependencies.includes(row.id),
         [builder.excludedDependencies]
     );
+    const isExcludeActive = useMemo(
+        () => (rows: MetadataItem[]) => _.some(rows, row => !isExcluded(row)),
+        [isExcluded]
+    );
+
+    const isIncludeActive = useMemo(
+        () => (rows: MetadataItem[]) => _.every(rows, row => isExcluded(row)),
+        [isExcluded]
+    );
+
     const rowConfig = useCallback(
         (row: MetadataItem): RowConfig => (isExcluded(row) ? { style: { backgroundColor: "#ffcdd2" } } : {}),
         [isExcluded]
@@ -106,12 +115,14 @@ export function useSettingsPage() {
 
     const saveExcludedDependencies = useCallback(() => {
         compositionRoot.excludedDependencies.save(builder.excludedDependencies).run(
-            () => snackbar.success("Successfully saved global excluded dependencies!"),
-            error => snackbar.error(error)
+            () => setSuccessMessage("Successfully saved global excluded dependencies!"),
+            error => setErrorMessage(error)
         );
-    }, [builder, compositionRoot.excludedDependencies, snackbar]);
+    }, [builder, compositionRoot.excludedDependencies]);
 
     return {
+        errorMessage: errorMessage,
+        successMessage: successMessage,
         isLoading: isLoading,
         listOptions: listOptions,
         response: response,
@@ -119,7 +130,8 @@ export function useSettingsPage() {
         excludeDependency: excludeDependency,
         includeDependency: includeDependency,
         getModelName: getModelName,
-        isExcluded: isExcluded,
+        isExcludeActive: isExcludeActive,
+        isIncludeActive: isIncludeActive,
         onChangeSearch: onChangeSearch,
         onChangeModel: onChangeModel,
         onTableChange: onTableChange,
