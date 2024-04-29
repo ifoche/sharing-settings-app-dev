@@ -20,11 +20,13 @@ export const SettingsPage: React.FC = () => {
         isLoading,
         response,
         selection,
+        listOptions,
         excludeDependency,
         getModelName,
         includeDependency,
         isExcluded,
         onChangeSearch,
+        onChangeModel,
         onTableChange,
         rowConfig,
         saveExcludedDependencies,
@@ -100,7 +102,7 @@ export const SettingsPage: React.FC = () => {
                 loading={isLoading}
                 initialState={initialState}
                 forceSelectionColumn={true}
-                filterComponents={<Filter />}
+                filterComponents={<Filter model={listOptions.model} onChangeModel={onChangeModel} />}
                 onChangeSearch={onChangeSearch}
                 searchBoxLabel={i18n.t("Search by name")}
                 actions={actions}
