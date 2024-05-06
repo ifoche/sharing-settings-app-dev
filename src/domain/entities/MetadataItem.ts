@@ -27,6 +27,7 @@ export type MetadataModel =
     | "organisationUnitGroupSets";
 
 export const displayName: Record<string, string> = {
+    attributes: "Attributes",
     dataSets: "Data Sets",
     programs: "Programs",
     dashboards: "Dashboards",
