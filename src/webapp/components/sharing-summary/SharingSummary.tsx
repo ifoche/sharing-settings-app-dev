@@ -14,7 +14,7 @@ export const SharingSummary = ({ summary }: SharingSummaryProps) => {
         <div>
             <Title>{i18n.t("Changes will be made to:")}</Title>
             {Object.entries(sharingsPayload).map(([displayName, metadata]) => (
-                <MetadataList key={displayName} title={displayName} metadata={metadata} />
+                <MetadataList key={displayName} title={pluralize(displayName)} metadata={metadata} />
             ))}
 
             {metadataSharings.length !== 0 && (
@@ -33,9 +33,9 @@ export const SharingSummary = ({ summary }: SharingSummaryProps) => {
     );
 };
 
-const MetadataList = ({ key, title, metadata }: { key: string; title: string; metadata: NamedRef[] }) => {
+const MetadataList = ({ title, metadata }: { title: string; metadata: NamedRef[] }) => {
     return (
-        <ul key={key}>
+        <ul>
             <li>
                 {i18n.t(title)}
                 <ul>
@@ -52,3 +52,7 @@ const Title = styled.p`
     font-weight: 500;
     margin: 0;
 `;
+
+function pluralize(str: string) {
+    return str.endsWith("y") ? `${str.slice(0, -1)}ies` : `${str}s`;
+}

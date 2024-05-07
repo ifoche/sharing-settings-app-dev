@@ -1,4 +1,4 @@
-import { Ref } from "./Ref";
+import { NamedRef, Ref } from "./Ref";
 import { SharedObject, SharingSetting } from "./SharedObject";
 
 export type MetadataModel =
@@ -76,7 +76,9 @@ export type SharingObject = {
     public: string;
 };
 
-export type MetadataItem = Ref & Sharing & SharedObject & { [key: string]: any | undefined };
+export type CodedRef = NamedRef & { code: string | undefined };
+
+export type MetadataItem = CodedRef & Sharing & SharedObject & { [key: string]: any | undefined };
 
 export function isValidModel(model: string): model is MetadataModel {
     return ["dataSets", "programs", "dashboards"].includes(model);

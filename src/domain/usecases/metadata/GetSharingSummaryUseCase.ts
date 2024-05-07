@@ -2,7 +2,7 @@ import _ from "lodash";
 import { FutureData } from "../../entities/Future";
 import { MetadataRepository } from "../../repositories/MetadataRepository";
 import { MetadataPayload } from "../../entities/MetadataItem";
-import { SharingWarning, SharingSummary } from "../../entities/MetadataSharing";
+import { SharingWarning, SharingSummary, SharingPayload } from "../../entities/MetadataSharing";
 
 export class GetSharingSummaryUseCase {
     constructor(private metadataRepository: MetadataRepository) {}
@@ -20,24 +20,41 @@ export class GetSharingSummaryUseCase {
         });
     }
 
-    private getSharingPayload(payloads: MetadataPayload[]) {
+    private getSharingPayload(payloads: MetadataPayload[]): SharingPayload {
         const metadataPayload: MetadataPayload = _.merge({}, ...payloads.map(payload => _.omit(payload, "date")));
-
-        return _(metadataPayload)
+        const sharingPayload = _(metadataPayload)
             .mapKeys((_, key) => this.metadataRepository.getModelName(key))
             .mapValues(payloads =>
                 _(payloads)
-                    .map(payload => ({ id: payload.id, name: payload.name }))
+                    .map(payload => ({ id: payload.id, name: payload.name, code: payload.code }))
                     .uniqBy("id")
+                    .filter(payload => payload.name !== "default" && payload.code !== "default")
                     .value()
             )
             .value();
+
+        return _.pickBy(sharingPayload, value => !_.isEmpty(value));
     }
 
     private cleanMetadataSharing(metadataSharingWithChildren: SharingWarning[]): SharingWarning[] {
         return metadataSharingWithChildren
             .map(item => {
-                const children = item.children.filter(child => !_.isEqual(child.sharing, item.sharing));
+                const children = item.children.filter(child => {
+                    const childSharing = {
+                        userGroups: child.sharing.userGroups,
+                        users: child.sharing.users,
+                        public: child.sharing.public,
+                    };
+                    const parentSharing = {
+                        userGroups: item.sharing.userGroups,
+                        users: item.sharing.users,
+                        public: item.sharing.public,
+                    };
+
+                    return (
+                        !_.isEqual(childSharing, parentSharing) && child.name !== "default" && child.code !== "default"
+                    );
+                });
 
                 return {
                     ...item,
@@ -64,10 +81,12 @@ export class GetSharingSummaryUseCase {
                         ? {
                               id: parentItem.id,
                               name: parentItem.name,
+                              code: parentItem.code,
                               sharing: parentItem.sharing,
                               children: children.map(child => ({
                                   id: child.id,
                                   name: child.name,
+                                  code: child.code,
                                   sharing: child.sharing,
                               })),
                           }

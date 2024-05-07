@@ -1,9 +1,6 @@
-import { SharingObject } from "./MetadataItem";
-import { NamedRef } from "./Ref";
+import { CodedRef, SharingObject } from "./MetadataItem";
 
-type MetadataSharing = {
-    id: string;
-    name: string;
+type MetadataSharing = CodedRef & {
     sharing: SharingObject;
 };
 
@@ -11,7 +8,9 @@ export type SharingWarning = MetadataSharing & {
     children: MetadataSharing[];
 };
 
+export type SharingPayload = Record<string, CodedRef[]>;
+
 export interface SharingSummary {
     sharingWarnings: SharingWarning[];
-    sharingPayload: Record<string, NamedRef[]>;
+    sharingPayload: SharingPayload;
 }
