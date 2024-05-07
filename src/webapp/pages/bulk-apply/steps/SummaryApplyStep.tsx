@@ -1,70 +1,48 @@
 import { ConfirmationDialog, useSnackbar } from "@eyeseetea/d2-ui-components";
 import Button from "@material-ui/core/Button";
-import React, { useCallback, useState } from "react";
-import { ImportResult } from "../../../../domain/entities/ImportResult";
+import React, { useEffect } from "react";
 import i18n from "../../../../locales";
 import { ImportSummary } from "../../../components/import-summary/ImportSummary";
-import { useAppContext } from "../../../contexts/app-context";
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
-import _ from "lodash";
-import { MetadataSharing } from "../../../../domain/entities/MetadataSharing";
+import { useSummaryStep } from "./useSummaryStep";
 
 export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ builder }) => {
-    const { compositionRoot } = useAppContext();
     const snackbar = useSnackbar();
 
-    const [importResult, setImportResult] = useState<ImportResult>();
-    const [openDialog, setDialogOpen] = useState<boolean>(false);
-    const [openWarningsDialog, setWarningsDialogOpen] = useState<boolean>(false);
-    const [warningResult, setWarningResult] = useState<MetadataSharing[]>([]);
-    const [loading, setLoading] = useState<boolean>(false);
+    const {
+        globalMessage,
+        importResult,
+        loading,
+        openDialog,
+        openWarningsDialog,
+        warningResult,
+        applySharingSync,
+        applySharingSettings,
+        closeImportSummary,
+        closePublicAccessWarningDialog,
+        closeWarningDialog,
+        getMetadataSharingWithChildren,
+    } = useSummaryStep(builder);
 
-    const applySharingSetting = useCallback(() => {
-        setLoading(true);
+    useEffect(() => {
+        if (!globalMessage) return;
 
-        compositionRoot.metadata
-            .applySharingSettings(builder)
-            .flatMap(payload => compositionRoot.metadata.import(payload))
-            .run(
-                result => {
-                    openDialog && setDialogOpen(false);
-                    openWarningsDialog && setWarningsDialogOpen(false);
-                    setLoading(false);
-                    setImportResult(result);
-                },
-                error => snackbar.error(error)
-            );
-    }, [builder, compositionRoot.metadata, openDialog, openWarningsDialog, snackbar]);
-
-    const applySharingSync = useCallback(() => {
-        setLoading(true);
-
-        compositionRoot.metadata.getMetadataWithChildrenSharings(builder.baseElements).run(
-            result => {
-                if (!_.isEmpty(result)) {
-                    setWarningsDialogOpen(true);
-                    setWarningResult(result);
-                    setLoading(false);
-                } else {
-                    applySharingSetting();
-                }
-            },
-            error => snackbar.error(error)
-        );
-    }, [applySharingSetting, builder.baseElements, compositionRoot.metadata, snackbar]);
+        if (globalMessage.type === "error") {
+            snackbar.error(globalMessage.text);
+        } else {
+            snackbar.success(globalMessage?.text);
+        }
+    }, [globalMessage, snackbar]);
 
     return (
         <React.Fragment>
-            {importResult && <ImportSummary results={[importResult]} onClose={() => setImportResult(undefined)} />}
+            {importResult && <ImportSummary results={[importResult]} onClose={closeImportSummary} />}
 
             <ConfirmationDialog
                 isOpen={openDialog}
                 title={i18n.t("Warning")}
-                onCancel={() => {
-                    setLoading(false);
-                    setDialogOpen(false);
-                }}
-                onSave={applySharingSync}
+                onCancel={closePublicAccessWarningDialog}
+                onSave={getMetadataSharingWithChildren}
                 saveText={loading ? i18n.t("Saving") : i18n.t("Continue")}
                 cancelText={i18n.t("Go back")}
                 maxWidth={"sm"}
@@ -77,12 +55,8 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
             <ConfirmationDialog
                 isOpen={openWarningsDialog}
                 title={i18n.t("Warning")}
-                onCancel={() => {
-                    setLoading(false);
-                    setWarningResult([]);
-                    setWarningsDialogOpen(false);
-                }}
-                onSave={applySharingSetting}
+                onCancel={closeWarningDialog}
+                onSave={applySharingSync}
                 saveText={loading ? i18n.t("Saving") : i18n.t("Continue")}
                 cancelText={i18n.t("Go back")}
                 maxWidth={"lg"}
@@ -95,7 +69,7 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
                             <li>
                                 {i18n.t(`${item.name} (${item.id}) has different sharing settings from:`)}
                                 <ul>
-                                    {item.children.map((child: any) => {
+                                    {item.children.map(child => {
                                         return <li key={child.id}>{i18n.t(`${child.name} (${child.id})`)}</li>;
                                     })}
                                 </ul>
@@ -105,14 +79,7 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
                 })}
             </ConfirmationDialog>
 
-            <Button
-                variant="contained"
-                color="primary"
-                onClick={() =>
-                    builder.sharings.publicAccess !== "--------" ? setDialogOpen(true) : applySharingSync()
-                }
-                disabled={loading}
-            >
+            <Button variant="contained" color="primary" onClick={applySharingSettings} disabled={loading}>
                 {i18n.t("Apply Sharing Settings")}
             </Button>
         </React.Fragment>
