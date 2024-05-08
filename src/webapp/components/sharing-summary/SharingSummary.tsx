@@ -1,4 +1,4 @@
-import { SharingSummary as SharingSummaryI } from "../../../domain/entities/MetadataSharing";
+import { SharingSummary as SharingSummaryI } from "../../../domain/entities/SharingSummary";
 import { NamedRef } from "../../../domain/entities/Ref";
 import i18n from "../../../locales";
 import styled from "styled-components";

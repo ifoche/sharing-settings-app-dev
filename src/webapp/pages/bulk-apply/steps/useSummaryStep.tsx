@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useAppContext } from "../../../contexts/app-context";
 import { SharingUpdate } from "../../../../domain/entities/SharingUpdate";
 import { ImportResult } from "../../../../domain/entities/ImportResult";
-import { SharingSummary } from "../../../../domain/entities/MetadataSharing";
+import { SharingSummary } from "../../../../domain/entities/SharingSummary";
 
 type GlobalMessage = {
     text: string;

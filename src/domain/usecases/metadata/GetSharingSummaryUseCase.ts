@@ -2,7 +2,7 @@ import _ from "lodash";
 import { FutureData } from "../../entities/Future";
 import { MetadataRepository } from "../../repositories/MetadataRepository";
 import { MetadataPayload } from "../../entities/MetadataItem";
-import { SharingWarning, SharingSummary, SharingPayload } from "../../entities/MetadataSharing";
+import { SharingWarning, SharingSummary, SharingPayload } from "../../entities/SharingSummary";
 
 export class GetSharingSummaryUseCase {
     constructor(private metadataRepository: MetadataRepository) {}
