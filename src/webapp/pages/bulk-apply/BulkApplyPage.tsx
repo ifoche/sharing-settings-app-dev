@@ -26,7 +26,7 @@ export const BulkApplyPage: React.FC = () => {
 
     return (
         <React.Fragment>
-            <PageHeader title={i18n.t("Bulk apply")} onBackClick={goBack} />
+            <PageHeader title={i18n.t("Bulk apply sharing settings")} onBackClick={goBack} />
 
             {dialogProps && <ConfirmationDialog isOpen={true} maxWidth={"xl"} {...dialogProps} />}
 
