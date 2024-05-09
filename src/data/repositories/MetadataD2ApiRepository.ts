@@ -74,6 +74,10 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         });
     }
 
+    public getMetadataFromIds(ids: string[]): FutureData<MetadataPayload> {
+        return this.fetchMetadata(ids);
+    }
+
     public getModelName(model: string): string {
         return this.api.models[model as ModelIndex].schema.displayName ?? i18n.t("Unknown model");
     }

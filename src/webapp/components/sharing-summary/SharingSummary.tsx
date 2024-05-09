@@ -5,28 +5,40 @@ import styled from "styled-components";
 
 interface SharingSummaryProps {
     summary: SharingSummaryI;
+    excludedMetadata: NamedRef[];
 }
 
-export const SharingSummary = ({ summary }: SharingSummaryProps) => {
-    const { sharingWarnings: metadataSharings, sharingPayload: sharingsPayload } = summary;
+export const SharingSummary = ({ summary, excludedMetadata }: SharingSummaryProps) => {
+    const { sharingWarnings, sharingPayload } = summary;
 
     return (
         <div>
             <Title>{i18n.t("Changes will be made to:")}</Title>
-            {Object.entries(sharingsPayload).map(([displayName, metadata]) => (
+            {Object.entries(sharingPayload).map(([displayName, metadata]) => (
                 <MetadataList key={displayName} title={pluralize(displayName)} metadata={metadata} />
             ))}
 
-            {metadataSharings.length !== 0 && (
+            {sharingWarnings.length !== 0 && (
                 <div>
                     <Title>{i18n.t("Warning:")}</Title>
-                    {metadataSharings.map(metadataItem => (
+                    {sharingWarnings.map(metadataItem => (
                         <MetadataList
                             key={metadataItem.id}
                             title={`${metadataItem.name} (${metadataItem.id}) has different sharing settings from:`}
                             metadata={metadataItem.children}
                         />
                     ))}
+                </div>
+            )}
+
+            {excludedMetadata.length !== 0 && (
+                <div>
+                    <Title>{i18n.t("Excluded dependencies:")}</Title>
+                    <ul>
+                        {excludedMetadata.map(({ id, name }) => (
+                            <li key={id}>{i18n.t(`${name} (${id})`)}</li>
+                        ))}
+                    </ul>
                 </div>
             )}
         </div>

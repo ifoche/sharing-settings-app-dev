@@ -3,6 +3,7 @@ import { useAppContext } from "../../../contexts/app-context";
 import { SharingUpdate } from "../../../../domain/entities/SharingUpdate";
 import { ImportResult } from "../../../../domain/entities/ImportResult";
 import { SharingSummary } from "../../../../domain/entities/SharingSummary";
+import { NamedRef } from "../../../../domain/entities/Ref";
 
 type GlobalMessage = {
     text: string;
@@ -17,6 +18,14 @@ export function useSummaryStep(builder: SharingUpdate) {
     const [sharingSummary, setSharingSummary] = useState<SharingSummary>();
     const [loading, setLoading] = useState<boolean>(false);
     const [globalMessage, setGlobalMessage] = useState<GlobalMessage | undefined>(undefined);
+    const [excludedMetadata, setExcludedMetadata] = useState<NamedRef[]>([]);
+
+    useEffect(() => {
+        compositionRoot.metadata.getExcludedMetadata(builder.excludedDependencies).run(
+            excludedMetadata => setExcludedMetadata(excludedMetadata),
+            error => setGlobalMessage({ type: "error", text: error })
+        );
+    }, [builder, compositionRoot.metadata]);
 
     useEffect(() => {
         setLoading(true);
@@ -55,6 +64,7 @@ export function useSummaryStep(builder: SharingUpdate) {
     }, []);
 
     return {
+        excludedMetadata,
         globalMessage,
         importResult,
         loading,

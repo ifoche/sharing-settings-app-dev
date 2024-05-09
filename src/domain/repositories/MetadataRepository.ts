@@ -6,6 +6,7 @@ export interface MetadataRepository {
     list(options: ListOptions): FutureData<ListMetadataResponse>;
     getDependencies(ids: string[]): FutureData<MetadataPayload>;
     getMetadataWithChildren(ids: string[]): FutureData<MetadataPayload[]>;
+    getMetadataFromIds(ids: string[]): FutureData<MetadataPayload>;
     save(payload: MetadataPayload): FutureData<ImportResult>;
     getModelName(model: string): string;
     isShareable(model: string): boolean;

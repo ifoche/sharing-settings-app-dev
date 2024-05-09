@@ -13,6 +13,7 @@ import { ListMetadataUseCase } from "./domain/usecases/metadata/ListMetadataUseC
 import { SaveExcludedDependenciesUseCase } from "./domain/usecases/excludedDependencies/SaveExcludedDependenciesUseCase";
 import { ListExcludedDependenciesUseCase } from "./domain/usecases/excludedDependencies/ListExcludedDependenciesUseCase";
 import { GetSharingSummaryUseCase } from "./domain/usecases/metadata/GetSharingSummaryUseCase";
+import { GetExcludedDependenciesMetadata } from "./domain/usecases/metadata/GetExcludedDependenciesMetadata";
 
 export function getCompositionRoot(instance: Instance) {
     const instanceRepository = new InstanceDefaultRepository(instance);
@@ -27,6 +28,7 @@ export function getCompositionRoot(instance: Instance) {
         metadata: getExecute({
             list: new ListMetadataUseCase(metadataRepository),
             getSharingSummary: new GetSharingSummaryUseCase(metadataRepository),
+            getExcludedMetadata: new GetExcludedDependenciesMetadata(metadataRepository),
             listDependencies: new ListDependenciesUseCase(metadataRepository),
             applySharingSettings: new ApplySharingSettingsUseCase(metadataRepository),
             getModelName: new GetModelNameUseCase(metadataRepository),

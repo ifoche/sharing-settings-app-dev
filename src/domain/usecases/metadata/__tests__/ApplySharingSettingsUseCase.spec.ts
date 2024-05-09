@@ -117,6 +117,10 @@ class MockMetadataRepository implements MetadataRepository {
         return Future.success(ids.map(id => metadata[id] ?? {}));
     }
 
+    getMetadataFromIds(ids: string[]): FutureData<MetadataPayload> {
+        return Future.success(mergePayloads(ids.map(id => metadata[id] ?? {})));
+    }
+
     list(_options: ListOptions): FutureData<ListMetadataResponse> {
         throw new Error("Method not implemented.");
     }

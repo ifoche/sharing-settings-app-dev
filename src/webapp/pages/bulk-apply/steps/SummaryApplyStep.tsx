@@ -11,6 +11,7 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
     const snackbar = useSnackbar();
 
     const {
+        excludedMetadata,
         globalMessage,
         importResult,
         loading,
@@ -35,7 +36,7 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
     return (
         <React.Fragment>
             {importResult && <ImportSummary results={[importResult]} onClose={closeImportSummary} />}
-            {sharingSummary && <SharingSummary summary={sharingSummary} />}
+            {sharingSummary && <SharingSummary summary={sharingSummary} excludedMetadata={excludedMetadata} />}
 
             <ConfirmationDialog
                 isOpen={openDialog}
