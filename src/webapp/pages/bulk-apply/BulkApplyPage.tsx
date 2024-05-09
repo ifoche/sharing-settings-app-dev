@@ -25,7 +25,7 @@ export const BulkApplyPage: React.FC = () => {
     }, []);
 
     return (
-        <React.Fragment>
+        <>
             <PageHeader title={i18n.t("Bulk apply sharing settings")}>
                 <NavLink to={"/settings"}>
                     <IconButton color="primary">
@@ -37,7 +37,7 @@ export const BulkApplyPage: React.FC = () => {
             {dialogProps && <ConfirmationDialog isOpen={true} maxWidth={"xl"} {...dialogProps} />}
 
             <SharingWizard onCancel={onCancel} builder={builder} updateBuilder={updateBuilder} />
-        </React.Fragment>
+        </>
     );
 };
 
