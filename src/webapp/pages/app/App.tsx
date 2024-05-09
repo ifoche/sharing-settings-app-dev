@@ -15,6 +15,7 @@ import { Router } from "../Router";
 import "./App.css";
 import muiThemeLegacy from "./themes/dhis2-legacy.theme";
 import { muiTheme } from "./themes/dhis2.theme";
+import { Feedback } from "@eyeseetea/feedback-component";
 
 export interface AppProps {
     api: D2Api;
@@ -26,6 +27,7 @@ export const App: React.FC<AppProps> = React.memo(({ api, d2, instance }) => {
     const [showShareButton, setShowShareButton] = useState(false);
     const [loading, setLoading] = useState(true);
     const [appContext, setAppContext] = useState<AppContextState | null>(null);
+    const [username, setUsername] = useState("");
 
     useEffect(() => {
         async function setup() {
@@ -36,6 +38,7 @@ export const App: React.FC<AppProps> = React.memo(({ api, d2, instance }) => {
             const isShareButtonVisible = _(appConfig).get("appearance.showShareButton") || false;
 
             setAppContext({ api, currentUser, compositionRoot });
+            setUsername(currentUser.username);
             setShowShareButton(isShareButtonVisible);
             setLoading(false);
         }
@@ -57,6 +60,7 @@ export const App: React.FC<AppProps> = React.memo(({ api, d2, instance }) => {
                     </div>
 
                     <Share visible={showShareButton} />
+                    <Feedback options={appConfig.feedback} username={username} />
                 </SnackbarProvider>
             </OldMuiThemeProvider>
         </MuiThemeProvider>
