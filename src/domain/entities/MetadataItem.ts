@@ -51,6 +51,8 @@ export const displayName: Record<string, string> = {
     dataElementGroupSets: "Data Element Group Set",
     organisationUnitGroups: "Organisation Unit Group",
     organisationUnitGroupSets: "Organisation Unit Group Set",
+    trackedEntityTypes: "Tracked Entity Types",
+    trackedEntityAttributes: "Tracked Entity Attributes",
 };
 export type MetadataPayload = Record<string, MetadataItem[]>;
 

@@ -1,17 +1,20 @@
 import _ from "lodash";
 import { FutureData } from "../../entities/Future";
 import { MetadataRepository } from "../../repositories/MetadataRepository";
-import { MetadataPayload } from "../../entities/MetadataItem";
+import { CodedRef, MetadataPayload } from "../../entities/MetadataItem";
 import { SharingWarning, SharingSummary, SharingPayload } from "../../entities/SharingSummary";
+import { SharingUpdate } from "../../entities/SharingUpdate";
 
 export class GetSharingSummaryUseCase {
     constructor(private metadataRepository: MetadataRepository) {}
 
-    public execute(ids: string[]): FutureData<SharingSummary> {
-        return this.metadataRepository.getMetadataWithChildren(ids).map(payloads => {
-            const metadataSharingsWithChildren = this.getMetadataSharingWithChildren(payloads, ids);
-            const sharingWarnings = this.cleanMetadataSharing(metadataSharingsWithChildren);
-            const sharingPayload = this.getSharingPayload(payloads);
+    public execute(update: SharingUpdate): FutureData<SharingSummary> {
+        const { baseElements, excludedDependencies } = update;
+
+        return this.metadataRepository.getMetadataWithChildren(baseElements).map(payloads => {
+            const metadataWithDifferentSharing = this.getMetadataWithDifferentSharing(payloads, baseElements);
+            const sharingWarnings = this.cleanMetadataSharing(metadataWithDifferentSharing, excludedDependencies);
+            const sharingPayload = this.getSharingPayload(payloads, excludedDependencies);
 
             return {
                 sharingWarnings: sharingWarnings,
@@ -20,7 +23,7 @@ export class GetSharingSummaryUseCase {
         });
     }
 
-    private getSharingPayload(payloads: MetadataPayload[]): SharingPayload {
+    private getSharingPayload(payloads: MetadataPayload[], excludedDependencies: string[]): SharingPayload {
         const metadataPayload: MetadataPayload = _.merge({}, ...payloads.map(payload => _.omit(payload, "date")));
         const sharingPayload = _(metadataPayload)
             .mapKeys((_, key) => this.metadataRepository.getModelName(key))
@@ -28,7 +31,7 @@ export class GetSharingSummaryUseCase {
                 _(payloads)
                     .map(payload => ({ id: payload.id, name: payload.name, code: payload.code }))
                     .uniqBy("id")
-                    .filter(payload => payload.name !== "default" && payload.code !== "default")
+                    .filter(payload => !excludedDependencies.includes(payload.id) && !isDefaultElement(payload))
                     .value()
             )
             .value();
@@ -36,7 +39,10 @@ export class GetSharingSummaryUseCase {
         return _.pickBy(sharingPayload, value => !_.isEmpty(value));
     }
 
-    private cleanMetadataSharing(metadataSharingWithChildren: SharingWarning[]): SharingWarning[] {
+    private cleanMetadataSharing(
+        metadataSharingWithChildren: SharingWarning[],
+        excludedDependencies: string[]
+    ): SharingWarning[] {
         return metadataSharingWithChildren
             .map(item => {
                 const children = item.children.filter(child => {
@@ -52,7 +58,9 @@ export class GetSharingSummaryUseCase {
                     };
 
                     return (
-                        !_.isEqual(childSharing, parentSharing) && child.name !== "default" && child.code !== "default"
+                        !_.isEqual(childSharing, parentSharing) &&
+                        !excludedDependencies.includes(child.id) &&
+                        !isDefaultElement(child)
                     );
                 });
 
@@ -61,10 +69,10 @@ export class GetSharingSummaryUseCase {
                     children: children,
                 };
             })
-            .filter(item => !_.isEmpty(item.children));
+            .filter(item => !_.isEmpty(item.children) && !excludedDependencies.includes(item.id));
     }
 
-    private getMetadataSharingWithChildren(payload: MetadataPayload[], parentIds: string[]): SharingWarning[] {
+    private getMetadataWithDifferentSharing(payload: MetadataPayload[], parentIds: string[]): SharingWarning[] {
         return _(payload)
             .flatMap(payloadGroup =>
                 parentIds.map(parentId => {
@@ -97,3 +105,7 @@ export class GetSharingSummaryUseCase {
             .value();
     }
 }
+
+const isDefaultElement = (metadataElement: CodedRef) => {
+    return metadataElement.name === "default" || metadataElement.code === "default";
+};

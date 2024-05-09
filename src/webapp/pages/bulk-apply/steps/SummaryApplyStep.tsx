@@ -27,8 +27,8 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
 
         if (globalMessage.type === "error") {
             snackbar.error(globalMessage.text);
-        } else {
-            snackbar.success(globalMessage?.text);
+        } else if (globalMessage.type === "success") {
+            snackbar.success(globalMessage.text);
         }
     }, [globalMessage, snackbar]);
 

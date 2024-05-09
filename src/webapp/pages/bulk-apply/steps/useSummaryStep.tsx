@@ -20,14 +20,14 @@ export function useSummaryStep(builder: SharingUpdate) {
 
     useEffect(() => {
         setLoading(true);
-        compositionRoot.metadata.getSharingSummary(builder.baseElements).run(
+        compositionRoot.metadata.getSharingSummary(builder).run(
             sharingSummary => {
                 setSharingSummary(sharingSummary);
                 setLoading(false);
             },
             error => setGlobalMessage({ type: "error", text: error })
         );
-    }, [builder.baseElements, compositionRoot.metadata]);
+    }, [builder, compositionRoot.metadata]);
 
     const applySharingSync = useCallback(() => {
         setLoading(true);
@@ -39,6 +39,7 @@ export function useSummaryStep(builder: SharingUpdate) {
                     openDialog && setDialogOpen(false);
                     setLoading(false);
                     setImportResult(result);
+                    setGlobalMessage({ type: "success", text: "Sharing settings successfully applied" });
                 },
                 error => setGlobalMessage({ type: "error", text: error })
             );
