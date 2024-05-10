@@ -75,7 +75,7 @@ export class MetadataD2ApiRepository implements MetadataRepository {
     }
 
     public getMetadataFromIds(ids: string[]): FutureData<MetadataPayload> {
-        return this.fetchMetadata(ids);
+        return this.fetchMetadata(ids).map(payload => mergePayloads([payload]));
     }
 
     public getModelName(model: string): string {

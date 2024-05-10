@@ -17,25 +17,37 @@ export class GetSharingSummaryUseCase {
             const sharingWarnings = this.cleanMetadataSharing(metadataWithDifferentSharing, excludedDependencies);
             const sharingPayload = this.getSharingPayload(payloads, excludedDependencies);
 
-            return this.metadataRepository.getMetadataFromIds(excludedDependencies).map(payload => {
-                const excludedMetadata = this.getExcludedMetadata(payload);
+            return this.metadataRepository.getMetadataFromIds(excludedDependencies).flatMap(excludedPayload => {
+                const excludedMetadata = this.getMetadataFromPayload(excludedPayload);
 
-                return {
-                    excludedMetadata: excludedMetadata,
-                    sharingWarnings: sharingWarnings,
-                    sharingPayload: sharingPayload,
-                };
+                return this.metadataRepository.getDependencies(baseElements).map(baseElementPayload => {
+                    const baseElementMetadata = this.getMetadataFromPayload(baseElementPayload);
+                    const excludedMdSummary = excludedMetadata.filter(excluded =>
+                        baseElementMetadata.map(payload => payload.id).includes(excluded.id)
+                    );
+
+                    return {
+                        excludedMetadata: excludedMdSummary,
+                        sharingWarnings: sharingWarnings,
+                        sharingPayload: sharingPayload,
+                    };
+                });
             });
         });
     }
 
-    private getExcludedMetadata(payload: MetadataPayload): NamedRef[] {
-        return _(payload)
+    private getMetadataFromPayload(payload: MetadataPayload): NamedRef[] {
+        const cleanedPayload = this.cleanPayload(payload);
+
+        return _(cleanedPayload)
             .values()
             .flatten()
             .map(metadataItem => ({ id: metadataItem.id, name: metadataItem.name }))
-            .filter(metadataItem => metadataItem.id !== undefined && metadataItem.name !== undefined)
             .value();
+    }
+
+    private cleanPayload(payload: MetadataPayload): MetadataPayload {
+        return _.pickBy(payload, (_items, model) => this.metadataRepository.isShareable(model));
     }
 
     private getSharingPayload(payloads: MetadataPayload[], excludedDependencies: string[]): SharingPayload {
