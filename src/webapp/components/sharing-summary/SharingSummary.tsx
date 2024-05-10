@@ -5,11 +5,10 @@ import styled from "styled-components";
 
 interface SharingSummaryProps {
     summary: SharingSummaryI;
-    excludedMetadata: NamedRef[];
 }
 
-export const SharingSummary = ({ summary, excludedMetadata }: SharingSummaryProps) => {
-    const { sharingWarnings, sharingPayload } = summary;
+export const SharingSummary = ({ summary }: SharingSummaryProps) => {
+    const { excludedMetadata, sharingWarnings, sharingPayload } = summary;
 
     return (
         <div>

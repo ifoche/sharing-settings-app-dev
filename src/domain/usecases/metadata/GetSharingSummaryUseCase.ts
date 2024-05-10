@@ -4,6 +4,7 @@ import { MetadataRepository } from "../../repositories/MetadataRepository";
 import { CodedRef, MetadataPayload } from "../../entities/MetadataItem";
 import { SharingWarning, SharingSummary, SharingPayload } from "../../entities/SharingSummary";
 import { SharingUpdate } from "../../entities/SharingUpdate";
+import { NamedRef } from "../../entities/Ref";
 
 export class GetSharingSummaryUseCase {
     constructor(private metadataRepository: MetadataRepository) {}
@@ -11,16 +12,30 @@ export class GetSharingSummaryUseCase {
     public execute(update: SharingUpdate): FutureData<SharingSummary> {
         const { baseElements, excludedDependencies } = update;
 
-        return this.metadataRepository.getMetadataWithChildren(baseElements).map(payloads => {
+        return this.metadataRepository.getMetadataWithChildren(baseElements).flatMap(payloads => {
             const metadataWithDifferentSharing = this.getMetadataWithDifferentSharing(payloads, baseElements);
             const sharingWarnings = this.cleanMetadataSharing(metadataWithDifferentSharing, excludedDependencies);
             const sharingPayload = this.getSharingPayload(payloads, excludedDependencies);
 
-            return {
-                sharingWarnings: sharingWarnings,
-                sharingPayload: sharingPayload,
-            };
+            return this.metadataRepository.getMetadataFromIds(excludedDependencies).map(payload => {
+                const excludedMetadata = this.getExcludedMetadata(payload);
+
+                return {
+                    excludedMetadata: excludedMetadata,
+                    sharingWarnings: sharingWarnings,
+                    sharingPayload: sharingPayload,
+                };
+            });
         });
+    }
+
+    private getExcludedMetadata(payload: MetadataPayload): NamedRef[] {
+        return _(payload)
+            .values()
+            .flatten()
+            .map(metadataItem => ({ id: metadataItem.id, name: metadataItem.name }))
+            .filter(metadataItem => metadataItem.id !== undefined && metadataItem.name !== undefined)
+            .value();
     }
 
     private getSharingPayload(payloads: MetadataPayload[], excludedDependencies: string[]): SharingPayload {
