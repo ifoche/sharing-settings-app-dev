@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: i18next-conv\n"
-"POT-Creation-Date: 2024-05-09T10:48:45.850Z\n"
+"POT-Creation-Date: 2024-05-10T12:31:24.872Z\n"
 "PO-Revision-Date: 2018-10-25T09:02:35.143Z\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13,12 +13,6 @@ msgstr ""
 
 msgid "Metadata"
 msgstr ""
-
-msgid "Add"
-msgstr "Añadir"
-
-msgid "List"
-msgstr "Listar"
 
 msgid "<No value>"
 msgstr ""
@@ -76,6 +70,42 @@ msgstr "Volver"
 
 msgid "Help"
 msgstr "Ayuda"
+
+msgid "Share"
+msgstr ""
+
+msgid "Share on twitter"
+msgstr ""
+
+msgid ""
+"Sharing Settings app development is sustainable thanks to the partners for "
+"which we build customized DHIS2 solutions. It has been funded by WHO and the "
+"WHO Integrated Data Platform (WIDP), where several WHO departments and units "
+"share a dedicated hosting and maintenance provided by"
+msgstr ""
+
+msgid "back some specific new features."
+msgstr ""
+
+msgid ""
+"The Long Term Agreement EyeSeeTea holds with WHO for this maintenance "
+"includes maintenance of this application, ensuring that it will always work "
+"at least with the last version of WIDP. We are passionate about both DHIS2 "
+"and open source, so giving back to the community through dedicated open-"
+"source development is and will always be part of EyeSeeTea’s commitment. You "
+"can also"
+msgstr ""
+
+msgid ""
+"support our work through a one-time contribution or becoming a regular "
+"github sponsor"
+msgstr ""
+
+msgid "World Health Organization"
+msgstr ""
+
+msgid "EyeSeeTea"
+msgstr "EyeSeeTea"
 
 msgid "Cancel sharing action?"
 msgstr ""
@@ -193,20 +223,14 @@ msgstr ""
 msgid "Apply Sharing Settings"
 msgstr ""
 
-msgid "Apply update"
-msgstr ""
-
-msgid "Edit sharing settings to data sets, programs and dashboards."
-msgstr ""
-
-msgid "Settings"
-msgstr ""
-
-msgid "Exclude metadata items globally"
-msgstr ""
-
 msgid "Global exclusion settings"
 msgstr ""
 
 msgid "Save global excluded dependencies"
 msgstr ""
+
+#~ msgid "Add"
+#~ msgstr "Añadir"
+
+#~ msgid "List"
+#~ msgstr "Listar"
