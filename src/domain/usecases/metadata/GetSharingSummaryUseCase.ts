@@ -9,13 +9,14 @@ import { NamedRef } from "../../entities/Ref";
 export class GetSharingSummaryUseCase {
     constructor(private metadataRepository: MetadataRepository) {}
 
-    public execute(update: SharingUpdate): FutureData<SharingSummary> {
+    public execute(update: SharingUpdate, payload: MetadataPayload): FutureData<SharingSummary> {
         const { baseElements, excludedDependencies } = update;
 
         return this.metadataRepository.getMetadataWithChildren(baseElements).flatMap(payloads => {
-            const metadataWithDifferentSharing = this.getMetadataWithDifferentSharing(payloads, baseElements);
+            const payloadsSummary = this.getPayloadsSummary(payloads, payload, excludedDependencies);
+            const metadataWithDifferentSharing = this.getMetadataWithDifferentSharing(payloadsSummary, baseElements);
             const sharingWarnings = this.cleanMetadataSharing(metadataWithDifferentSharing, excludedDependencies);
-            const sharingPayload = this.getSharingPayload(payloads, excludedDependencies);
+            const sharingPayload = this.getSharingPayload(payload, excludedDependencies);
 
             return this.metadataRepository.getMetadataFromIds(excludedDependencies).flatMap(excludedPayload => {
                 const excludedMetadata = this.getMetadataFromPayload(excludedPayload);
@@ -36,8 +37,31 @@ export class GetSharingSummaryUseCase {
         });
     }
 
+    private getPayloadsSummary(
+        d2Payloads: MetadataPayload[],
+        updatedPayload: MetadataPayload,
+        excludedDependencies: string[]
+    ): MetadataPayload[] {
+        const cleanedPayload = this.cleanPayload(updatedPayload);
+
+        return d2Payloads.map(d2Payload => {
+            const cleanedD2Payload = this.cleanPayload(d2Payload);
+
+            return _.mapValues(cleanedD2Payload, (items, key) => {
+                const mappingArray = cleanedPayload[key] || [];
+
+                return items
+                    .map(item => {
+                        const existing = mappingArray.find(mappingItem => mappingItem.id === item.id);
+                        return existing ? { ...item, sharing: existing.sharing } : item;
+                    })
+                    .filter(payload => !excludedDependencies.includes(payload.id) && !isDefaultElement(payload));
+            });
+        });
+    }
+
     private getMetadataFromPayload(payload: MetadataPayload): NamedRef[] {
-        const cleanedPayload = this.cleanPayload(payload);
+        const cleanedPayload = _.pickBy(payload, (_items, model) => this.metadataRepository.isShareable(model));
 
         return _(cleanedPayload)
             .values()
@@ -47,12 +71,11 @@ export class GetSharingSummaryUseCase {
     }
 
     private cleanPayload(payload: MetadataPayload): MetadataPayload {
-        return _.pickBy(payload, (_items, model) => this.metadataRepository.isShareable(model));
+        return _.pickBy(payload, value => _.isArray(value) && !_.isEmpty(value));
     }
 
-    private getSharingPayload(payloads: MetadataPayload[], excludedDependencies: string[]): SharingPayload {
-        const metadataPayload: MetadataPayload = _.merge({}, ...payloads.map(payload => _.omit(payload, "date")));
-        const sharingPayload = _(metadataPayload)
+    private getSharingPayload(payload: MetadataPayload, excludedDependencies: string[]): SharingPayload {
+        const sharingPayload = _(payload)
             .mapKeys((_, key) => this.metadataRepository.getModelName(key))
             .mapValues(payloads =>
                 _(payloads)
