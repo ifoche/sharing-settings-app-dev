@@ -1,5 +1,3 @@
-import _ from "lodash";
-
 export const metadata: Record<string, Record<string, any[]>> = {
     dashboard1: {
         dashboards: [
@@ -39,6 +37,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            access: "r-------",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 dashboardItems: [
                     {
                         lastUpdated: "2019-10-03T12:41:12.718",
@@ -598,6 +618,38 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        c8sN59GDJpC: {
+                            access: "r-------",
+                            displayName: "ETA Data Entry - Events",
+                            id: "c8sN59GDJpC",
+                        },
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        J68LnyQufb9: {
+                            displayName: "ETA Facility Analysis Only - Events",
+                            access: "r-------",
+                            id: "J68LnyQufb9",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 translations: [],
                 userAccesses: [],
             },
@@ -721,6 +773,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -866,6 +940,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["pe"],
                 optionalAxes: [],
@@ -1154,6 +1250,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["ou"],
                 optionalAxes: [],
@@ -1294,6 +1412,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["pe"],
                 optionalAxes: [],
@@ -1599,6 +1739,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -1751,6 +1913,38 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        c8sN59GDJpC: {
+                            access: "r-------",
+                            displayName: "ETA Data Entry - Events",
+                            id: "c8sN59GDJpC",
+                        },
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        J68LnyQufb9: {
+                            access: "r-------",
+                            displayName: "ETA Facility Analysis Only - Events",
+                            id: "J68LnyQufb9",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["ou"],
                 optionalAxes: [],
@@ -1890,6 +2084,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -2029,6 +2245,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["ou"],
                 optionalAxes: [],
@@ -2170,6 +2408,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["ou"],
                 optionalAxes: [],
@@ -2459,6 +2719,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -2610,6 +2892,38 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        c8sN59GDJpC: {
+                            access: "r-------",
+                            displayName: "ETA Data Entry - Events",
+                            id: "c8sN59GDJpC",
+                        },
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        J68LnyQufb9: {
+                            access: "r-------",
+                            displayName: "ETA Facility Analysis Only - Events",
+                            id: "J68LnyQufb9",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -2858,6 +3172,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        x8Tk2UMgpAd: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only - Events",
+                            id: "x8Tk2UMgpAd",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                        UfhhwZK73Lg: {
+                            displayName: "WIDP IT team",
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -2905,6 +3241,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 dashboardItems: [
                     {
                         lastUpdated: "2019-10-03T15:21:53.161",
@@ -3370,6 +3718,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 translations: [],
                 userAccesses: [],
             },
@@ -3488,6 +3848,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["ou"],
                 optionalAxes: [],
@@ -3621,6 +3998,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -3755,6 +4149,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -3894,6 +4305,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["ou"],
                 optionalAxes: [],
@@ -4141,6 +4569,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -4274,6 +4719,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["ou"],
                 optionalAxes: [],
@@ -4407,6 +4869,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -4539,6 +5018,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["ou"],
                 optionalAxes: [],
@@ -4663,6 +5159,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 programIndicatorDimensions: [],
                 subscribers: [],
                 columnDimensions: ["pe"],
@@ -4784,6 +5297,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "Urx6COfeLkm",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        QhhxtdJ8HL7: {
+                            access: "r-------",
+                            displayName: "ETA Ministry Analysis Only",
+                            id: "QhhxtdJ8HL7",
+                        },
+                        Urx6COfeLkm: {
+                            displayName: "ETA administrators",
+                            access: "rw------",
+                            id: "Urx6COfeLkm",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 programIndicatorDimensions: [],
                 subscribers: [],
                 columnDimensions: ["pe"],
@@ -4836,6 +5366,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "ZXEVDM9XRea",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "r-------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 dashboardItems: [
                     {
                         lastUpdated: "2020-04-14T18:23:01.630",
@@ -5484,6 +6031,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "rw------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "r-------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -5691,6 +6260,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -5895,6 +6486,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -6096,6 +6709,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -6297,6 +6932,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -6504,6 +7161,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -6715,6 +7394,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -6910,6 +7611,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -7117,6 +7840,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -7327,6 +8072,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -7528,6 +8295,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -7738,6 +8527,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -7933,6 +8744,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -8082,6 +8915,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -8292,6 +9147,28 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "suMb19wGXPR",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        suMb19wGXPR: {
+                            access: "rw------",
+                            displayName: "MAL_Malaria admin",
+                            id: "suMb19wGXPR",
+                        },
+                        ZXEVDM9XRea: {
+                            displayName: "MAL_Malaria access",
+                            access: "r-------",
+                            id: "ZXEVDM9XRea",
+                        },
+                        OviFXqdot0H: {
+                            displayName: "MAL_Malaria users",
+                            access: "rw------",
+                            id: "OviFXqdot0H",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 subscribers: [],
                 columnDimensions: ["dx"],
                 optionalAxes: [],
@@ -8412,6 +9289,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    external: false,
+                    public: "rw------",
+                    users: {},
+                },
                 translations: [],
                 userAccesses: [],
                 categories: [
@@ -8476,6 +9359,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        sCjEPgiOhP1: {
+                            access: "r-r-----",
+                            displayName: "WIDP admins",
+                            id: "sCjEPgiOhP1",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 programSections: [],
                 attributeValues: [],
                 programStages: [
@@ -8496,6 +9396,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ignoreApproval: false,
                 categoryCombo: {
                     id: "JzvGfLYkX17",
+                },
+                sharing: {
+                    userGroups: {},
+                    external: false,
+                    users: {},
                 },
                 translations: [],
                 attributeValues: [],
@@ -8569,6 +9474,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            external: false,
+                            users: {},
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -8602,6 +9512,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            external: false,
+                            users: {},
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -8621,6 +9536,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        sCjEPgiOhP1: {
+                            access: "r-r-----",
+                            displayName: "WIDP admins",
+                            id: "sCjEPgiOhP1",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    users: {},
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 programStageSections: [],
@@ -8642,6 +9574,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    external: false,
+                    users: {},
+                    public: "rwrw----",
+                },
                 organisationUnits: [],
             },
         ],
@@ -8682,6 +9620,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        sCjEPgiOhP1: {
+                            access: "r-------",
+                            displayName: "WIDP admins",
+                            id: "sCjEPgiOhP1",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    users: {},
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -8723,6 +9678,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        sCjEPgiOhP1: {
+                            access: "r-------",
+                            displayName: "WIDP admins",
+                            id: "sCjEPgiOhP1",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    users: {},
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -8743,6 +9715,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    external: false,
+                    users: {},
+                    public: "rw------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -8810,6 +9788,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    external: false,
+                    users: {},
+                    public: "rw------",
+                },
                 translations: [],
                 userAccesses: [],
                 categories: [
@@ -8890,6 +9874,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         programTrackedEntityAttributeGroups: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            external: false,
+                            users: {},
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -8915,6 +9904,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        sCjEPgiOhP1: {
+                            access: "r-r-----",
+                            displayName: "WIDP admins",
+                            id: "sCjEPgiOhP1",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    users: {},
+                    public: "--------",
+                },
                 programSections: [],
                 attributeValues: [],
                 programStages: [
@@ -9008,6 +10014,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            external: false,
+                            users: {},
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -9041,6 +10052,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            external: false,
+                            users: {},
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -9060,6 +10076,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        sCjEPgiOhP1: {
+                            access: "r-r-----",
+                            displayName: "WIDP admins",
+                            id: "sCjEPgiOhP1",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {},
+                },
                 attributeValues: [],
                 userAccesses: [],
                 programStageSections: [],
@@ -9296,6 +10329,199 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UQe9YTumaCV",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        HJRKloCWNeh: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_ACD_Event_Entry",
+                            id: "HJRKloCWNeh",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        cy0qXsDxzxe: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_VL_LabLog_View",
+                            id: "cy0qXsDxzxe",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-rw----",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        Ot2xz1vXELL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_CH_Healthcare_Event_View",
+                            id: "Ot2xz1vXELL",
+                        },
+                        DzvWl4E1DhF: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_CH_HealthSystem_Event_View",
+                            id: "DzvWl4E1DhF",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        cDb6nhH0rXS: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_VL_Tracker_View",
+                            id: "cDb6nhH0rXS",
+                        },
+                        YJ4SW7rs30P: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_CPG",
+                            id: "YJ4SW7rs30P",
+                        },
+                        ODVk6IF6Dso: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_ACD_Event_View",
+                            id: "ODVk6IF6Dso",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        ln8nJQmOSpJ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_CH_Healthcare_Event_Entry",
+                            id: "ln8nJQmOSpJ",
+                        },
+                        irooBniCRle: {
+                            access: "rwr-----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-rw----",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rwrw----",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        TbGA9fMJpCR: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_VL_LabLog_Entry",
+                            id: "TbGA9fMJpCR",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        Qi5B1pnVvEH: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_CH_HealthSystem_Event_Entry",
+                            id: "Qi5B1pnVvEH",
+                        },
+                        mYtjuODefO4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_VL_Tracker_Entry",
+                            id: "mYtjuODefO4",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                        UlXOWwGGx7W: {
+                            access: "r-rw----",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                    },
+                },
                 attributeValues: [],
                 trackedEntityTypeAttributes: [],
                 translations: [],
@@ -9328,6 +10554,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    public: "rwrw----",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -9371,6 +10602,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        sCjEPgiOhP1: {
+                            access: "r-------",
+                            displayName: "WIDP admins",
+                            id: "sCjEPgiOhP1",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {},
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -9412,6 +10660,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        sCjEPgiOhP1: {
+                            access: "r-------",
+                            displayName: "WIDP admins",
+                            id: "sCjEPgiOhP1",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {},
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -9432,6 +10697,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    public: "rw------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -9543,6 +10813,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {},
+                    public: "r-------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -9826,6 +11108,244 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "aAGXWv0GkMo",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        Ot2xz1vXELL: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_Event_View",
+                            id: "Ot2xz1vXELL",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        Qi5B1pnVvEH: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_HealthSystem_Event_Entry",
+                            id: "Qi5B1pnVvEH",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        peFZC729hMn: {
+                            access: "r-------",
+                            displayName: "SS_NTD_Skin_Yaws_Surv_Global_View",
+                            id: "peFZC729hMn",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        DRlUpjkyeT9: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_MYC_GlSurv_View",
+                            id: "DRlUpjkyeT9",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        fth3On7vInl: {
+                            access: "r-------",
+                            displayName: "NTD",
+                            id: "fth3On7vInl",
+                        },
+                        cT8WhjLqmH9: {
+                            access: "r-------",
+                            displayName: "SS_NTD_Skin_Yaws_Surv_Global_Entry",
+                            id: "cT8WhjLqmH9",
+                        },
+                        ln8nJQmOSpJ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_Event_Entry",
+                            id: "ln8nJQmOSpJ",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        wG402TIgmDq: {
+                            access: "r-------",
+                            displayName: "SS_NTD_Skin_Yaws_Surv_GHA_Entry",
+                            id: "wG402TIgmDq",
+                        },
+                        IsbhpWFqxOx: {
+                            access: "r-------",
+                            displayName: "SS_NTD_Skin_MYC_GlSurv_Entry",
+                            id: "IsbhpWFqxOx",
+                        },
+                        HVjJiw4WEW5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_Skin_Yaws_Surv_GHA_View",
+                            id: "HVjJiw4WEW5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        DzvWl4E1DhF: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_HealthSystem_Event_View",
+                            id: "DzvWl4E1DhF",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        IPzz6wlkIp0: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_MYC_HQ",
+                            id: "IPzz6wlkIp0",
+                        },
+                        orn5lTGFMve: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Public",
+                            id: "orn5lTGFMve",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        Fr3SskvRRFO: {
+                            access: "rw------",
+                            displayName: "NTD Chagas disease",
+                            id: "Fr3SskvRRFO",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        q9wZgtaDxWn: {
+                            access: "r-------",
+                            displayName: "Petar Jovanovic",
+                            id: "q9wZgtaDxWn",
+                        },
+                    },
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [
@@ -10099,6 +11619,209 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "wwAK2yjjWQc",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        FhhAcewq9it: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_View",
+                            id: "FhhAcewq9it",
+                        },
+                        mYtjuODefO4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Tracker_Entry",
+                            id: "mYtjuODefO4",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        peFZC729hMn: {
+                            access: "r-------",
+                            displayName: "SS_NTD_Skin_Yaws_Surv_Global_View",
+                            id: "peFZC729hMn",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                        owXIJqhlxHy: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_ARM_Tracker_Entry",
+                            id: "owXIJqhlxHy",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        cDb6nhH0rXS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Tracker_View",
+                            id: "cDb6nhH0rXS",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-------",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        QCd81cBHcad: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_ARM_Tracker_View",
+                            id: "QCd81cBHcad",
+                        },
+                        wwAK2yjjWQc: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
+                            id: "wwAK2yjjWQc",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                    },
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [
@@ -10219,6 +11942,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "ZvxncLTan3w",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                    users: {
+                        UlXOWwGGx7W: {
+                            displayName: "Duplicator Event",
+                            access: "r-------",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            displayName: "NTD CHECK",
+                            access: "r-------",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [
@@ -10318,6 +12119,69 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    external: false,
+                    public: "--------",
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            displayName: "Duplicator Event",
+                            access: "r-------",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            displayName: "NTD CHECK",
+                            access: "r-------",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [
@@ -10645,6 +12509,264 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "wwAK2yjjWQc",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        Ot2xz1vXELL: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_Event_View",
+                            id: "Ot2xz1vXELL",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        FhhAcewq9it: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_View",
+                            id: "FhhAcewq9it",
+                        },
+                        mYtjuODefO4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Tracker_Entry",
+                            id: "mYtjuODefO4",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        DgpZijnf5Sf: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_VectorControl_Event_Entry",
+                            id: "DgpZijnf5Sf",
+                        },
+                        ln8nJQmOSpJ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_Event_Entry",
+                            id: "ln8nJQmOSpJ",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                        owXIJqhlxHy: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_ARM_Tracker_Entry",
+                            id: "owXIJqhlxHy",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        cDb6nhH0rXS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Tracker_View",
+                            id: "cDb6nhH0rXS",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-------",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        kvu9Bts7nJb: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_VectorControl_Event_View",
+                            id: "kvu9Bts7nJb",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        PRgi0GEW3gw: {
+                            access: "rw------",
+                            displayName: "NTD Chagas disease - WCD2020",
+                            id: "PRgi0GEW3gw",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        Fr3SskvRRFO: {
+                            access: "rw------",
+                            displayName: "NTD Chagas disease",
+                            id: "Fr3SskvRRFO",
+                        },
+                        QCd81cBHcad: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_ARM_Tracker_View",
+                            id: "QCd81cBHcad",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        wwAK2yjjWQc: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
+                            id: "wwAK2yjjWQc",
+                        },
+                    },
+                    users: {
+                        iUNlUiEkyQx: {
+                            access: "rw------",
+                            displayName: "Chagas World Day 2020",
+                            id: "iUNlUiEkyQx",
+                        },
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        q9wZgtaDxWn: {
+                            access: "rw------",
+                            displayName: "Petar Jovanovic",
+                            id: "q9wZgtaDxWn",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [
@@ -11527,6 +13649,99 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "XqznB7ROzB3",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [
@@ -11647,6 +13862,73 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        cDb6nhH0rXS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Tracker_View",
+                            id: "cDb6nhH0rXS",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        mYtjuODefO4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Tracker_Entry",
+                            id: "mYtjuODefO4",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {},
+                    public: "r-------",
+                    external: false,
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -11853,6 +14135,169 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "yBUSIP5IhrF",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        mYtjuODefO4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Tracker_Entry",
+                            id: "mYtjuODefO4",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        cDb6nhH0rXS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Tracker_View",
+                            id: "cDb6nhH0rXS",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [
@@ -11903,6 +14348,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "H4atNsEuKxP",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    public: "r-------",
+                    external: false,
+                },
                 attributeValues: [],
                 translations: [
                     {
@@ -12024,6 +14475,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "XqznB7ROzB3",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [
@@ -12150,6 +14684,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "XqznB7ROzB3",
                     },
                 ],
+                sharing: {
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [
@@ -12413,6 +15030,214 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UQe9YTumaCV",
                     },
                 ],
+                sharing: {
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-rw----",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                        Ps2PMw1E7mI: {
+                            access: "rw------",
+                            displayName: "Loretta Hardjopawiro",
+                            id: "Ps2PMw1E7mI",
+                        },
+                        jrB1juLJyjJ: {
+                            access: "rw------",
+                            displayName: "Alexei MIKHAILOV",
+                            id: "jrB1juLJyjJ",
+                        },
+                        s5EVHUwoFKu: {
+                            access: "rw------",
+                            displayName: "Alexis Rico",
+                            id: "s5EVHUwoFKu",
+                        },
+                    },
+                    userGroups: {
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        HJRKloCWNeh: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_ACD_Event_Entry",
+                            id: "HJRKloCWNeh",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        cy0qXsDxzxe: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_VL_LabLog_View",
+                            id: "cy0qXsDxzxe",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-rw----",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        Ot2xz1vXELL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_CH_Healthcare_Event_View",
+                            id: "Ot2xz1vXELL",
+                        },
+                        DzvWl4E1DhF: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_CH_HealthSystem_Event_View",
+                            id: "DzvWl4E1DhF",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        cDb6nhH0rXS: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_VL_Tracker_View",
+                            id: "cDb6nhH0rXS",
+                        },
+                        YJ4SW7rs30P: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_CPG",
+                            id: "YJ4SW7rs30P",
+                        },
+                        ODVk6IF6Dso: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_ACD_Event_View",
+                            id: "ODVk6IF6Dso",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        ln8nJQmOSpJ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_CH_Healthcare_Event_Entry",
+                            id: "ln8nJQmOSpJ",
+                        },
+                        irooBniCRle: {
+                            access: "rwr-----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-rw----",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rwrw----",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        TbGA9fMJpCR: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_VL_LabLog_Entry",
+                            id: "TbGA9fMJpCR",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        Qi5B1pnVvEH: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_CH_HealthSystem_Event_Entry",
+                            id: "Qi5B1pnVvEH",
+                        },
+                        mYtjuODefO4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_VL_Tracker_Entry",
+                            id: "mYtjuODefO4",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 trackedEntityTypeAttributes: [],
                 translations: [],
@@ -12894,6 +15719,109 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "yBUSIP5IhrF",
                     },
                 ],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -13139,6 +16067,159 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        sVRPz2NvK37: {
+                            access: "r-------",
+                            displayName: "NTD_AFRO",
+                            id: "sVRPz2NvK37",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        TbGA9fMJpCR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_Entry",
+                            id: "TbGA9fMJpCR",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        cy0qXsDxzxe: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_View",
+                            id: "cy0qXsDxzxe",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_TxO_AB_missed",
@@ -13276,6 +16357,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "DET_NTD_SKIN_PIX_PreTx_PIX",
@@ -13314,7 +16473,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Charger la photo pr\ufffd-traitement",
+                        value: "Charger la photo pr�-traitement",
                     },
                 ],
                 userGroupAccesses: [
@@ -13414,6 +16573,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_jointLimitation_T",
@@ -13531,6 +16773,69 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Thorax_T",
@@ -13729,6 +17034,139 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "UIDreference",
@@ -13826,6 +17264,69 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        phezIKUxlC2: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_EMRO_SOM",
+                            id: "phezIKUxlC2",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        K40P7b1JFdc: {
+                            access: "r-------",
+                            displayName: "NTD_EMRO",
+                            id: "K40P7b1JFdc",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Tx_AB_YNU_T",
@@ -13949,6 +17450,79 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "DE_PR_GEN_UID",
@@ -14146,6 +17720,134 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "DET_NTD_SKIN_PIX_PreTx_FILE",
@@ -14257,6 +17959,79 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_PLACE_CountryOfResidence_T",
@@ -14469,6 +18244,144 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Ulcer_T",
@@ -14514,7 +18427,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Ulc\ufffdre",
+                        value: "Ulc�re",
                     },
                 ],
                 userGroupAccesses: [
@@ -14644,6 +18557,114 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-------",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        FhhAcewq9it: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_View",
+                            id: "FhhAcewq9it",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        wwAK2yjjWQc: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
+                            id: "wwAK2yjjWQc",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_Age_atDiagnosis_T",
@@ -14863,6 +18884,149 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        sVRPz2NvK37: {
+                            access: "r-------",
+                            displayName: "NTD_AFRO",
+                            id: "sVRPz2NvK37",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Osteomyelitis_T",
@@ -14911,7 +19075,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Ost\ufffdomy\ufffdlite",
+                        value: "Ost�omy�lite",
                     },
                     {
                         property: "NAME",
@@ -15046,6 +19210,114 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-------",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        FhhAcewq9it: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_View",
+                            id: "FhhAcewq9it",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        wwAK2yjjWQc: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
+                            id: "wwAK2yjjWQc",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_TxO_T",
@@ -15146,6 +19418,69 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_FirstName_T",
@@ -15355,6 +19690,149 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        sVRPz2NvK37: {
+                            access: "r-------",
+                            displayName: "NTD_AFRO",
+                            id: "sVRPz2NvK37",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        TbGA9fMJpCR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_Entry",
+                            id: "TbGA9fMJpCR",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        cy0qXsDxzxe: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_View",
+                            id: "cy0qXsDxzxe",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Tx0_dateHealing_T",
@@ -15488,6 +19966,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Abdomen_T",
@@ -15676,6 +20237,139 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_PLACE_Residence_Coords_T",
@@ -15893,6 +20587,159 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        sCjEPgiOhP1: {
+                            access: "rw------",
+                            displayName: "WIDP admins",
+                            id: "sCjEPgiOhP1",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        Nn17qA7SD5K: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_LEISHMAN",
+                            id: "Nn17qA7SD5K",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        Fr3SskvRRFO: {
+                            access: "r-------",
+                            displayName: "NTD Chagas disease",
+                            id: "Fr3SskvRRFO",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        TbGA9fMJpCR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_Entry",
+                            id: "TbGA9fMJpCR",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        cy0qXsDxzxe: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_View",
+                            id: "cy0qXsDxzxe",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Genitalia_T",
@@ -15926,7 +20773,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Zone g\ufffdnitale",
+                        value: "Zone g�nitale",
                     },
                     {
                         property: "DESCRIPTION",
@@ -16090,6 +20937,134 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Lab_Spe_YNU_T",
@@ -16267,6 +21242,124 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        FhhAcewq9it: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_View",
+                            id: "FhhAcewq9it",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-------",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        QCd81cBHcad: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_ARM_Tracker_View",
+                            id: "QCd81cBHcad",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        wwAK2yjjWQc: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
+                            id: "wwAK2yjjWQc",
+                        },
+                        owXIJqhlxHy: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_ARM_Tracker_Entry",
+                            id: "owXIJqhlxHy",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Nodule_T",
@@ -16441,6 +21534,114 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-------",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        FhhAcewq9it: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_View",
+                            id: "FhhAcewq9it",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        wwAK2yjjWQc: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
+                            id: "wwAK2yjjWQc",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_PLACE_Residence_Coordinates_T",
@@ -16578,6 +21779,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Lab_Mycolactone_InitialResults_T",
@@ -16713,6 +21997,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_Family name_T",
@@ -16922,6 +22289,149 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        sVRPz2NvK37: {
+                            access: "r-------",
+                            displayName: "NTD_AFRO",
+                            id: "sVRPz2NvK37",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        TbGA9fMJpCR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_Entry",
+                            id: "TbGA9fMJpCR",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        cy0qXsDxzxe: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_View",
+                            id: "cy0qXsDxzxe",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Papule_Lesion_T",
@@ -17091,6 +22601,114 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        FhhAcewq9it: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_View",
+                            id: "FhhAcewq9it",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-------",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        wwAK2yjjWQc: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
+                            id: "wwAK2yjjWQc",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "DET_NTD_BU_ITxO",
@@ -17233,6 +22851,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_Registry Number_T",
@@ -17313,6 +23014,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "DET_NTD_SKIN_PIX_POSTx_FILE",
@@ -17424,6 +23173,79 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_PLACE_VillageOfResidence_GPS_T",
@@ -17623,6 +23445,139 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        sVRPz2NvK37: {
+                            access: "r-------",
+                            displayName: "NTD_AFRO",
+                            id: "sVRPz2NvK37",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "DET_NTD_SKIN_PIX_POSTx_PIX",
@@ -17757,6 +23712,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Plaque_T",
@@ -17926,6 +23964,114 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-------",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        FhhAcewq9it: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_View",
+                            id: "FhhAcewq9it",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        wwAK2yjjWQc: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
+                            id: "wwAK2yjjWQc",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Tx_ABType_T",
@@ -18062,6 +24208,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Buttocks perineum_T",
@@ -18260,6 +24484,139 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_Sexe_T",
@@ -18526,6 +24883,189 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        Ot2xz1vXELL: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_Event_View",
+                            id: "Ot2xz1vXELL",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        fth3On7vInl: {
+                            access: "r-------",
+                            displayName: "NTD",
+                            id: "fth3On7vInl",
+                        },
+                        ln8nJQmOSpJ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_Event_Entry",
+                            id: "ln8nJQmOSpJ",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        sVRPz2NvK37: {
+                            access: "r-------",
+                            displayName: "NTD_AFRO",
+                            id: "sVRPz2NvK37",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        TbGA9fMJpCR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_Entry",
+                            id: "TbGA9fMJpCR",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        Fr3SskvRRFO: {
+                            access: "rw------",
+                            displayName: "NTD Chagas disease",
+                            id: "Fr3SskvRRFO",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        cy0qXsDxzxe: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_View",
+                            id: "cy0qXsDxzxe",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        q9wZgtaDxWn: {
+                            access: "r-------",
+                            displayName: "Petar Jovanovic",
+                            id: "q9wZgtaDxWn",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Classif_T",
@@ -18690,6 +25230,99 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Back_T",
@@ -18883,6 +25516,139 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "DET_NTD_BU_TxO",
@@ -19019,6 +25785,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Head Neck_T",
@@ -19058,7 +25902,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "T\ufffdte / Cou",
+                        value: "T�te / Cou",
                     },
                     {
                         property: "SHORT_NAME",
@@ -19223,6 +26067,139 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Lower Limb_T",
@@ -19266,7 +26243,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Membre inf\ufffdrieur",
+                        value: "Membre inf�rieur",
                     },
                 ],
                 userGroupAccesses: [
@@ -19426,6 +26403,139 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Breast_T",
@@ -19624,6 +26734,139 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Cl_category_T",
@@ -19766,6 +27009,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Tx_AB_Completed_T",
@@ -19918,6 +27244,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Upper limb_T",
@@ -19962,7 +27371,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Membre sup\ufffdrieur",
+                        value: "Membre sup�rieur",
                     },
                 ],
                 userGroupAccesses: [
@@ -20122,6 +27531,139 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Oedema_T",
@@ -20171,7 +27713,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "\ufffdd\ufffdme",
+                        value: "�d�me",
                     },
                 ],
                 userGroupAccesses: [
@@ -20301,6 +27843,114 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        FhhAcewq9it: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_View",
+                            id: "FhhAcewq9it",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-------",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        wwAK2yjjWQc: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
+                            id: "wwAK2yjjWQc",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_PLACE_Residence_OU_T",
@@ -20529,6 +28179,159 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        NApRIgamRrj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_Entry",
+                            id: "NApRIgamRrj",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        ZuT9b32Dhv5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_View",
+                            id: "ZuT9b32Dhv5",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        BIIJN4E57xU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_Entry",
+                            id: "BIIJN4E57xU",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        sVRPz2NvK37: {
+                            access: "r-------",
+                            displayName: "NTD_AFRO",
+                            id: "sVRPz2NvK37",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        z06qKmTZ3OR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_LEP_Event_View",
+                            id: "z06qKmTZ3OR",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        TbGA9fMJpCR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_Entry",
+                            id: "TbGA9fMJpCR",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        fC90V0CPRFC: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_Event_View",
+                            id: "fC90V0CPRFC",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        cy0qXsDxzxe: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LabLog_View",
+                            id: "cy0qXsDxzxe",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Skin_Cl_Lesion_Loc_Eye_T",
@@ -20572,7 +28375,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "\ufffdil",
+                        value: "�il",
                     },
                 ],
                 userGroupAccesses: [
@@ -20726,6 +28529,134 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        Wx8ovUuTEEU: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_Entry",
+                            id: "Wx8ovUuTEEU",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        adE2VMPwCI5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_VL_LeishManTracker_View",
+                            id: "adE2VMPwCI5",
+                        },
+                        UxF4jhfIylS: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_Entry",
+                            id: "UxF4jhfIylS",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        GHGv3VsHn1a: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
+                            id: "GHGv3VsHn1a",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        JcHpRoc6nyA: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_Entry",
+                            id: "JcHpRoc6nyA",
+                        },
+                        fDujq7N2i6v: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_LeishManTracker_Entry",
+                            id: "fDujq7N2i6v",
+                        },
+                        eXn7a4TcJBj: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Event_View",
+                            id: "eXn7a4TcJBj",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        SttGU3eGd4O: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_CL_Tracker_View",
+                            id: "SttGU3eGd4O",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "GEN_Locality_T",
@@ -20846,6 +28777,69 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Lab_PCR_Initial Results_T",
@@ -20991,6 +28985,89 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        fRlwLe1FUtr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_View",
+                            id: "fRlwLe1FUtr",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        PxfXOdDzaVo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Lab_Event_Entry",
+                            id: "PxfXOdDzaVo",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        bxyNjDdzxoY: {
+                            access: "r-------",
+                            displayName: "WISCENTD - data lake extraction",
+                            id: "bxyNjDdzxoY",
+                        },
+                        jBKsc308Wq4: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_View",
+                            id: "jBKsc308Wq4",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        rLZTilSc96A: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_PatientForm_Entry",
+                            id: "rLZTilSc96A",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
         ],
         categories: [
@@ -21007,6 +29084,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    external: false,
+                    public: "rw------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -21141,6 +29224,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Breast",
@@ -21265,6 +29396,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Osteomyelitis",
@@ -21389,6 +29568,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Tx_AB",
@@ -21514,6 +29741,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Lab_Confirmed",
@@ -21638,6 +29913,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Tx_AB_Completed",
@@ -21763,6 +30086,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Buttocks_perineum",
@@ -21887,6 +30258,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_EPI_Cat_III",
@@ -22011,6 +30430,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Papule",
@@ -22135,6 +30602,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_EPI_Cat_II",
@@ -22259,6 +30774,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Classif_Recurrent",
@@ -22383,6 +30946,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_EPI_Cat_I",
@@ -22508,6 +31119,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_EPI_malecases",
@@ -22632,6 +31291,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 lastUpdated: "2021-03-01T11:52:48.053",
@@ -22754,6 +31461,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Back",
@@ -22878,6 +31633,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Oedema",
@@ -23002,6 +31805,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_EPI_ageGTE15years",
@@ -23126,6 +31977,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Abdomen",
@@ -23250,6 +32149,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Lower_Limb",
@@ -23374,6 +32321,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_joint_limitation",
@@ -23499,6 +32494,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Ulcer",
@@ -23623,6 +32666,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_EPI_unknowngender",
@@ -23747,6 +32838,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_EPI_age5-14years",
@@ -23871,6 +33010,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Upper_limb",
@@ -23995,6 +33182,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Thorax",
@@ -24119,6 +33354,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Eye",
@@ -24243,6 +33526,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Genitalia",
@@ -24367,6 +33698,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Classif_Newcases",
@@ -24491,6 +33870,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Nodule",
@@ -24615,6 +34042,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_Clin_Head_Neck",
@@ -24739,6 +34214,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_EPI_Cat_unkown",
@@ -24863,6 +34386,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "PI_BU02_EPI_femalecases",
@@ -24987,6 +34558,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 lastUpdated: "2021-03-01T11:52:48.928",
@@ -25110,6 +34729,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        bzuIPO5zQPV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-------",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
         ],
         programStageDataElements: [
@@ -26112,6 +35779,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    publicAccess: "rw------",
+                    external: false,
+                },
                 translations: [],
                 userAccesses: [],
                 categories: [
@@ -40678,6 +50351,53 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UQe9YTumaCV",
                     },
                 ],
+                sharing: {
+                    public: "--------",
+                    userGroups: {
+                        irooBniCRle: {
+                            access: "rwr-----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                    },
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-rw----",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-r-----",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
                 programSections: [],
                 attributeValues: [],
                 programStages: [
@@ -40788,6 +50508,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -40824,6 +50549,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -40860,6 +50590,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -40896,6 +50631,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -40932,6 +50672,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -40968,6 +50713,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41004,6 +50754,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41040,6 +50795,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41076,6 +50836,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41112,6 +50877,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41148,6 +50918,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41184,6 +50959,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41220,6 +51000,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41256,6 +51041,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41292,6 +51082,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41328,6 +51123,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41364,6 +51164,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41400,6 +51205,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41436,6 +51246,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41472,6 +51287,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41508,6 +51328,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41544,6 +51369,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41580,6 +51410,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41616,6 +51451,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41652,6 +51492,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41688,6 +51533,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41724,6 +51574,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41760,6 +51615,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41796,6 +51656,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41868,6 +51733,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41904,6 +51774,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41940,6 +51815,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -41973,6 +51853,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42006,6 +51891,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42039,6 +51929,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42072,6 +51967,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42105,6 +52005,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42138,6 +52043,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42171,6 +52081,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42204,6 +52119,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42237,6 +52157,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42270,6 +52195,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42303,6 +52233,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42336,6 +52271,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42369,6 +52309,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42402,6 +52347,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42435,6 +52385,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42468,6 +52423,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         favorites: [],
                         translations: [],
                         userGroupAccesses: [],
+                        sharing: {
+                            userGroups: {},
+                            users: {},
+                            external: false,
+                        },
                         attributeValues: [],
                         userAccesses: [],
                     },
@@ -42601,6 +52561,129 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "peFZC729hMn",
                     },
                 ],
+                sharing: {
+                    users: {
+                        UlXOWwGGx7W: {
+                            access: "r-rw----",
+                            displayName: "Duplicator Event",
+                            id: "UlXOWwGGx7W",
+                        },
+                        xgKMFzwPLs6: {
+                            access: "r-r-----",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    userGroups: {
+                        cT8WhjLqmH9: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_Skin_Yaws_Surv_Global_Entry",
+                            id: "cT8WhjLqmH9",
+                        },
+                        IPzz6wlkIp0: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_MYC_HQ",
+                            id: "IPzz6wlkIp0",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        bzuIPO5zQPV: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_Event_Entry",
+                            id: "bzuIPO5zQPV",
+                        },
+                        cy0qXsDxzxe: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_VL_LabLog_View",
+                            id: "cy0qXsDxzxe",
+                        },
+                        YWgdwKzbsnN: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_VL_Event_View",
+                            id: "YWgdwKzbsnN",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        I95k8bm5q5J: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_SUPPLY_DispatchHQ_Entry",
+                            id: "I95k8bm5q5J",
+                        },
+                        irooBniCRle: {
+                            access: "rwr-----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        IsbhpWFqxOx: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_Skin_MYC_GlSurv_Entry",
+                            id: "IsbhpWFqxOx",
+                        },
+                        r4gcKCyB5fF: {
+                            access: "rwrw----",
+                            displayName: "NTD_LSH_VL_PHC",
+                            id: "r4gcKCyB5fF",
+                        },
+                        DRlUpjkyeT9: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_MYC_GlSurv_View",
+                            id: "DRlUpjkyeT9",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        AKCiUSICdUT: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_VL_Event_Entry",
+                            id: "AKCiUSICdUT",
+                        },
+                        TbGA9fMJpCR: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_VL_LabLog_Entry",
+                            id: "TbGA9fMJpCR",
+                        },
+                        KZ2hDNFMcvB: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_SUPPLY_DispatchHQ_View",
+                            id: "KZ2hDNFMcvB",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        UQe9YTumaCV: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_Event_View",
+                            id: "UQe9YTumaCV",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        peFZC729hMn: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_Skin_Yaws_Surv_Global_View",
+                            id: "peFZC729hMn",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -46582,6 +56665,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 translations: [],
                 userAccesses: [],
                 organisationUnits: [],
+                sharing: {
+                    public: "rwrw----",
+                    external: false,
+                    userGroups: {},
+                    users: {},
+                },
             },
         ],
     },
@@ -46610,6 +56699,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 translations: [],
                 userAccesses: [],
                 categories: [
@@ -46634,6 +56735,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    public: "rw------",
+                    external: false,
+                    users: {},
+                    userGroups: {},
+                },
                 translations: [],
                 userAccesses: [],
                 categories: [
@@ -46667,6 +56774,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -46705,6 +56824,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -48895,6 +59026,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -48934,6 +59077,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -48970,6 +59125,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49006,6 +59173,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49042,6 +59221,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49078,6 +59269,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49114,6 +59317,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49150,6 +59365,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49186,6 +59413,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49222,6 +59461,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49258,6 +59509,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49294,6 +59557,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49330,6 +59605,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49366,6 +59653,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49402,6 +59701,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49438,6 +59749,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49474,6 +59797,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49510,6 +59845,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49546,6 +59893,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49582,6 +59941,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49610,6 +59981,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 },
                 translations: [],
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49646,6 +60023,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49682,6 +60071,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49718,6 +60119,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49754,6 +60167,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49790,6 +60215,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49829,6 +60266,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49865,6 +60314,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49901,6 +60362,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49937,6 +60410,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -49974,6 +60459,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -50010,6 +60507,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -50040,6 +60549,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 },
                 translations: [],
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -50076,6 +60591,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -50112,6 +60639,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -50149,6 +60688,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -50185,6 +60736,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -50221,6 +60784,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
@@ -50240,6 +60815,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    external: false,
+                    public: "rwrw----",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50267,6 +60848,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50298,6 +60891,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50329,6 +60934,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50360,6 +60977,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50391,6 +61020,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50422,6 +61063,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50453,6 +61106,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50484,6 +61149,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50518,6 +61195,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50558,6 +61247,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    external: false,
+                    public: "rw------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -50924,6 +61619,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 indicators: [],
                 userAccesses: [],
@@ -51023,6 +61730,64 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 lastUpdated: "2021-06-01T17:25:45.794",
@@ -51115,6 +61880,64 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Ulcer%",
@@ -51208,6 +62031,64 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "IA_BU_PCR%",
@@ -51300,6 +62181,64 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_ABcompleted%",
@@ -51373,6 +62312,48 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {},
+                },
             },
             {
                 code: "IA_BU_JointLim_%",
@@ -51446,6 +62427,48 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {},
+                },
             },
             {
                 lastUpdated: "2021-06-01T17:25:45.775",
@@ -51524,6 +62547,53 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 attributeValues: [],
                 userAccesses: [],
                 legendSets: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {},
+                },
             },
         ],
         categoryCombos: [
@@ -51636,6 +62706,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "RchPsJmL2wA",
                     },
                 ],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "CC_Gender",
@@ -51722,6 +62870,64 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "gvZZplg7PkY",
                     },
                 ],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        QUaeS1tdoLx: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        JusJWdDa1LM: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        H4YpPpQeKQR: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SBE_AggData_View",
+                            id: "H4YpPpQeKQR",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "CC_AgeGroup",
@@ -51886,6 +63092,129 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "J2EQ3575tpG",
                     },
                 ],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        OBxv9dRBkM5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_View",
+                            id: "OBxv9dRBkM5",
+                        },
+                        JusJWdDa1LM: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        foOXWD4beuA: {
+                            access: "r-------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "default",
@@ -51910,6 +63239,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "DMyxTSpvKOp",
                     },
                 ],
+                sharing: {
+                    public: "rw------",
+                    external: false,
+                    userGroups: {},
+                    users: {},
+                },
             },
             {
                 code: "CC_AgeGroup_BU",
@@ -51934,6 +63269,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "DddEdUVkG71",
                     },
                 ],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {},
+                    users: {},
+                },
             },
         ],
         categoryOptionCombos: [
@@ -52321,12 +63662,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "NAME",
                         locale: "fr",
-                        value: "Nombre de cas confim\ufffds par PCR",
+                        value: "Nombre de cas confim�s par PCR",
                     },
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Cas confim\ufffds par PCR",
+                        value: "Cas confim�s par PCR",
                     },
                 ],
                 userGroupAccesses: [
@@ -52420,6 +63761,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Cl_Ulcer",
@@ -52449,7 +63868,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "NAME",
                         locale: "fr",
-                        value: "Nombre de cas pr\ufffdsentant un ulc\ufffdre",
+                        value: "Nombre de cas pr�sentant un ulc�re",
                     },
                     {
                         property: "FORM_NAME",
@@ -52553,6 +63972,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_EPI_AnnualCases",
@@ -52582,7 +64079,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Nombre annuel de cas d'ulc\ufffdre de Buruli",
+                        value: "Nombre annuel de cas d'ulc�re de Buruli",
                     },
                     {
                         property: "SHORT_NAME",
@@ -52607,7 +64104,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "NAME",
                         locale: "fr",
-                        value: "Nombre annuel de cas d'ulc\ufffdre de Buruli",
+                        value: "Nombre annuel de cas d'ulc�re de Buruli",
                     },
                 ],
                 userGroupAccesses: [
@@ -52713,6 +64210,94 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        aDYjuZk8cXT: {
+                            access: "r-------",
+                            displayName: "WHO NTD department",
+                            id: "aDYjuZk8cXT",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_EPI_Age",
@@ -52740,12 +64325,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Cas d'ulc\ufffdre de Buruli (par groupe d'\ufffdge)",
+                        value: "Cas d'ulc�re de Buruli (par groupe d'�ge)",
                     },
                     {
                         property: "NAME",
                         locale: "fr",
-                        value: "Nombre de cas d'ulc\ufffdre de Buruli (par groupe d'\ufffdge)",
+                        value: "Nombre de cas d'ulc�re de Buruli (par groupe d'�ge)",
                     },
                 ],
                 userGroupAccesses: [
@@ -52839,6 +64424,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Tx_ABcompletion",
@@ -52878,7 +64541,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Patients ayant compl\ufffdt\ufffd le traitement antibiotique",
+                        value: "Patients ayant compl�t� le traitement antibiotique",
                     },
                 ],
                 userGroupAccesses: [
@@ -52972,6 +64635,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_CL_JointLim",
@@ -52999,7 +64740,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "NAME",
                         locale: "fr",
-                        value: "Nombre de cas pr\ufffdsentant une limitation articulaire au moment du diagnostique",
+                        value: "Nombre de cas pr�sentant une limitation articulaire au moment du diagnostique",
                     },
                     {
                         property: "SHORT_NAME",
@@ -53019,7 +64760,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Cas pr\ufffdsentant une limitation articulaire au moment du diagnostique",
+                        value: "Cas pr�sentant une limitation articulaire au moment du diagnostique",
                     },
                 ],
                 userGroupAccesses: [
@@ -53113,6 +64854,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_Cl_Cat",
@@ -53142,7 +64961,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Cas d'ulc\ufffdre de Buruli par cat\ufffdgorie",
+                        value: "Cas d'ulc�re de Buruli par cat�gorie",
                     },
                     {
                         property: "SHORT_NAME",
@@ -53157,7 +64976,7 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "NAME",
                         locale: "fr",
-                        value: "Nombre de cas d'ulc\ufffdre de Buruli par cat\ufffdgorie",
+                        value: "Nombre de cas d'ulc�re de Buruli par cat�gorie",
                     },
                     {
                         property: "NAME",
@@ -53261,6 +65080,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "BU_EPI_Gender",
@@ -53293,12 +65190,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     {
                         property: "NAME",
                         locale: "fr",
-                        value: "Nombre de cas d'ulc\ufffdre de Buruli (par genre)",
+                        value: "Nombre de cas d'ulc�re de Buruli (par genre)",
                     },
                     {
                         property: "SHORT_NAME",
                         locale: "fr",
-                        value: "Cas d'ulc\ufffdre de Buruli (par genre)",
+                        value: "Cas d'ulc�re de Buruli (par genre)",
                     },
                     {
                         property: "SHORT_NAME",
@@ -53397,6 +65294,84 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 legendSets: [],
                 aggregationLevels: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
         ],
         categoryOptions: [
@@ -53412,6 +65387,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    public: "rwrw----",
+                    external: false,
+                    userGroups: {},
+                    users: {},
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -53617,6 +65598,154 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        Mg0TXhvvXJ4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Entry",
+                            id: "Mg0TXhvvXJ4",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        JusJWdDa1LM: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-rw----",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        H4YpPpQeKQR: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SBE_AggData_View",
+                            id: "H4YpPpQeKQR",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        B6oADCiiW8v: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_View",
+                            id: "B6oADCiiW8v",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        PCa3h9xXkLN: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_Entry",
+                            id: "PCa3h9xXkLN",
+                        },
+                        irooBniCRle: {
+                            access: "rwrw----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        OBxv9dRBkM5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_View",
+                            id: "OBxv9dRBkM5",
+                        },
+                        foOXWD4beuA: {
+                            access: "r-------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        PthCrHajHLi: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_View",
+                            id: "PthCrHajHLi",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Op_BU_Cat_II",
@@ -53885,6 +66014,219 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        Mg0TXhvvXJ4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Entry",
+                            id: "Mg0TXhvvXJ4",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                        IPzz6wlkIp0: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_MYC_HQ",
+                            id: "IPzz6wlkIp0",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        LCs79RaVi0a: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_SUPPLY_MonthlyStock_Entry",
+                            id: "LCs79RaVi0a",
+                        },
+                        foOXWD4beuA: {
+                            access: "rw------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        TNA9oGI43e4: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_EURO_ARM",
+                            id: "TNA9oGI43e4",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-rw----",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        K40P7b1JFdc: {
+                            access: "r-r-----",
+                            displayName: "NTD_EMRO",
+                            id: "K40P7b1JFdc",
+                        },
+                        VONeiGGohxr: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Other",
+                            id: "VONeiGGohxr",
+                        },
+                        B6oADCiiW8v: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_View",
+                            id: "B6oADCiiW8v",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        PCa3h9xXkLN: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_Entry",
+                            id: "PCa3h9xXkLN",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-r-----",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        phezIKUxlC2: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_EMRO_SOM",
+                            id: "phezIKUxlC2",
+                        },
+                        irooBniCRle: {
+                            access: "rwrw----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-r-----",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        j3RfLgyvhbd: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Country",
+                            id: "j3RfLgyvhbd",
+                        },
+                        orn5lTGFMve: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Public",
+                            id: "orn5lTGFMve",
+                        },
+                        PthCrHajHLi: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_View",
+                            id: "PthCrHajHLi",
+                        },
+                        pbZna7luFaM: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_OIE",
+                            id: "pbZna7luFaM",
+                        },
+                        Zr1fdsbkiAR: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Official",
+                            id: "Zr1fdsbkiAR",
+                        },
+                        aDYjuZk8cXT: {
+                            access: "r-r-----",
+                            displayName: "WHO NTD department",
+                            id: "aDYjuZk8cXT",
+                        },
+                        BMxt1NZML9e: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_SUPPLY_HQ",
+                            id: "BMxt1NZML9e",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        K7VPSVrAYeV: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Estimates",
+                            id: "K7VPSVrAYeV",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "rwr-----",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        MYa3lh5k0Yq: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_SUPPLY_HQPublished",
+                            id: "MYa3lh5k0Yq",
+                        },
+                        Fs9vCVCHjlE: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Demo",
+                            id: "Fs9vCVCHjlE",
+                        },
+                        CoxTaSDd4Bz: {
+                            access: "r-r-----",
+                            displayName: "NTD_Skin_AFRO_GHA",
+                            id: "CoxTaSDd4Bz",
+                        },
+                        I95k8bm5q5J: {
+                            access: "rwr-----",
+                            displayName: "SS_NTD_LSH_SUPPLY_DispatchHQ_Entry",
+                            id: "I95k8bm5q5J",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "ALL_Op_Gender_Male",
@@ -53923,6 +66265,18 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 userAccesses: [],
                 organisationUnits: [],
+                sharing: {
+                    public: "r-rw----",
+                    external: false,
+                    userGroups: {
+                        JusJWdDa1LM: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                    },
+                    users: {},
+                },
             },
             {
                 code: "Op_Age_15over",
@@ -54118,6 +66472,149 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        Mg0TXhvvXJ4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Entry",
+                            id: "Mg0TXhvvXJ4",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-rw----",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        B6oADCiiW8v: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_View",
+                            id: "B6oADCiiW8v",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        PCa3h9xXkLN: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_Entry",
+                            id: "PCa3h9xXkLN",
+                        },
+                        irooBniCRle: {
+                            access: "rwrw----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        OBxv9dRBkM5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_View",
+                            id: "OBxv9dRBkM5",
+                        },
+                        JusJWdDa1LM: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                        foOXWD4beuA: {
+                            access: "r-------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        PthCrHajHLi: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_View",
+                            id: "PthCrHajHLi",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "ALL_Op_Gender_Female",
@@ -54174,6 +66671,33 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 userAccesses: [],
                 organisationUnits: [],
+                sharing: {
+                    public: "r-rw----",
+                    external: false,
+                    userGroups: {
+                        foOXWD4beuA: {
+                            access: "rwrw----",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        JusJWdDa1LM: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        H4YpPpQeKQR: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SBE_AggData_View",
+                            id: "H4YpPpQeKQR",
+                        },
+                    },
+                    users: {},
+                },
             },
             {
                 code: "Op_Age_15-49y",
@@ -54219,6 +66743,33 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 translations: [],
                 userAccesses: [],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        foOXWD4beuA: {
+                            access: "rwrw----",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        JusJWdDa1LM: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rwrw----",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        H4YpPpQeKQR: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SBE_AggData_View",
+                            id: "H4YpPpQeKQR",
+                        },
+                    },
+                    users: {},
+                },
             },
             {
                 code: "Op_Age_50over",
@@ -54239,6 +66790,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 translations: [],
                 userAccesses: [],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {},
+                    users: {},
+                },
             },
             {
                 code: "Op_BU_Cat_I",
@@ -54507,6 +67064,219 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        Mg0TXhvvXJ4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Entry",
+                            id: "Mg0TXhvvXJ4",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        IPzz6wlkIp0: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_MYC_HQ",
+                            id: "IPzz6wlkIp0",
+                        },
+                        LCs79RaVi0a: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_SUPPLY_MonthlyStock_Entry",
+                            id: "LCs79RaVi0a",
+                        },
+                        foOXWD4beuA: {
+                            access: "rw------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        TNA9oGI43e4: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_EURO_ARM",
+                            id: "TNA9oGI43e4",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-rw----",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        K40P7b1JFdc: {
+                            access: "r-r-----",
+                            displayName: "NTD_EMRO",
+                            id: "K40P7b1JFdc",
+                        },
+                        VONeiGGohxr: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Other",
+                            id: "VONeiGGohxr",
+                        },
+                        B6oADCiiW8v: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_View",
+                            id: "B6oADCiiW8v",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        PCa3h9xXkLN: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_Entry",
+                            id: "PCa3h9xXkLN",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-r-----",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        phezIKUxlC2: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_EMRO_SOM",
+                            id: "phezIKUxlC2",
+                        },
+                        irooBniCRle: {
+                            access: "rwrw----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-r-----",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        j3RfLgyvhbd: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Country",
+                            id: "j3RfLgyvhbd",
+                        },
+                        orn5lTGFMve: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Public",
+                            id: "orn5lTGFMve",
+                        },
+                        PthCrHajHLi: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_View",
+                            id: "PthCrHajHLi",
+                        },
+                        pbZna7luFaM: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_OIE",
+                            id: "pbZna7luFaM",
+                        },
+                        Zr1fdsbkiAR: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Official",
+                            id: "Zr1fdsbkiAR",
+                        },
+                        aDYjuZk8cXT: {
+                            access: "r-r-----",
+                            displayName: "WHO NTD department",
+                            id: "aDYjuZk8cXT",
+                        },
+                        BMxt1NZML9e: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_SUPPLY_HQ",
+                            id: "BMxt1NZML9e",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        K7VPSVrAYeV: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Estimates",
+                            id: "K7VPSVrAYeV",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "rwr-----",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        MYa3lh5k0Yq: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_SUPPLY_HQPublished",
+                            id: "MYa3lh5k0Yq",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        Fs9vCVCHjlE: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Demo",
+                            id: "Fs9vCVCHjlE",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                        I95k8bm5q5J: {
+                            access: "rwr-----",
+                            displayName: "SS_NTD_LSH_SUPPLY_DispatchHQ_Entry",
+                            id: "I95k8bm5q5J",
+                        },
+                        CoxTaSDd4Bz: {
+                            access: "r-r-----",
+                            displayName: "NTD_Skin_AFRO_GHA",
+                            id: "CoxTaSDd4Bz",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Op_Age_unknown",
@@ -54708,6 +67478,154 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        Mg0TXhvvXJ4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Entry",
+                            id: "Mg0TXhvvXJ4",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-rw----",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        H4YpPpQeKQR: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SBE_AggData_View",
+                            id: "H4YpPpQeKQR",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        B6oADCiiW8v: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_View",
+                            id: "B6oADCiiW8v",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        PCa3h9xXkLN: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_Entry",
+                            id: "PCa3h9xXkLN",
+                        },
+                        irooBniCRle: {
+                            access: "rwrw----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        OBxv9dRBkM5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_View",
+                            id: "OBxv9dRBkM5",
+                        },
+                        JusJWdDa1LM: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                        foOXWD4beuA: {
+                            access: "r-------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        PthCrHajHLi: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_View",
+                            id: "PthCrHajHLi",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Op_Age_under5",
@@ -54903,6 +67821,149 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        Mg0TXhvvXJ4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Entry",
+                            id: "Mg0TXhvvXJ4",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-rw----",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        B6oADCiiW8v: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_View",
+                            id: "B6oADCiiW8v",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        PCa3h9xXkLN: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_Entry",
+                            id: "PCa3h9xXkLN",
+                        },
+                        irooBniCRle: {
+                            access: "rwrw----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        OBxv9dRBkM5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_View",
+                            id: "OBxv9dRBkM5",
+                        },
+                        JusJWdDa1LM: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                        foOXWD4beuA: {
+                            access: "r-------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        PthCrHajHLi: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_View",
+                            id: "PthCrHajHLi",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Op_BU_Cat_unknown",
@@ -55182,6 +68243,219 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        Mg0TXhvvXJ4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Entry",
+                            id: "Mg0TXhvvXJ4",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        IPzz6wlkIp0: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_MYC_HQ",
+                            id: "IPzz6wlkIp0",
+                        },
+                        LCs79RaVi0a: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_SUPPLY_MonthlyStock_Entry",
+                            id: "LCs79RaVi0a",
+                        },
+                        foOXWD4beuA: {
+                            access: "rw------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        TNA9oGI43e4: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_EURO_ARM",
+                            id: "TNA9oGI43e4",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-rw----",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        K40P7b1JFdc: {
+                            access: "r-r-----",
+                            displayName: "NTD_EMRO",
+                            id: "K40P7b1JFdc",
+                        },
+                        VONeiGGohxr: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Other",
+                            id: "VONeiGGohxr",
+                        },
+                        B6oADCiiW8v: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_View",
+                            id: "B6oADCiiW8v",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        PCa3h9xXkLN: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_Entry",
+                            id: "PCa3h9xXkLN",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-r-----",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        phezIKUxlC2: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_EMRO_SOM",
+                            id: "phezIKUxlC2",
+                        },
+                        irooBniCRle: {
+                            access: "rwrw----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-r-----",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        j3RfLgyvhbd: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Country",
+                            id: "j3RfLgyvhbd",
+                        },
+                        orn5lTGFMve: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Public",
+                            id: "orn5lTGFMve",
+                        },
+                        PthCrHajHLi: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_View",
+                            id: "PthCrHajHLi",
+                        },
+                        pbZna7luFaM: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_OIE",
+                            id: "pbZna7luFaM",
+                        },
+                        Zr1fdsbkiAR: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Official",
+                            id: "Zr1fdsbkiAR",
+                        },
+                        aDYjuZk8cXT: {
+                            access: "r-r-----",
+                            displayName: "WHO NTD department",
+                            id: "aDYjuZk8cXT",
+                        },
+                        BMxt1NZML9e: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_SUPPLY_HQ",
+                            id: "BMxt1NZML9e",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        K7VPSVrAYeV: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Estimates",
+                            id: "K7VPSVrAYeV",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "rwr-----",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        MYa3lh5k0Yq: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_SUPPLY_HQPublished",
+                            id: "MYa3lh5k0Yq",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        Fs9vCVCHjlE: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Demo",
+                            id: "Fs9vCVCHjlE",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                        I95k8bm5q5J: {
+                            access: "rwr-----",
+                            displayName: "SS_NTD_LSH_SUPPLY_DispatchHQ_Entry",
+                            id: "I95k8bm5q5J",
+                        },
+                        CoxTaSDd4Bz: {
+                            access: "r-r-----",
+                            displayName: "NTD_Skin_AFRO_GHA",
+                            id: "CoxTaSDd4Bz",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Op_BU_Cat_III",
@@ -55450,6 +68724,219 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     },
                 ],
                 organisationUnits: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        Mg0TXhvvXJ4: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Entry",
+                            id: "Mg0TXhvvXJ4",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                        IPzz6wlkIp0: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_MYC_HQ",
+                            id: "IPzz6wlkIp0",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rwrw----",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        LCs79RaVi0a: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_SUPPLY_MonthlyStock_Entry",
+                            id: "LCs79RaVi0a",
+                        },
+                        foOXWD4beuA: {
+                            access: "rw------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        TNA9oGI43e4: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_EURO_ARM",
+                            id: "TNA9oGI43e4",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-rw----",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        K40P7b1JFdc: {
+                            access: "r-r-----",
+                            displayName: "NTD_EMRO",
+                            id: "K40P7b1JFdc",
+                        },
+                        VONeiGGohxr: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Other",
+                            id: "VONeiGGohxr",
+                        },
+                        B6oADCiiW8v: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_View",
+                            id: "B6oADCiiW8v",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        PCa3h9xXkLN: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_Entry",
+                            id: "PCa3h9xXkLN",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-r-----",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        phezIKUxlC2: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_EMRO_SOM",
+                            id: "phezIKUxlC2",
+                        },
+                        irooBniCRle: {
+                            access: "rwrw----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        tEOUdu1ala4: {
+                            access: "r-r-----",
+                            displayName: "NTD_EURO",
+                            id: "tEOUdu1ala4",
+                        },
+                        j3RfLgyvhbd: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Country",
+                            id: "j3RfLgyvhbd",
+                        },
+                        orn5lTGFMve: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Public",
+                            id: "orn5lTGFMve",
+                        },
+                        PthCrHajHLi: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_RAB_AggData_Retro_View",
+                            id: "PthCrHajHLi",
+                        },
+                        pbZna7luFaM: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_OIE",
+                            id: "pbZna7luFaM",
+                        },
+                        Zr1fdsbkiAR: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Official",
+                            id: "Zr1fdsbkiAR",
+                        },
+                        aDYjuZk8cXT: {
+                            access: "r-r-----",
+                            displayName: "WHO NTD department",
+                            id: "aDYjuZk8cXT",
+                        },
+                        BMxt1NZML9e: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_SUPPLY_HQ",
+                            id: "BMxt1NZML9e",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        K7VPSVrAYeV: {
+                            access: "r-------",
+                            displayName: "NTD_RAB_Estimates",
+                            id: "K7VPSVrAYeV",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        sXNyAgGyHSK: {
+                            access: "rwr-----",
+                            displayName: "SS_NTD_LSH_VL_KEN_Event_Entry",
+                            id: "sXNyAgGyHSK",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-rw----",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rwr-----",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        Fs9vCVCHjlE: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_Demo",
+                            id: "Fs9vCVCHjlE",
+                        },
+                        MYa3lh5k0Yq: {
+                            access: "r-r-----",
+                            displayName: "NTD_LSH_SUPPLY_HQPublished",
+                            id: "MYa3lh5k0Yq",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                        I95k8bm5q5J: {
+                            access: "rwr-----",
+                            displayName: "SS_NTD_LSH_SUPPLY_DispatchHQ_Entry",
+                            id: "I95k8bm5q5J",
+                        },
+                        CoxTaSDd4Bz: {
+                            access: "r-r-----",
+                            displayName: "NTD_Skin_AFRO_GHA",
+                            id: "CoxTaSDd4Bz",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "ALL_Gender_9",
@@ -55481,6 +68968,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                 ],
                 userAccesses: [],
                 organisationUnits: [],
+                sharing: {
+                    public: "r-rw----",
+                    external: false,
+                    userGroups: {},
+                    users: {},
+                },
             },
         ],
         categories: [
@@ -55500,6 +68993,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "q9wZgtaDxWn",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {},
+                    users: {},
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -55537,6 +69036,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "H4atNsEuKxP",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    public: "r-------",
+                    external: false,
+                    userGroups: {},
+                    users: {},
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -55653,6 +69158,69 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "rduPRxceiXM",
                     },
                 ],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "Age group",
@@ -55827,6 +69395,129 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "w5ItMDKuO20",
                     },
                 ],
+                sharing: {
+                    public: "--------",
+                    external: false,
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        OBxv9dRBkM5: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_View",
+                            id: "OBxv9dRBkM5",
+                        },
+                        JusJWdDa1LM: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SBE_AggData_Entry",
+                            id: "JusJWdDa1LM",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        foOXWD4beuA: {
+                            access: "r-------",
+                            displayName: "NTD_NZD_admin",
+                            id: "foOXWD4beuA",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        nPPxGTmEqbL: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggData_View",
+                            id: "nPPxGTmEqbL",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        Un2GLxeuVZ2: {
+                            access: "rw------",
+                            displayName: "NTD_LSH_Admin",
+                            id: "Un2GLxeuVZ2",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        TUL6Ftyw9j6: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_YAWS_AggData_Entry",
+                            id: "TUL6Ftyw9j6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        QUaeS1tdoLx: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggrDataSimple_Entry",
+                            id: "QUaeS1tdoLx",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        yBUSIP5IhrF: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_HQ",
+                            id: "yBUSIP5IhrF",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                        aAGXWv0GkMo: {
+                            access: "r-------",
+                            displayName: "SS_NTD_LSH_AggData_Entry",
+                            id: "aAGXWv0GkMo",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                },
             },
             {
                 code: "default",
@@ -55841,6 +69532,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    public: "rw------",
+                    external: false,
+                    userGroups: {},
+                    users: {},
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -56035,6 +69732,23 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        irooBniCRle: {
+                            access: "rw------",
+                            id: "irooBniCRle",
+                            displayName: "NTD admin team",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "rw------",
+                            id: "UfhhwZK73Lg",
+                            displayName: "WIDP IT team",
+                        },
+                    },
+                    users: {},
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 indicators: [
                     {
@@ -56096,6 +69810,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    external: false,
+                    public: "rw------",
+                },
                 translations: [],
                 userAccesses: [],
                 categories: [
@@ -56415,6 +70135,74 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "GcNXOjowdL7",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -56575,6 +70363,94 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "GcNXOjowdL7",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        aDYjuZk8cXT: {
+                            access: "r-------",
+                            displayName: "WHO NTD department",
+                            id: "aDYjuZk8cXT",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        k1KjQJqaHpz: {
+                            access: "rw------",
+                            displayName: "NTD_SKIN_Admin",
+                            id: "k1KjQJqaHpz",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        ZvxncLTan3w: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_Yaws_WHO",
+                            id: "ZvxncLTan3w",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        UnTaQrY57qi: {
+                            access: "r-------",
+                            displayName: "NTD_LSH_Monthly_Importer",
+                            id: "UnTaQrY57qi",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -56701,6 +70577,74 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "GcNXOjowdL7",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -56820,6 +70764,74 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UhRUGTBad7l",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -56945,6 +70957,74 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "GcNXOjowdL7",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -57064,6 +71144,74 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "GcNXOjowdL7",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -57165,6 +71313,59 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -57290,6 +71491,74 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UhRUGTBad7l",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -57409,6 +71678,74 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "GcNXOjowdL7",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -57528,6 +71865,74 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "GcNXOjowdL7",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -57647,6 +72052,74 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "GcNXOjowdL7",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        n7TwFEDHiw6: {
+                            access: "r-------",
+                            displayName: "NTD_RO",
+                            id: "n7TwFEDHiw6",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-------",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-------",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        urN5y60pAuu: {
+                            access: "r-------",
+                            displayName: "NTD_CH_HQ",
+                            id: "urN5y60pAuu",
+                        },
+                        irooBniCRle: {
+                            access: "rw------",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                        UhRUGTBad7l: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_Entry",
+                            id: "UhRUGTBad7l",
+                        },
+                        GcNXOjowdL7: {
+                            access: "r-------",
+                            displayName: "SS_NTD_CH_Healthcare_AggrData_View",
+                            id: "GcNXOjowdL7",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    public: "--------",
+                    external: false,
+                },
                 attributeValues: [],
                 userAccesses: [
                     {
@@ -57673,6 +72146,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    external: false,
+                    public: "rwrw----",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -57693,6 +72172,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                     id: "eK26I7dRbC4",
                 },
                 userGroupAccesses: [],
+                sharing: {
+                    userGroups: {},
+                    users: {},
+                    external: false,
+                    public: "rw------",
+                },
                 attributeValues: [],
                 translations: [],
                 userAccesses: [],
@@ -58006,6 +72491,54 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         id: "UfhhwZK73Lg",
                     },
                 ],
+                sharing: {
+                    userGroups: {
+                        irooBniCRle: {
+                            access: "rwr-----",
+                            displayName: "NTD admin team",
+                            id: "irooBniCRle",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
+                        },
+                        ZyQlPOL3aSD: {
+                            access: "r-r-----",
+                            displayName: "NTD_SKIN_BU_HQ",
+                            id: "ZyQlPOL3aSD",
+                        },
+                        ztM3xGja5IQ: {
+                            access: "r-rw----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_Entry",
+                            id: "ztM3xGja5IQ",
+                        },
+                        vjGluCqWr25: {
+                            access: "r-r-----",
+                            displayName: "NTD Web Portal",
+                            id: "vjGluCqWr25",
+                        },
+                        LkY2dlqepEr: {
+                            access: "r-r-----",
+                            displayName: "SS_NTD_SKIN_BU_AggData_View",
+                            id: "LkY2dlqepEr",
+                        },
+                        UfhhwZK73Lg: {
+                            access: "r-------",
+                            displayName: "WIDP IT team",
+                            id: "UfhhwZK73Lg",
+                        },
+                    },
+                    users: {
+                        xgKMFzwPLs6: {
+                            access: "r-------",
+                            displayName: "NTD CHECK",
+                            id: "xgKMFzwPLs6",
+                        },
+                    },
+                    external: false,
+                    public: "--------",
+                },
                 attributeValues: [],
                 indicators: [],
                 userAccesses: [
