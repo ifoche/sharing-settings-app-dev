@@ -6040,12 +6040,12 @@ export const metadata: Record<string, Record<string, any[]>> = {
                         },
                         ZXEVDM9XRea: {
                             displayName: "MAL_Malaria access",
-                            access: "rw------",
+                            access: "r-------",
                             id: "ZXEVDM9XRea",
                         },
                         OviFXqdot0H: {
                             displayName: "MAL_Malaria users",
-                            access: "r-------",
+                            access: "rw------",
                             id: "OviFXqdot0H",
                         },
                     },
@@ -11666,11 +11666,6 @@ export const metadata: Record<string, Record<string, any[]>> = {
                             displayName: "WISCENTD - data lake extraction",
                             id: "bxyNjDdzxoY",
                         },
-                        peFZC729hMn: {
-                            access: "r-------",
-                            displayName: "SS_NTD_Skin_Yaws_Surv_Global_View",
-                            id: "peFZC729hMn",
-                        },
                         GHGv3VsHn1a: {
                             access: "r-------",
                             displayName: "SS_NTD_LSH_CL_LeishManTracker_View",
@@ -11805,6 +11800,11 @@ export const metadata: Record<string, Record<string, any[]>> = {
                             access: "r-------",
                             displayName: "SS_NTD_LSH_CL_ARM_Tracker_Entry",
                             id: "wwAK2yjjWQc",
+                        },
+                        XqznB7ROzB3: {
+                            access: "r-------",
+                            displayName: "NTD_SKIN_HQ",
+                            id: "XqznB7ROzB3",
                         },
                     },
                     external: false,
