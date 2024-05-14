@@ -173,7 +173,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
 
                 const filterModels = _.keys(data).map(item => ({
                     id: item as MetadataModel,
-                    name: displayName[item] ?? i18n.t("Unknown model"),
+                    name: displayName[item] ?? i18n.t(_.startCase(item)),
                 }));
 
                 setRows(rows);

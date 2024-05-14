@@ -27,6 +27,7 @@ export type MetadataModel =
     | "organisationUnitGroupSets";
 
 export const displayName: Record<string, string> = {
+    attributes: "Attributes",
     dataSets: "Data Sets",
     programs: "Programs",
     dashboards: "Dashboards",
@@ -50,6 +51,8 @@ export const displayName: Record<string, string> = {
     dataElementGroupSets: "Data Element Group Set",
     organisationUnitGroups: "Organisation Unit Group",
     organisationUnitGroupSets: "Organisation Unit Group Set",
+    trackedEntityAttributes: "Tracked Entity Attributes",
+    trackedEntityTypes: "Tracked Entity Types",
 };
 export type MetadataPayload = Record<string, MetadataItem[]>;
 
