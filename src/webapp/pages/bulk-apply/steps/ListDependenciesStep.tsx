@@ -180,7 +180,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
 
                 setRows(rows);
                 setFilterOptions(filterModels);
-                setListOptions(options => ({ ...options, model: selectedModel ?? "dashboards" }));
+                setListOptions(options => ({ ...options, model: filterModels[0]?.id ?? "dashboards" }));
                 setFilteredRows(rows.filter(row => row.metadataType === selectedModel ?? filterModels[0]?.id));
                 setIsLoading(false);
             },
