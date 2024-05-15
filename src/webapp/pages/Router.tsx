@@ -16,7 +16,7 @@ export const Router: React.FC = React.memo(() => {
                     {/* Default route */}
                     <Route render={() => <BulkApplyPage />} />
                 </Switch>
-                <About visible={true} />
+                <About />
             </HashRouter>
         </Container>
     );

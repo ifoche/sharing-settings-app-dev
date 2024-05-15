@@ -3,19 +3,11 @@ import styled from "styled-components";
 import { Info as InfoIcon } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
-interface AboutProps {
-    visible: boolean;
-}
-
-export const About: React.FC<AboutProps> = React.memo(({ visible }) => {
+export const About: React.FC = React.memo(() => {
     return (
-        <>
-            {visible && (
-                <AboutButton to="/about">
-                    <InfoIcon fontSize="small" />
-                </AboutButton>
-            )}
-        </>
+        <AboutButton to="/about">
+            <InfoIcon fontSize="small" />
+        </AboutButton>
     );
 });
 
