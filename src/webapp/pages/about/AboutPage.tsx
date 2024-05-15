@@ -19,7 +19,7 @@ export const AboutPage = () => {
                 >
                     <HomeIcon fontSize="small" color="inherit" />
                 </BackButton>
-                <Title variant="h1">About Sharing Settings App</Title>
+                <Title variant="h1">{i18n.t("About Sharing Settings App")}</Title>
                 <Description variant="body2">
                     {i18n.t(
                         "Sharing Settings app development is sustainable thanks to the partners for which we build customized DHIS2 solutions. It has been funded by WHO and the WHO Integrated Data Platform (WIDP), where several WHO departments and units share a dedicated hosting and maintenance provided by"
