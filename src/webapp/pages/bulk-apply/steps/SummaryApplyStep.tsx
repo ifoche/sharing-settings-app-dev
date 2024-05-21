@@ -6,6 +6,8 @@ import { ImportSummary } from "../../../components/import-summary/ImportSummary"
 import { MetadataSharingWizardStepProps } from "../SharingWizardSteps";
 import { useSummaryStep } from "./useSummaryStep";
 import { SharingSummary } from "../../../components/sharing-summary/SharingSummary";
+import { CircularProgress } from "material-ui";
+import styled from "styled-components";
 
 export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ builder }) => {
     const snackbar = useSnackbar();
@@ -33,9 +35,10 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
     }, [globalMessage, snackbar]);
 
     return (
-        <React.Fragment>
+        <Container>
             {importResult && <ImportSummary results={[importResult]} onClose={closeImportSummary} />}
             {sharingSummary && <SharingSummary summary={sharingSummary} />}
+            {loading && <CircularProgress />}
 
             <ConfirmationDialog
                 isOpen={openDialog}
@@ -51,9 +54,19 @@ export const SummaryApplyStep: React.FC<MetadataSharingWizardStepProps> = ({ bui
                 {i18n.t("You are about to change the public access sharing setting. Would you like to continue?")}
             </ConfirmationDialog>
 
-            <Button variant="contained" color="primary" onClick={applySharingSettings} disabled={loading}>
+            <StyledButton variant="contained" color="primary" onClick={applySharingSettings} disabled={loading}>
                 {i18n.t("Apply Sharing Settings")}
-            </Button>
-        </React.Fragment>
+            </StyledButton>
+        </Container>
     );
 };
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+const StyledButton = styled(Button)`
+    margin: 20px 0 0 0;
+    width: max-content;
+`;
