@@ -104,7 +104,7 @@ export const SettingsPage: React.FC = () => {
     );
 
     return (
-        <React.Fragment>
+        <>
             <PageHeader title={i18n.t("Global exclusion settings")} onBackClick={goBack} />
             <ObjectsTable<MetadataItem>
                 rows={response.objects}
@@ -125,7 +125,7 @@ export const SettingsPage: React.FC = () => {
             <Button type="submit" onClick={saveExcludedDependencies} primary>
                 {i18n.t("Save global excluded dependencies")}
             </Button>
-        </React.Fragment>
+        </>
     );
 };
 

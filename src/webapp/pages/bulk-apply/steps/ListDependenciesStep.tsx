@@ -32,6 +32,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
     const [selection, setSelection] = useState<TableSelection[]>([]);
     const [filterOptions, setFilterOptions] = useState<DropdownOption<MetadataModel>[]>([]);
     const [listOptions, setListOptions] = useState<ListOptions>(initialState);
+    const [selectedModel, setSelectedModel] = useState<MetadataModel>();
 
     const columns = useMemo(
         (): TableColumn<MetadataItem>[] => [
@@ -141,6 +142,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
 
     const applyFilterChanges = useCallback(
         (model: MetadataModel) => {
+            setSelectedModel(model);
             setListOptions(options => ({ ...options, model }));
             setFilteredRows(rows.filter(row => row.metadataType === model));
         },
@@ -173,18 +175,18 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
 
                 const filterModels = _.keys(data).map(item => ({
                     id: item as MetadataModel,
-                    name: displayName[item] ?? i18n.t("Unknown model"),
+                    name: displayName[item] ?? i18n.t(_.startCase(item)),
                 }));
 
                 setRows(rows);
                 setFilterOptions(filterModels);
                 setListOptions(options => ({ ...options, model: filterModels[0]?.id ?? "dashboards" }));
-                setFilteredRows(rows.filter(row => row.metadataType === filterModels[0]?.id));
+                setFilteredRows(rows.filter(row => row.metadataType === selectedModel ?? filterModels[0]?.id));
                 setIsLoading(false);
             },
             error => snackbar.error(error)
         );
-    }, [builder, compositionRoot, snackbar]);
+    }, [builder, compositionRoot, selectedModel, snackbar]);
 
     useEffect(() => {
         compositionRoot.excludedDependencies.list().run(
@@ -205,7 +207,7 @@ export const ListDependenciesStep: React.FC<MetadataSharingWizardStepProps> = ({
             <Dropdown<MetadataModel>
                 items={filterOptions}
                 onValueChange={applyFilterChanges}
-                value={listOptions.model}
+                value={selectedModel ?? listOptions.model}
                 label={i18n.t("Metadata type")}
                 hideEmpty={true}
             />
