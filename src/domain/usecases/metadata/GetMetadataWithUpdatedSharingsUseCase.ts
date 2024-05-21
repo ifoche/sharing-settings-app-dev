@@ -6,7 +6,7 @@ import { buildAccessString, getAccessFromString, SharedObject, SharingSetting } 
 import { SharingUpdate } from "../../entities/SharingUpdate";
 import { MetadataRepository } from "../../repositories/MetadataRepository";
 
-export class ApplySharingSettingsUseCase implements UseCase {
+export class GetMetadataWithUpdatedSharingsUseCase implements UseCase {
     constructor(private metadataRepository: MetadataRepository) {}
 
     public execute(update: SharingUpdate): FutureData<MetadataPayload> {
