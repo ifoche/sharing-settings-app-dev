@@ -18,7 +18,7 @@ export const SharingSummary = ({ summary }: SharingSummaryProps) => {
             ))}
 
             {sharingWarnings.length !== 0 && (
-                <div>
+                <Warnings>
                     <Title>{i18n.t("Warning:")}</Title>
                     {sharingWarnings.map(metadataItem => (
                         <MetadataList
@@ -27,7 +27,7 @@ export const SharingSummary = ({ summary }: SharingSummaryProps) => {
                             metadata={metadataItem.children}
                         />
                     ))}
-                </div>
+                </Warnings>
             )}
 
             {excludedMetadata.length !== 0 && (
@@ -62,6 +62,11 @@ const MetadataList = ({ title, metadata }: { title: string; metadata: NamedRef[]
 const Title = styled.p`
     font-weight: 500;
     margin: 0;
+`;
+
+const Warnings = styled.div`
+    background-color: #FFF4E5;
+    padding: 2rem;
 `;
 
 function pluralize(str: string) {
