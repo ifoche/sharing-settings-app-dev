@@ -12,10 +12,10 @@ export class GetSharingSummaryUseCase {
     public execute(update: SharingUpdate, payload: MetadataPayload): FutureData<SharingSummary> {
         const { baseElements, excludedDependencies } = update;
 
-        return this.metadataRepository.getMetadataWithChildren(baseElements).flatMap(payloads => {
-            const payloadsSummary = this.getPayloadsSummary(payloads, payload, excludedDependencies);
+        return this.metadataRepository.getMetadataWithChildren(baseElements).flatMap(selectedMetadata => {
+            const payloadsSummary = this.getPayloadsSummary(selectedMetadata, payload);
             const metadataWithDifferentSharing = this.getMetadataWithDifferentSharing(payloadsSummary, baseElements);
-            const sharingWarnings = this.cleanMetadataSharing(metadataWithDifferentSharing, excludedDependencies);
+            const sharingWarnings = this.cleanMetadataSharing(metadataWithDifferentSharing);
             const sharingPayload = this.getSharingPayload(payload, excludedDependencies);
 
             return this.metadataRepository.getMetadataFromIds(excludedDependencies).flatMap(excludedPayload => {
@@ -37,11 +37,7 @@ export class GetSharingSummaryUseCase {
         });
     }
 
-    private getPayloadsSummary(
-        d2Payloads: MetadataPayload[],
-        updatedPayload: MetadataPayload,
-        excludedDependencies: string[]
-    ): MetadataPayload[] {
+    private getPayloadsSummary(d2Payloads: MetadataPayload[], updatedPayload: MetadataPayload): MetadataPayload[] {
         const cleanedPayload = this.cleanPayload(updatedPayload);
 
         return d2Payloads.map(d2Payload => {
@@ -55,7 +51,7 @@ export class GetSharingSummaryUseCase {
                         const existing = mappingArray.find(mappingItem => mappingItem.id === item.id);
                         return existing ? { ...item, sharing: existing.sharing } : item;
                     })
-                    .filter(payload => !excludedDependencies.includes(payload.id) && !isDefaultElement(payload));
+                    .filter(payload => !isDefaultElement(payload));
             });
         });
     }
@@ -89,10 +85,7 @@ export class GetSharingSummaryUseCase {
         return _.pickBy(sharingPayload, value => !_.isEmpty(value));
     }
 
-    private cleanMetadataSharing(
-        metadataSharingWithChildren: SharingWarning[],
-        excludedDependencies: string[]
-    ): SharingWarning[] {
+    private cleanMetadataSharing(metadataSharingWithChildren: SharingWarning[]): SharingWarning[] {
         return metadataSharingWithChildren
             .map(item => {
                 const children = item.children.filter(child => {
@@ -107,11 +100,7 @@ export class GetSharingSummaryUseCase {
                         public: item.sharing.public,
                     };
 
-                    return (
-                        !_.isEqual(childSharing, parentSharing) &&
-                        !excludedDependencies.includes(child.id) &&
-                        !isDefaultElement(child)
-                    );
+                    return !_.isEqual(childSharing, parentSharing) && !isDefaultElement(child);
                 });
 
                 return {
@@ -119,7 +108,7 @@ export class GetSharingSummaryUseCase {
                     children: children,
                 };
             })
-            .filter(item => !_.isEmpty(item.children) && !excludedDependencies.includes(item.id));
+            .filter(item => !_.isEmpty(item.children));
     }
 
     private getMetadataWithDifferentSharing(payload: MetadataPayload[], parentIds: string[]): SharingWarning[] {

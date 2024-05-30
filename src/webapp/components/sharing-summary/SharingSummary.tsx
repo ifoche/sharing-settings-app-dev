@@ -65,8 +65,9 @@ const Title = styled.p`
 `;
 
 const Warnings = styled.div`
-    background-color: #FFF4E5;
+    background-color: #fff4e5;
     padding: 2rem;
+    margin-bottom: 1rem;
 `;
 
 function pluralize(str: string) {
