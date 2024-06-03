@@ -9,14 +9,14 @@ import { NamedRef } from "../../entities/Ref";
 export class GetSharingSummaryUseCase {
     constructor(private metadataRepository: MetadataRepository) {}
 
-    public execute(update: SharingUpdate, payload: MetadataPayload): FutureData<SharingSummary> {
+    public execute(update: SharingUpdate, updatedMetadata: MetadataPayload): FutureData<SharingSummary> {
         const { baseElements, excludedDependencies } = update;
 
-        return this.metadataRepository.getMetadataWithChildren(baseElements).flatMap(selectedMetadata => {
-            const payloadsSummary = this.getPayloadsSummary(selectedMetadata, payload);
-            const metadataWithDifferentSharing = this.getMetadataWithDifferentSharing(payloadsSummary, baseElements);
-            const sharingWarnings = this.cleanMetadataSharing(metadataWithDifferentSharing);
-            const sharingPayload = this.getSharingPayload(payload, excludedDependencies);
+        return this.metadataRepository.getMetadataWithChildren(baseElements).flatMap(currentMetadata => {
+            const payloadsSummary = this.getPayloadsSummary(currentMetadata, updatedMetadata);
+            const metadataTree = this.buildMetadataTreeFromPayload(payloadsSummary, baseElements);
+            const sharingWarnings = this.getMetadataWithDifferentSharing(metadataTree);
+            const sharingPayload = this.getSharingPayload(updatedMetadata, excludedDependencies);
 
             return this.metadataRepository.getMetadataFromIds(excludedDependencies).flatMap(excludedPayload => {
                 const excludedMetadata = this.getMetadataFromPayload(excludedPayload);
@@ -85,8 +85,8 @@ export class GetSharingSummaryUseCase {
         return _.pickBy(sharingPayload, value => !_.isEmpty(value));
     }
 
-    private cleanMetadataSharing(metadataSharingWithChildren: SharingWarning[]): SharingWarning[] {
-        return metadataSharingWithChildren
+    private getMetadataWithDifferentSharing(metadataTree: SharingWarning[]): SharingWarning[] {
+        return metadataTree
             .map(item => {
                 const children = item.children.filter(child => {
                     const childSharing = {
@@ -111,7 +111,7 @@ export class GetSharingSummaryUseCase {
             .filter(item => !_.isEmpty(item.children));
     }
 
-    private getMetadataWithDifferentSharing(payload: MetadataPayload[], parentIds: string[]): SharingWarning[] {
+    private buildMetadataTreeFromPayload(payload: MetadataPayload[], parentIds: string[]): SharingWarning[] {
         return _(payload)
             .flatMap(payloadGroup =>
                 parentIds.map(parentId => {
