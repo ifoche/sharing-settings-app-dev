@@ -23,7 +23,7 @@ export const SharingSummary = ({ summary }: SharingSummaryProps) => {
                     {sharingWarnings.map(metadataItem => (
                         <MetadataList
                             key={metadataItem.id}
-                            title={`${metadataItem.name} (${metadataItem.id}) has different sharing settings from:`}
+                            title={`${metadataItem.name} (${metadataItem.id}) will have different sharing settings from:`}
                             metadata={metadataItem.children}
                         />
                     ))}
