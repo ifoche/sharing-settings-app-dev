@@ -47,20 +47,7 @@ export class MetadataD2ApiRepository implements MetadataRepository {
     }
 
     public getDependencies(ids: string[]): FutureData<MetadataPayload> {
-        return this.fetchMetadata(ids)
-            .flatMap(payload => {
-                const items = _(payload)
-                    .mapValues((items, key) => {
-                        if (!Array.isArray(items) || !isValidModel(key)) return undefined;
-                        return items.map(item => ({ model: key, id: item.id }));
-                    })
-                    .values()
-                    .flatten()
-                    .compact()
-                    .value();
-
-                return Future.futureMap(items, ({ model, id }) => this.fetchMetadataWithDependencies(model, id));
-            })
+        return this.getMetadataWithChildren(ids)
             .flatMap(payloads => {
                 const payload = mergePayloads(payloads);
                 const extraIds = extractExtraDependencies(payload);
@@ -69,6 +56,26 @@ export class MetadataD2ApiRepository implements MetadataRepository {
                 return this.fetchMetadata(extraIds).map(dependencies => mergePayloads([payload, dependencies]));
             })
             .map(payload => removeDefaults(payload));
+    }
+
+    public getMetadataWithChildren(ids: string[]): FutureData<MetadataPayload[]> {
+        return this.fetchMetadata(ids).flatMap(payload => {
+            const items = _(payload)
+                .mapValues((items, key) => {
+                    if (!Array.isArray(items) || !isValidModel(key)) return undefined;
+                    return items.map(item => ({ model: key, id: item.id }));
+                })
+                .values()
+                .flatten()
+                .compact()
+                .value();
+
+            return Future.futureMap(items, ({ model, id }) => this.fetchMetadataWithDependencies(model, id));
+        });
+    }
+
+    public getMetadataFromIds(ids: string[]): FutureData<MetadataPayload> {
+        return this.fetchMetadata(ids).map(payload => mergePayloads([payload]));
     }
 
     public getModelName(model: string): string {

@@ -1,4 +1,4 @@
-import { Ref } from "./Ref";
+import { NamedRef, Ref } from "./Ref";
 import { SharedObject, SharingSetting } from "./SharedObject";
 
 export type MetadataModel =
@@ -27,6 +27,7 @@ export type MetadataModel =
     | "organisationUnitGroupSets";
 
 export const displayName: Record<string, string> = {
+    attributes: "Attributes",
     dataSets: "Data Sets",
     programs: "Programs",
     dashboards: "Dashboards",
@@ -50,6 +51,8 @@ export const displayName: Record<string, string> = {
     dataElementGroupSets: "Data Element Group Set",
     organisationUnitGroups: "Organisation Unit Group",
     organisationUnitGroupSets: "Organisation Unit Group Set",
+    trackedEntityTypes: "Tracked Entity Types",
+    trackedEntityAttributes: "Tracked Entity Attributes",
 };
 export type MetadataPayload = Record<string, MetadataItem[]>;
 
@@ -75,7 +78,9 @@ export type SharingObject = {
     public: string;
 };
 
-export type MetadataItem = Ref & Sharing & SharedObject & { [key: string]: any | undefined };
+export type CodedRef = NamedRef & { code: string | undefined };
+
+export type MetadataItem = CodedRef & Sharing & SharedObject & { [key: string]: any | undefined };
 
 export function isValidModel(model: string): model is MetadataModel {
     return ["dataSets", "programs", "dashboards"].includes(model);

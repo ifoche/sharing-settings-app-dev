@@ -5,13 +5,14 @@ import { GlobalExcludedDependenciesD2ApiRepository } from "./data/repositories/G
 import { GetCurrentUserUseCase } from "./domain/usecases/instance/GetCurrentUserUseCase";
 import { GetInstanceVersionUseCase } from "./domain/usecases/instance/GetInstanceVersionUseCase";
 import { SearchUsersUseCase } from "./domain/usecases/instance/SearchUsersUseCase";
-import { ApplySharingSettingsUseCase } from "./domain/usecases/metadata/ApplySharingSettingsUseCase";
+import { GetMetadataWithUpdatedSharingsUseCase } from "./domain/usecases/metadata/GetMetadataWithUpdatedSharingsUseCase";
 import { GetModelNameUseCase } from "./domain/usecases/metadata/GetModelNameUseCase";
 import { ImportMetadataUseCase } from "./domain/usecases/metadata/ImportMetadataUseCase";
 import { ListDependenciesUseCase } from "./domain/usecases/metadata/ListDependenciesUseCase";
 import { ListMetadataUseCase } from "./domain/usecases/metadata/ListMetadataUseCase";
 import { SaveExcludedDependenciesUseCase } from "./domain/usecases/excludedDependencies/SaveExcludedDependenciesUseCase";
 import { ListExcludedDependenciesUseCase } from "./domain/usecases/excludedDependencies/ListExcludedDependenciesUseCase";
+import { GetSharingSummaryUseCase } from "./domain/usecases/metadata/GetSharingSummaryUseCase";
 
 export function getCompositionRoot(instance: Instance) {
     const instanceRepository = new InstanceDefaultRepository(instance);
@@ -25,8 +26,9 @@ export function getCompositionRoot(instance: Instance) {
         }),
         metadata: getExecute({
             list: new ListMetadataUseCase(metadataRepository),
+            getSharingSummary: new GetSharingSummaryUseCase(metadataRepository),
             listDependencies: new ListDependenciesUseCase(metadataRepository),
-            applySharingSettings: new ApplySharingSettingsUseCase(metadataRepository),
+            getMetadataWithUpdatedSharings: new GetMetadataWithUpdatedSharingsUseCase(metadataRepository),
             getModelName: new GetModelNameUseCase(metadataRepository),
             import: new ImportMetadataUseCase(metadataRepository),
         }),
