@@ -7,7 +7,7 @@ import { MetadataPayload } from "../../../entities/MetadataItem";
 import { SharingUpdate } from "../../../entities/SharingUpdate";
 import { ListMetadataResponse, ListOptions, MetadataRepository } from "../../../repositories/MetadataRepository";
 import { GetMetadataWithUpdatedSharingsUseCase } from "../GetMetadataWithUpdatedSharingsUseCase";
-import { metadata } from "./ApplySharingSettingsUseCase.metadata";
+import { metadata } from "./GetMetadataWithUpdatedSharingsUseCase.metadata";
 import { SharingSetting } from "../../../entities/SharedObject";
 
 describe("Apply sharing settings use case", () => {
