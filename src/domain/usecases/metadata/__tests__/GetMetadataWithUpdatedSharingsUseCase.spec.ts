@@ -10,7 +10,7 @@ import { GetMetadataWithUpdatedSharingsUseCase } from "../GetMetadataWithUpdated
 import { metadata } from "./GetMetadataWithUpdatedSharingsUseCase.metadata";
 import { SharingSetting } from "../../../entities/SharedObject";
 
-describe("Apply sharing settings use case", () => {
+describe("Get metadata with updated sharing settings use case", () => {
     let metadataRepository: MetadataRepository;
     let usecase: GetMetadataWithUpdatedSharingsUseCase;
 
