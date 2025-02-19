@@ -98,7 +98,8 @@ export class MetadataD2ApiRepository implements MetadataRepository {
         switch (model) {
             case "dataElementGroupSets":
                 return this.getDataElementGroupSetWithDependencies(id);
-
+            case "organisationUnitGroups":
+                return this.getOrgUnitGroupDependencies(id);
             case "organisationUnitGroupSets":
                 return this.getOrgUnitGroupSetWithDependencies(id);
             default:
@@ -123,6 +124,27 @@ export class MetadataD2ApiRepository implements MetadataRepository {
             return Future.success({
                 dataElementGroups: dataElementGroups,
                 dataElementGroupSets: [rest],
+            });
+        });
+    }
+
+    private getOrgUnitGroupDependencies(id: string): FutureData<MetadataPayload> {
+        return apiToFuture(
+            this.api.models.organisationUnitGroups.get({
+                fields: {
+                    $owner: true,
+                    organisationUnits: { $owner: true },
+                },
+                filter: { id: { eq: id } },
+            })
+        ).flatMap(response => {
+            const d2Object = response.objects[0];
+            if (!d2Object) return Future.success({});
+
+            const { organisationUnits, ...rest } = d2Object;
+            return Future.success({
+                organisationUnits: organisationUnits,
+                organisationUnitGroups: [rest],
             });
         });
     }
